@@ -4,25 +4,26 @@
     "linkedin": null,
     "cv_de": null,
     "portrait": null,
-    "domain": "https://antonfrolov.de"
+    "domain": "https://antonfrolov.de",
+    "featured_project": "people-behind-the-projects"
   },
   "projects": [
     {
       "slug": "people-behind-the-projects",
       "org": "CLIMATECH Montage GmbH",
-      "year": "2025–2026",
+      "year": "2026",
       "asset": "climatech-people",
       "title": [
-        "People Behind the Projects",
-        "Die Menschen hinter den Projekten"
+        "The Klimatechniker Project",
+        "Das Klimatechniker-Projekt"
       ],
       "cats": [
-        "Employer Branding · Video Production · Social Media",
-        "Employer Branding · Videoproduktion · Social Media"
+        "Content Strategy · Social Media Collaboration · Video Production · Employer Branding",
+        "Content-Strategie · Social-Media-Collaboration · Videoproduktion · Employer Branding"
       ],
       "intro": [
-        "Employee stories and short-form video, from the first idea to the final edit. Making technical work—and the people behind it—more visible.",
-        "Mitarbeitergeschichten und Kurzvideos: von der ersten Idee bis zum fertigen Schnitt. Technische Arbeit und die Menschen dahinter sichtbar machen."
+        "Employee-led storytelling meets employer branding.",
+        "Authentische Einblicke in den Arbeitsalltag – durch eine Mitarbeiter-Collaboration."
       ],
       "context": [
         "Technical projects are also stories about people. I developed employee-focused photo and video content for CLIMATECH, including a technical construction project in Berlin.",
@@ -50,9 +51,385 @@
         "Deliverables included employee-focused short-form videos, project stories and a three-part interview series with a climate technician. Audience and recruitment results are not documented here.",
         "Entstanden sind Kurzvideos über Mitarbeitende, Projektgeschichten und eine dreiteilige Interviewreihe mit einem Klimatechniker. Reichweiten oder Recruiting-Ergebnisse werden hier nicht ausgewiesen."
       ],
-      "cover": null,
+      "cover": "/media/klimatechniker/rooftop-1440.webp",
       "images": [],
-      "videos": []
+      "videos": [],
+      "layout": "klimatechniker",
+      "cover_alt": [
+        "Rooftop ventilation ductwork with the Berlin skyline in the background",
+        "Lüftungsleitungen auf einem Dach vor der Berliner Skyline"
+      ],
+      "cover_width": 1536,
+      "cover_height": 2048,
+      "cover_srcset": "/media/klimatechniker/rooftop-480.webp 480w, /media/klimatechniker/rooftop-800.webp 800w, /media/klimatechniker/rooftop-1440.webp 1440w",
+      "case_study": {
+        "publication_approved": true,
+        "role": [
+          "Concept / Project Coordination / Filming / Editing",
+          "Konzept / Projektkoordination / Kamera / Schnitt"
+        ],
+        "opportunity": {
+          "heading": [
+            "An existing community. A new opportunity.",
+            "Die Idee"
+          ],
+          "text": [
+            "A CLIMATECH technician was already sharing his everyday work with an established Instagram audience. I independently proposed an Instagram collaboration to bring his perspective into CLIMATECH’s employer branding.",
+            "Ein Techniker von CLIMATECH gab seiner Instagram-Community bereits Einblicke in seinen Arbeitsalltag. Ich schlug eigenständig eine Instagram-Collaboration vor, um seine Perspektive in das Employer Branding von CLIMATECH einzubringen."
+          ]
+        },
+        "profiles": [
+          {
+            "asset": "profile-company",
+            "handle": "@climatech_gruppe",
+            "count": [
+              "615 followers",
+              "615 Follower"
+            ],
+            "caption": [
+              "CLIMATECH’s corporate profile",
+              "Das Unternehmensprofil von CLIMATECH"
+            ],
+            "alt": [
+              "Supplied Instagram profile screenshot of climatech_gruppe showing 615 followers",
+              "Bereitgestellter Screenshot des Instagram-Profils climatech_gruppe mit 615 Followern"
+            ]
+          },
+          {
+            "asset": "profile-employee",
+            "handle": "@klimatechniker__",
+            "count": [
+              "≈13,200 followers",
+              "ca. 13.200 Follower"
+            ],
+            "caption": [
+              "An employee’s established technical community",
+              "Die bestehende Fach-Community eines Mitarbeiters"
+            ],
+            "alt": [
+              "Supplied Instagram profile screenshot of klimatechniker__ showing 13.2K followers",
+              "Bereitgestellter Screenshot des Instagram-Profils klimatechniker__ mit 13,2 Tsd. Followern"
+            ]
+          }
+        ],
+        "snapshot_note": [
+          "Follower counts are snapshots from the supplied profiles, not campaign results or evidence of follower growth. Screenshot dates were not supplied.",
+          "Die Followerzahlen stammen aus den bereitgestellten Profil-Screenshots. Sie sind weder Kampagnenergebnisse noch ein Beleg für Followerwachstum. Das Aufnahmedatum der Screenshots wurde nicht angegeben."
+        ],
+        "production": {
+          "heading": [
+            "From concept to production.",
+            "Von der Idee zum Dreh"
+          ],
+          "text": [
+            "On site, I handled the camera independently and filmed technical work, everyday moments and interview footage.",
+            "Vor Ort übernahm ich eigenständig die Kameraarbeit und filmte technische Abläufe, Alltagssituationen und Interviewsequenzen."
+          ]
+        },
+        "photos": [
+          {
+            "asset": "rooftop",
+            "caption": [
+              "The rooftop as a production location",
+              "Das Dach als Drehort"
+            ],
+            "alt": [
+              "Ventilation ductwork on a rooftop overlooking Berlin in morning light",
+              "Lüftungsleitungen auf einem Dach mit Blick über Berlin im Morgenlicht"
+            ]
+          },
+          {
+            "asset": "installation",
+            "caption": [
+              "Technical processes, observed up close",
+              "Technische Abläufe aus nächster Nähe"
+            ],
+            "alt": [
+              "A ventilation component is lifted by a crane above the rooftop installation",
+              "Ein Lüftungsbauteil wird mit einem Kran über die Dachinstallation gehoben"
+            ]
+          },
+          {
+            "asset": "planning",
+            "caption": [
+              "The people behind the installation",
+              "Die Menschen hinter der Installation"
+            ],
+            "alt": [
+              "Two technicians discuss the rooftop work beside ventilation equipment",
+              "Zwei Techniker besprechen die Arbeiten neben der Lüftungsanlage auf dem Dach"
+            ]
+          }
+        ],
+        "formats_heading": [
+          "Three formats. One production.",
+          "Drei Formate, eine Produktion."
+        ],
+        "formats_intro": [
+          "I edited the footage into three finished pieces: two dynamic Reels and one informative employee interview.",
+          "Im Schnitt entstanden drei fertige Beiträge: zwei dynamische Reels und ein informatives Mitarbeiterinterview."
+        ],
+        "videos": [
+          {
+            "asset": "reel-1",
+            "label": [
+              "01 — Project Reel",
+              "01 — Projekt-Reel"
+            ],
+            "text": [
+              "A concise, fast-cut montage of technical work, rooftop coordination and the installation. The supplied export has no audio track.",
+              "Eine kompakte, schnell geschnittene Montage aus technischen Arbeiten, Abstimmungen auf dem Dach und der Installation. Der bereitgestellte Export enthält keine Tonspur."
+            ],
+            "duration": "0:14",
+            "width": 720,
+            "height": 1280,
+            "audio": "none",
+            "public_url": "/media/klimatechniker/reel-1.mp4"
+          },
+          {
+            "asset": "reel-2",
+            "label": [
+              "02 — Creative Reel",
+              "02 — Kreatives Reel"
+            ],
+            "text": [
+              "A personality-led short-form edit combining expressive performance, effects and footage of the rooftop installation.",
+              "Ein Kurzvideo, das Persönlichkeit, expressive Inszenierung und Effekte mit Aufnahmen der Dachinstallation verbindet."
+            ],
+            "duration": "0:18",
+            "width": 720,
+            "height": 1280,
+            "audio": "review"
+          },
+          {
+            "asset": "interview",
+            "label": [
+              "03 — Employee Interview",
+              "03 — Mitarbeiterinterview"
+            ],
+            "text": [
+              "Gregor introduces himself and his background in an informal interview on the road. The supplied video includes German on-screen subtitles.",
+              "Gregor stellt sich und seinen beruflichen Hintergrund in einem informellen Interview unterwegs vor. Das bereitgestellte Video enthält eingeblendete deutsche Untertitel."
+            ],
+            "duration": "0:27",
+            "width": 720,
+            "height": 960,
+            "audio": "review"
+          }
+        ],
+        "preview_notice": [
+          "This local preview includes all three finished videos. The public site plays the silent Reel 1. Audio clearance is pending for Reel 2 and the interview.",
+          "Diese lokale Vorschau enthält alle drei fertigen Videos. Auf der öffentlichen Website ist das stumme Reel 1 abspielbar. Die Tonrechte für Reel 2 und das Interview sind noch nicht geklärt."
+        ],
+        "publication": {
+          "heading": [
+            "From production to publication.",
+            "Veröffentlichung & Collaboration"
+          ],
+          "text": [
+            "The content was shared through an Instagram collaboration with the employee’s account and CLIMATECH’s own channels, connecting an existing technical community with the company’s employer branding communication.",
+            "Die Inhalte wurden als Instagram-Collaboration mit dem Mitarbeiter-Account und über die eigenen Kanäle von CLIMATECH geteilt. So wurde eine bestehende Fach-Community mit der Employer-Branding-Kommunikation des Unternehmens verbunden."
+          ]
+        },
+        "carousel_heading": [
+          "The interview, extended into a carousel.",
+          "Das Interview als Carousel weitererzählt."
+        ],
+        "carousel_note": [
+          "Five supplied slides introduce Gregor and bring his perspective into a format people can read and save.",
+          "Fünf bereitgestellte Slides stellen Gregor vor und machen seine Perspektive in einem lesbaren, speicherbaren Format zugänglich."
+        ],
+        "carousel": [
+          {
+            "asset": "carousel-1",
+            "alt": [
+              "Interview carousel cover: Im Gespräch mit Gregor, CLIMATECH Berlin",
+              "Titel des Interview-Carousels: Im Gespräch mit Gregor, CLIMATECH Berlin"
+            ]
+          },
+          {
+            "asset": "carousel-2",
+            "alt": [
+              "Rooftop installation with Gregor’s quote about building a social media community and exchanging practical experience",
+              "Dachinstallation mit Gregors Zitat über den Aufbau einer Social-Media-Community und fachlichen Austausch"
+            ]
+          },
+          {
+            "asset": "carousel-3",
+            "alt": [
+              "Two technicians on the roof with a quote about completing tasks well and supporting one another at CLIMATECH Berlin",
+              "Zwei Techniker auf dem Dach mit einem Zitat über gute Zusammenarbeit und gegenseitige Unterstützung bei CLIMATECH Berlin"
+            ]
+          },
+          {
+            "asset": "carousel-4",
+            "alt": [
+              "Rooftop team with a quote about helping colleagues and learning through mistakes",
+              "Team auf dem Dach mit einem Zitat über kollegiale Unterstützung und das Lernen aus Fehlern"
+            ]
+          },
+          {
+            "asset": "carousel-5",
+            "alt": [
+              "A technician’s tool bag with a quote about equipment and a flexible working environment at CLIMATECH",
+              "Werkzeugtasche mit einem Zitat über Ausstattung und flexibles Arbeiten bei CLIMATECH"
+            ]
+          }
+        ],
+        "evidence_heading": [
+          "Publication, in context.",
+          "Veröffentlichung im Kontext."
+        ],
+        "evidence": [
+          {
+            "asset": "publication-company",
+            "caption": [
+              "The interview carousel in CLIMATECH’s Instagram grid",
+              "Das Interview-Carousel im Instagram-Raster von CLIMATECH"
+            ],
+            "alt": [
+              "Supplied CLIMATECH Instagram grid showing the Gregor interview carousel among company posts",
+              "Bereitgestelltes Instagram-Raster von CLIMATECH mit dem Gregor-Interview-Carousel zwischen Unternehmensbeiträgen"
+            ]
+          },
+          {
+            "asset": "publication-employee",
+            "caption": [
+              "The same carousel on the employee’s profile",
+              "Dasselbe Carousel im Mitarbeiterprofil"
+            ],
+            "alt": [
+              "Supplied employee Instagram grid showing the Gregor interview carousel",
+              "Bereitgestelltes Instagram-Raster des Mitarbeiters mit dem Gregor-Interview-Carousel"
+            ]
+          },
+          {
+            "asset": "performance",
+            "caption": [
+              "Supplied Reel-grid screenshot with individual view counts",
+              "Bereitgestellter Screenshot des Reel-Rasters mit einzelnen Aufrufzahlen"
+            ],
+            "alt": [
+              "Instagram Reel grid with individual view counts, including 4,066 on a rooftop installation thumbnail; other posts are also visible",
+              "Instagram-Reel-Raster mit einzelnen Aufrufzahlen, darunter 4.066 bei einem Vorschaubild der Dachinstallation; außerdem sind andere Beiträge sichtbar"
+            ]
+          }
+        ],
+        "metric_heading": [
+          "What the screenshot confirms",
+          "Was der Screenshot belegt"
+        ],
+        "metric_note": [
+          "The supplied screenshot displays view counts for individual Reels in a mixed profile grid. It does not identify the export or reporting period reliably enough to attribute a number to one of these three files. No campaign total, reach, engagement rate or recruiting result is claimed.",
+          "Der bereitgestellte Screenshot zeigt Aufrufzahlen einzelner Reels in einem gemischten Profilraster. Export und Auswertungszeitraum lassen sich daraus nicht sicher genug bestimmen, um eine Zahl einer dieser drei Dateien zuzuordnen. Es werden keine Gesamtaufrufe, Reichweiten, Engagement-Raten oder Recruiting-Ergebnisse behauptet."
+        ],
+        "contribution": {
+          "heading": [
+            "My contribution",
+            "Mein Beitrag"
+          ],
+          "text": [
+            "I developed the collaboration idea and independently managed the creative production — from project selection and shoot planning to filming and editing the final videos.",
+            "Ich entwickelte die Idee für die Zusammenarbeit und betreute die kreative Produktion selbstständig – von der Projektauswahl und Drehplanung bis zu Kameraarbeit und Schnitt der fertigen Videos."
+          ],
+          "roles": [
+            [
+              "Concept development",
+              "Production planning",
+              "Filming",
+              "Video editing",
+              "Social media collaboration"
+            ],
+            [
+              "Konzeptentwicklung",
+              "Produktionsplanung",
+              "Kameraarbeit",
+              "Videoschnitt",
+              "Social-Media-Collaboration"
+            ]
+          ]
+        },
+        "back": [
+          "Explore the selected work",
+          "Weitere Projekte entdecken"
+        ],
+        "hero_caption": [
+          "On location: technical work and the people behind it.",
+          "Vor Ort: technische Arbeit und die Menschen dahinter."
+        ],
+        "hero_alt": [
+          "Two technicians reviewing the rooftop installation together",
+          "Zwei Techniker stimmen sich bei der Arbeit auf dem Dach ab"
+        ],
+        "editorial_title": [
+          "The Klimatechniker<br><em>Project.</em>",
+          "Das Klimatechniker-<br><em>Projekt.</em>"
+        ],
+        "timeline": {
+          "label": [
+            "Project timeline",
+            "Projektablauf"
+          ],
+          "title": [
+            "From idea to publication.",
+            "Von der Idee zur Veröffentlichung."
+          ],
+          "stages": {
+            "opportunity": [
+              "The Opportunity",
+              "Die Idee"
+            ],
+            "planning": [
+              "Concept & Planning",
+              "Konzept & Planung"
+            ],
+            "production": [
+              "Production",
+              "Produktion"
+            ],
+            "films": [
+              "Post-Production",
+              "Postproduktion"
+            ],
+            "publication": [
+              "Publication & Reach",
+              "Veröffentlichung & Reichweite"
+            ]
+          },
+          "planning": [
+            "I selected an active project site, coordinated the shoot and planned the material around three formats: two Reels and an employee interview.",
+            "Ich wählte einen laufenden Einsatz als Drehort, koordinierte die Produktion und plante das Material für drei Formate: zwei Reels und ein Mitarbeiterinterview."
+          ]
+        }
+      },
+      "featured": {
+        "summary": [
+          "An employee’s established community. An idea for a collaboration. Three video formats, developed from concept to final edit.",
+          "Eine bestehende Mitarbeiter-Community. Eine Idee für die Zusammenarbeit. Drei Videoformate – vom Konzept bis zum fertigen Schnitt."
+        ],
+        "scope": [
+          [
+            "Content strategy",
+            "Shoot coordination",
+            "Filming & editing"
+          ],
+          [
+            "Content-Strategie",
+            "Drehkoordination",
+            "Kamera & Schnitt"
+          ]
+        ],
+        "detail": {
+          "src": "/media/klimatechniker/hero-768.webp",
+          "alt": [
+            "Two technicians reviewing the rooftop installation together",
+            "Zwei Techniker stimmen sich bei der Arbeit auf dem Dach ab"
+          ],
+          "width": 768,
+          "height": 1024,
+          "srcset": "/media/klimatechniker/hero-480.webp 480w, /media/klimatechniker/hero-768.webp 768w"
+        }
+      }
     },
     {
       "slug": "technical-careers",
@@ -99,7 +476,11 @@
       ],
       "cover": null,
       "images": [],
-      "videos": []
+      "videos": [],
+      "home_visual_title": [
+        "Careers &<br>people.",
+        "Berufe &<br>Menschen."
+      ]
     },
     {
       "slug": "corporate-digital-presence",
@@ -148,7 +529,11 @@
       ],
       "cover": null,
       "images": [],
-      "videos": []
+      "videos": [],
+      "home_visual_title": [
+        "A clearer<br>company voice.",
+        "Ein klarer<br>Auftritt."
+      ]
     },
     {
       "slug": "product-to-brand",
@@ -199,7 +584,11 @@
       ],
       "cover": null,
       "images": [],
-      "videos": []
+      "videos": [],
+      "home_visual_title": [
+        "Product.<br>Brand.<br>Story.",
+        "Produkt.<br>Marke.<br>Geschichte."
+      ]
     },
     {
       "slug": "beyond-the-screen",
@@ -248,7 +637,125 @@
       ],
       "cover": null,
       "images": [],
-      "videos": []
+      "videos": [],
+      "home_visual_title": [
+        "Bringing<br>people together.",
+        "Menschen<br>verbinden."
+      ]
     }
-  ]
+  ],
+  "homepage": {
+    "eyebrow": [
+      "Marketing · Communications · Creative projects",
+      "Marketing · Kommunikation · Kreative Projekte"
+    ],
+    "heading": [
+      "From the first idea<br>to the <em>finished work.</em>",
+      "Von der ersten Idee<br>bis zur <em>Umsetzung.</em>"
+    ],
+    "intro": [
+      "I’m Anton, a marketing and communications professional in Leipzig. I bring planning, people and creative production together.",
+      "Ich bin Anton und arbeite in Marketing und Kommunikation in Leipzig. Ich verbinde Planung, Zusammenarbeit und kreative Umsetzung."
+    ],
+    "work_heading": [
+      "Selected work",
+      "Ausgewählte Projekte"
+    ],
+    "work_note": [
+      "Strategy, coordination and hands-on production.",
+      "Strategie, Koordination und kreative Umsetzung."
+    ],
+    "feature_kicker": [
+      "Featured case / 01",
+      "Im Fokus / 01"
+    ],
+    "more_heading": [
+      "More ways I work.",
+      "Weitere Arbeitsfelder."
+    ],
+    "more_note": [
+      "Marketing and communications across digital, product and live experiences.",
+      "Marketing und Kommunikation – digital, am Produkt und im persönlichen Austausch."
+    ],
+    "placeholder": [
+      "Editorial placeholder · project visuals to follow",
+      "Gestalterischer Platzhalter · Projektmaterial folgt"
+    ],
+    "about_heading": [
+      "A plan, a story,<br><em>and people.</em>",
+      "Ein Plan, eine Geschichte<br><em>und Menschen.</em>"
+    ],
+    "about_text": [
+      "I enjoy projects that combine creativity, collaboration and a bit of problem-solving. My experience spans digital marketing, content, partnerships and events in Germany and Russia. I’m comfortable working with a team or taking a project from planning through to delivery independently.",
+      "Ich mag Projekte, die Kreativität, Zusammenarbeit und ein wenig Problemlösen verbinden. Meine Erfahrung umfasst digitales Marketing, Content, Partnerschaften und Veranstaltungen in Deutschland und Russland. Ich arbeite gern im Team und betreue Projekte ebenso gern selbstständig von der Planung bis zur Umsetzung."
+    ],
+    "about_interest": [
+      "Interested in marketing, communications, employer branding and creative project coordination roles.",
+      "Offen für Aufgaben in Marketing, Kommunikation, Employer Branding und kreativer Projektkoordination."
+    ],
+    "capabilities_heading": [
+      "Thinking and making.",
+      "Planen und umsetzen."
+    ],
+    "capabilities": [
+      {
+        "title": [
+          "Marketing & communications",
+          "Marketing & Kommunikation"
+        ],
+        "text": [
+          "Digital marketing, content strategy, employer branding, recruitment marketing and social media.",
+          "Digitales Marketing, Content-Strategie, Employer Branding, Personalmarketing und Social Media."
+        ]
+      },
+      {
+        "title": [
+          "Projects & people",
+          "Projekte & Zusammenarbeit"
+        ],
+        "text": [
+          "Planning, project ownership, agency coordination, partnerships, stakeholders and events.",
+          "Planung, Projektverantwortung, Agenturkoordination, Partnerschaften, Stakeholder und Veranstaltungen."
+        ]
+      },
+      {
+        "title": [
+          "Creative production",
+          "Kreative Produktion"
+        ],
+        "text": [
+          "Photography, filming, interviews, editing and content for websites and social channels.",
+          "Fotografie, Kameraarbeit, Interviews, Schnitt und Inhalte für Websites und Social Media."
+        ]
+      }
+    ],
+    "experience_heading": [
+      "Experience, in brief.",
+      "Berufserfahrung, kompakt."
+    ],
+    "education_heading": [
+      "Education",
+      "Ausbildung"
+    ],
+    "contact_heading": [
+      "Have a project<br>or a role in mind?",
+      "Ein Projekt oder<br>eine Stelle im Blick?"
+    ],
+    "contact_text": [
+      "I’m open to marketing, communications and creative project opportunities. Let’s talk.",
+      "Ich bin offen für neue Aufgaben in Marketing, Kommunikation und kreativen Projekten. Lassen Sie uns sprechen."
+    ],
+    "view_case": [
+      "Explore the case",
+      "Zum Projekt"
+    ],
+    "availability": [
+      "Open to new opportunities",
+      "Offen für neue Möglichkeiten"
+    ],
+    "location": [
+      "Leipzig, Germany",
+      "Leipzig, Deutschland"
+    ]
+  }
 }
