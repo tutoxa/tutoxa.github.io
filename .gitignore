@@ -1,0 +1,3 @@
+# Local review videos are never published or committed.
+.preview-media/
+__pycache__/
