@@ -1,1 +1,333 @@
-
+{
+  "hero": {
+    "original": "FEE55686-ADD6-4005-B0EB-8C5C468DA899_1_105_c.jpeg",
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/hero-480.webp",
+        "width": 480,
+        "bytes": 34728
+      },
+      {
+        "path": "/media/klimatechniker/hero-768.webp",
+        "width": 768,
+        "bytes": 74486
+      }
+    ]
+  },
+  "rooftop": {
+    "original": "00C9152D-F4A8-4D56-AD02-45CD8A1EE89B_1_102_o.jpeg",
+    "width": 1536,
+    "height": 2048,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/rooftop-480.webp",
+        "width": 480,
+        "bytes": 29842
+      },
+      {
+        "path": "/media/klimatechniker/rooftop-800.webp",
+        "width": 800,
+        "bytes": 79284
+      },
+      {
+        "path": "/media/klimatechniker/rooftop-1440.webp",
+        "width": 1440,
+        "bytes": 205066
+      }
+    ]
+  },
+  "installation": {
+    "original": "6699FF05-DFA8-4542-9C34-C1AD38BFCBD0_1_105_c.jpeg",
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/installation-480.webp",
+        "width": 480,
+        "bytes": 33858
+      },
+      {
+        "path": "/media/klimatechniker/installation-768.webp",
+        "width": 768,
+        "bytes": 76264
+      }
+    ]
+  },
+  "planning": {
+    "original": "B15588BC-9BD2-4461-8939-3CFB923AD107_1_105_c.jpeg",
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/planning-480.webp",
+        "width": 480,
+        "bytes": 40514
+      },
+      {
+        "path": "/media/klimatechniker/planning-768.webp",
+        "width": 768,
+        "bytes": 92088
+      }
+    ]
+  },
+  "van": {
+    "original": "2E9FC0CF-F952-4430-B299-976AB7402E28_1_105_c.jpeg",
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/van-480.webp",
+        "width": 480,
+        "bytes": 46822
+      },
+      {
+        "path": "/media/klimatechniker/van-768.webp",
+        "width": 768,
+        "bytes": 106778
+      }
+    ]
+  },
+  "profile-company": {
+    "original": "Climatech Screenshot Insta 1.PNG",
+    "width": 1170,
+    "height": 2532,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/profile-company-480.webp",
+        "width": 480,
+        "bytes": 73980
+      },
+      {
+        "path": "/media/klimatechniker/profile-company-800.webp",
+        "width": 800,
+        "bytes": 146090
+      },
+      {
+        "path": "/media/klimatechniker/profile-company-1170.webp",
+        "width": 1170,
+        "bytes": 235900
+      }
+    ]
+  },
+  "profile-employee": {
+    "original": "Klimatechniker Screenshot Insta 1 .PNG",
+    "width": 1170,
+    "height": 2532,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/profile-employee-480.webp",
+        "width": 480,
+        "bytes": 80026
+      },
+      {
+        "path": "/media/klimatechniker/profile-employee-800.webp",
+        "width": 800,
+        "bytes": 162196
+      },
+      {
+        "path": "/media/klimatechniker/profile-employee-1170.webp",
+        "width": 1170,
+        "bytes": 271206
+      }
+    ]
+  },
+  "publication-company": {
+    "original": "Climatech Screenshot Insta 2.PNG",
+    "width": 1170,
+    "height": 2532,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/publication-company-480.webp",
+        "width": 480,
+        "bytes": 107560
+      },
+      {
+        "path": "/media/klimatechniker/publication-company-800.webp",
+        "width": 800,
+        "bytes": 220698
+      },
+      {
+        "path": "/media/klimatechniker/publication-company-1170.webp",
+        "width": 1170,
+        "bytes": 369558
+      }
+    ]
+  },
+  "publication-employee": {
+    "original": "Klimatechniker Screenshot Insta 2.PNG",
+    "width": 1170,
+    "height": 2532,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/publication-employee-480.webp",
+        "width": 480,
+        "bytes": 127722
+      },
+      {
+        "path": "/media/klimatechniker/publication-employee-800.webp",
+        "width": 800,
+        "bytes": 269460
+      },
+      {
+        "path": "/media/klimatechniker/publication-employee-1170.webp",
+        "width": 1170,
+        "bytes": 452564
+      }
+    ]
+  },
+  "performance": {
+    "original": "просмотры охваты.PNG",
+    "width": 1170,
+    "height": 2532,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/performance-480.webp",
+        "width": 480,
+        "bytes": 144082
+      },
+      {
+        "path": "/media/klimatechniker/performance-800.webp",
+        "width": 800,
+        "bytes": 307954
+      },
+      {
+        "path": "/media/klimatechniker/performance-1170.webp",
+        "width": 1170,
+        "bytes": 520046
+      }
+    ]
+  },
+  "carousel-1": {
+    "original": "Instagram_1.png",
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/carousel-1-480.webp",
+        "width": 480,
+        "bytes": 55438
+      },
+      {
+        "path": "/media/klimatechniker/carousel-1-800.webp",
+        "width": 800,
+        "bytes": 136062
+      },
+      {
+        "path": "/media/klimatechniker/carousel-1-1080.webp",
+        "width": 1080,
+        "bytes": 221012
+      }
+    ]
+  },
+  "carousel-2": {
+    "original": "Instagram_car_2.png",
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/carousel-2-480.webp",
+        "width": 480,
+        "bytes": 42852
+      },
+      {
+        "path": "/media/klimatechniker/carousel-2-800.webp",
+        "width": 800,
+        "bytes": 93550
+      },
+      {
+        "path": "/media/klimatechniker/carousel-2-1080.webp",
+        "width": 1080,
+        "bytes": 140130
+      }
+    ]
+  },
+  "carousel-3": {
+    "original": "Instagram_car_3.png",
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/carousel-3-480.webp",
+        "width": 480,
+        "bytes": 70216
+      },
+      {
+        "path": "/media/klimatechniker/carousel-3-800.webp",
+        "width": 800,
+        "bytes": 155310
+      },
+      {
+        "path": "/media/klimatechniker/carousel-3-1080.webp",
+        "width": 1080,
+        "bytes": 231626
+      }
+    ]
+  },
+  "carousel-4": {
+    "original": "Instagram_car_4.png",
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/carousel-4-480.webp",
+        "width": 480,
+        "bytes": 58010
+      },
+      {
+        "path": "/media/klimatechniker/carousel-4-800.webp",
+        "width": 800,
+        "bytes": 127456
+      },
+      {
+        "path": "/media/klimatechniker/carousel-4-1080.webp",
+        "width": 1080,
+        "bytes": 186600
+      }
+    ]
+  },
+  "carousel-5": {
+    "original": "Instagram_car_5.png",
+    "width": 1080,
+    "height": 1440,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/carousel-5-480.webp",
+        "width": 480,
+        "bytes": 65166
+      },
+      {
+        "path": "/media/klimatechniker/carousel-5-800.webp",
+        "width": 800,
+        "bytes": 139944
+      },
+      {
+        "path": "/media/klimatechniker/carousel-5-1080.webp",
+        "width": 1080,
+        "bytes": 206174
+      }
+    ]
+  },
+  "reel-1": {
+    "original": "Klimatechnik Reel 1.MOV",
+    "source_bytes": 43574105,
+    "preview_bytes": 3846991,
+    "preview_url": "/.preview-media/klimatechniker/reel-1.mp4",
+    "poster": "/media/klimatechniker/reel-1-poster.webp"
+  },
+  "reel-2": {
+    "original": "Klimatechnik Reel 2.MOV",
+    "source_bytes": 58468305,
+    "preview_bytes": 6942799,
+    "preview_url": "/.preview-media/klimatechniker/reel-2.mp4",
+    "poster": "/media/klimatechniker/reel-2-poster.webp"
+  },
+  "interview": {
+    "original": "Klimatechniker Interview 1.MOV",
+    "source_bytes": 77282808,
+    "preview_bytes": 6265914,
+    "preview_url": "/.preview-media/klimatechniker/interview.mp4",
+    "poster": "/media/klimatechniker/interview-poster.webp"
+  }
+}
