@@ -159,6 +159,17 @@
               "Two technicians discuss the rooftop work beside ventilation equipment",
               "Zwei Techniker besprechen die Arbeiten neben der Lüftungsanlage auf dem Dach"
             ]
+          },
+          {
+            "asset": "van",
+            "caption": [
+              "Equipment and preparation",
+              "Ausrüstung und Vorbereitung"
+            ],
+            "alt": [
+              "A technician at the open rear of a work van",
+              "Ein Techniker am offenen Heck eines Einsatzfahrzeugs"
+            ]
           }
         ],
         "formats_heading": [
@@ -316,21 +327,21 @@
           }
         ],
         "metric_heading": [
-          "What the screenshot confirms",
-          "Was der Screenshot belegt"
+          "Views on one rooftop Reel thumbnail",
+          "Aufrufe bei einem Reel mit Dachaufnahme"
         ],
         "metric_note": [
-          "The supplied screenshot displays view counts for individual Reels in a mixed profile grid. It does not identify the export or reporting period reliably enough to attribute a number to one of these three files. No campaign total, reach, engagement rate or recruiting result is claimed.",
-          "Der bereitgestellte Screenshot zeigt Aufrufzahlen einzelner Reels in einem gemischten Profilraster. Export und Auswertungszeitraum lassen sich daraus nicht sicher genug bestimmen, um eine Zahl einer dieser drei Dateien zuzuordnen. Es werden keine Gesamtaufrufe, Reichweiten, Engagement-Raten oder Recruiting-Ergebnisse behauptet."
+          "The supplied Instagram grid shows this count on one rooftop thumbnail. It does not identify the export or reporting period. Reaction counts are not visible.",
+          "Diese Zahl steht bei einem Vorschaubild der Dachinstallation im bereitgestellten Instagram-Raster. Export und Auswertungszeitraum sind nicht ersichtlich. Reaktionszahlen sind nicht sichtbar."
         ],
         "contribution": {
           "heading": [
-            "My contribution",
-            "Mein Beitrag"
+            "Takeaway",
+            "Fazit"
           ],
           "text": [
-            "I developed the collaboration idea and independently managed the creative production — from project selection and shoot planning to filming and editing the final videos.",
-            "Ich entwickelte die Idee für die Zusammenarbeit und betreute die kreative Produktion selbstständig – von der Projektauswahl und Drehplanung bis zu Kameraarbeit und Schnitt der fertigen Videos."
+            "An employee’s existing voice gave the collaboration a clear point of view. Planning the interview alongside the rooftop shoot made it possible to turn one production into two Reels, an interview and a carousel.",
+            "Die eigene Stimme des Mitarbeiters gab der Zusammenarbeit eine klare Perspektive. Weil ich das Interview zusammen mit dem Dreh auf dem Dach plante, entstanden aus einer Produktion zwei Reels, ein Interview und ein Carousel."
           ],
           "roles": [
             [
@@ -388,17 +399,29 @@
               "Produktion"
             ],
             "films": [
-              "Post-Production",
-              "Postproduktion"
+              "Outputs",
+              "Formate"
             ],
             "publication": [
-              "Publication & Reach",
-              "Veröffentlichung & Reichweite"
+              "Results",
+              "Ergebnisse"
             ]
           },
           "planning": [
-            "I selected an active project site, coordinated the shoot and planned the material around three formats: two Reels and an employee interview.",
-            "Ich wählte einen laufenden Einsatz als Drehort, koordinierte die Produktion und plante das Material für drei Formate: zwei Reels und ein Mitarbeiterinterview."
+            "I developed the collaboration idea myself, selected an active project site and coordinated the shoot. For the interview, I planned the concept, script structure and questions.",
+            "Ich entwickelte die Idee für die Zusammenarbeit selbst, wählte einen laufenden Einsatz als Drehort und koordinierte den Dreh. Für das Interview plante ich das Konzept, die Skriptstruktur und die Fragen."
+          ],
+          "planning_focus": [
+            [
+              "Collaboration concept",
+              "Interview structure",
+              "Interview questions"
+            ],
+            [
+              "Konzept der Zusammenarbeit",
+              "Interviewstruktur",
+              "Interviewfragen"
+            ]
           ]
         }
       },
