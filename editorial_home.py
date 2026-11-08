@@ -1,56 +1,71 @@
-"""Presentation for the editorial homepage; editable copy lives in content.json."""
-from html import escape as E
+"""The light portfolio homepage uses the existing project and experience data."""
+from html import escape as escape
 
 
-def render_home(lang, projects, config, translations, experience, path, links, copy):
-    i = 0 if lang == 'en' else 1
-    t = translations[lang]
-    def tx(key): return E(copy[key][i])
-    def rich(key): return E(copy[key][i]).replace('&lt;br&gt;', '<br>').replace('&lt;em&gt;', '<em>').replace('&lt;/em&gt;', '</em>')
-    def image(src, alt, width, height, eager=False, srcset=None, sizes='90vw', extra=''):
-        responsive = f' srcset="{E(srcset)}" sizes="{sizes}"' if srcset else ''
-        return f'<img src="{src}" alt="{E(alt)}" width="{width}" height="{height}" loading="{"eager" if eager else "lazy"}" decoding="async"{responsive}{" fetchpriority=high" if eager else ""} {extra}>'
-    p = next((p for p in projects if p['slug'] == config.get('featured_project')), projects[0])
-    featured = p.get('featured', {})
-    def project_image(project, eager=False, sizes='(max-width: 700px) 90vw, 45vw'):
-        return image(E(project['cover']), project.get('cover_alt',project['title'])[i], project.get('cover_width',1600), project.get('cover_height',1100), eager, project.get('cover_srcset'), sizes)
-    feature_image = project_image(p, True, '(max-width: 700px) 92vw, 62vw') if p.get('cover') else f'<div class="ed-feature-blank"><span>{E(p["title"][i])}</span><small>{tx("placeholder")}</small></div>'
-    detail = featured.get('detail')
-    people = image(E(detail['src']), detail['alt'][i], detail['width'], detail['height'], True, detail.get('srcset'), '(max-width: 700px) 34vw, 30vw') if detail else ''
-    people_block = f'<div class="ed-people">{people}</div>' if detail else ''
-    feature_summary = E(featured.get('summary',p['intro'])[i])
-    feature_scope = featured.get('scope',[p['cats'][0].split(' · '),p['cats'][1].split(' · ')])[i]
+def render_home(lang, projects, config, translations, experience, path, links, copy, preview=False):
+    index = 0 if lang == 'en' else 1
+
+    def text(value):
+        return escape(value[index] if isinstance(value, list) else value)
+
+    def resources():
+        email = f'<a class="button" href="mailto:{escape(config["email"])}">{["Email", "E-Mail"][index]} <span aria-hidden="true">↗</span></a>'
+        linkedin = (f'<a class="button" href="{escape(config["linkedin"])}" rel="me">LinkedIn ↗</a>'
+                    if config.get('linkedin') else (f'<span class="button unavailable" aria-disabled="true">{text(copy["linkedin_pending"])}</span>' if preview else ''))
+        cv = (f'<a class="button" href="{escape(config["cv_de"])}" download>CV ↓</a>'
+              if config.get('cv_de') else (f'<span class="button unavailable" aria-disabled="true">{text(copy["cv_pending"])}</span>' if preview else ''))
+        return f'<div class="contact-buttons">{email}{linkedin}{cv}</div>'
+
+    def review_note(key, css="content-note"):
+        return f'<p class="{css}">{text(copy[key])}</p>' if preview else ""
+
+    def experience_rows(entries):
+        rows = []
+        for year, organization, role, location, description in entries:
+            if index:
+                organization = organization.replace('Leibniz Institute for the History and Culture of Eastern Europe (GWZO)', 'Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO)').replace('Leipzig University', 'Universität Leipzig').replace('German Russian House', 'Deutsch-Russisches Haus')
+                location = location.replace('Germany', 'Deutschland').replace('Moscow, Russia', 'Moskau, Russland')
+            rows.append(f'<article class="career-entry"><p class="career-year">{escape(year)}</p><div><h3>{text(role)} <span>· {escape(organization)}</span></h3><p>{text(description)}</p><small>{escape(location)}</small></div></article>')
+        return ''.join(rows)
+
     cards = []
-    for n, project in enumerate((q for q in projects if q is not p), 2):
-        title = E(project['title'][i]); href = path(lang, project['slug'])
-        visual_title = E(project.get('home_visual_title',project['title'])[i]).replace('&lt;br&gt;', '<br>')
+    for number, project in enumerate(projects[:3], 1):
+        href = path(lang, project['slug'])
+        tags = ''.join(f'<span>{escape(tag)}</span>' for tag in project['cats'][index].split(' · '))
         if project.get('cover'):
-            cover = f'<a class="ed-cover ed-cover-photo" href="{href}" aria-label="{title}">{project_image(project)}</a>'
+            srcset = f' srcset="{escape(project["cover_srcset"])}" sizes="(max-width: 700px) 90vw, 42vw"' if project.get('cover_srcset') else ''
+            visual = f'<img src="{escape(project["cover"])}"{srcset} alt="{text(project["cover_alt"])}" width="{project["cover_width"]}" height="{project["cover_height"]}" loading="lazy" decoding="async">'
         else:
-            cover = f'<a class="ed-cover" href="{href}" aria-label="{title}"><span class="ed-cover-top"><span>{n:02}</span><span>{E(project["year"])}</span></span><span class="ed-cover-title">{visual_title}</span><span class="ed-cover-note">{tx("placeholder")}</span></a>'
-        cards.append(f'''<article class="ed-project ed-project-{n}">
-          {cover}
-          <div class="ed-project-info"><p class="ed-meta">{E(project['org'])}</p><h3><a href="{href}">{title} <span aria-hidden="true">↗</span></a></h3><p class="ed-project-intro">{E(project['intro'][i])}</p><p class="ed-cats">{E(project['cats'][i])}</p><a class="ed-link" href="{href}">{tx('view_case')} <span aria-hidden="true">↗</span></a></div>
-        </article>''')
-    rows = []
-    for year, org, roles, location, description in experience:
-        location = location if not i else location.replace('Germany', 'Deutschland').replace('Moscow, Russia', 'Moskau, Russland')
-        name = org if not i else org.replace('Leipzig University','Universität Leipzig').replace('German Russian House','Deutsch-Russisches Haus')
-        rows.append(f'<details class="ed-timeline-row"><summary><span class="ed-year">{year}</span><h3>{E(name)}</h3><span class="ed-job">{E(roles[i])}</span><span class="ed-expand" aria-hidden="true">+</span></summary><div class="ed-job-detail"><p>{E(description[i])}</p><small>{E(location)}</small></div></details>')
-    capabilities = ''.join(f'<article><span class="ed-counter">0{n}</span><h3>{E(c["title"][i])}</h3><p>{E(c["text"][i])}</p></article>' for n,c in enumerate(copy['capabilities'],1))
-    education = [
-        ('2022–2025', ['Leipzig University','Universität Leipzig'], ['Master’s Degree in European Studies','Masterabschluss in European Studies'], ['Political science, law, sociology and selected economics subjects, with a European and international focus.','Politikwissenschaft, Recht, Soziologie und ausgewählte wirtschaftswissenschaftliche Themen mit europäischem und internationalem Schwerpunkt.']),
-        ('2014–2018', ['RANEPA','RANEPA'], ['Bachelor’s Degree in International Relations','Bachelorabschluss in Internationalen Beziehungen'], ['Russian Presidential Academy of National Economy and Public Administration','Russische Akademie für Volkswirtschaft und öffentliche Verwaltung beim Präsidenten der Russischen Föderation'])]
-    education_html = ''.join(f'<article><span class="ed-meta">{year}</span><h3>{E(org[i])}</h3><p>{E(degree[i])}</p><small>{E(desc[i])}</small></article>' for year,org,degree,desc in education)
-    portrait = (image(E(config['portrait']), ['Portrait of Anton Frolov','Porträt von Anton Frolov'][i], 600, 800) if config.get('portrait') else f'<span>{["Portrait<br>to follow","Porträt<br>folgt"][i]}</span>')
-    return f'''<div class="ed-home">
-      <section class="ed-intro" aria-labelledby="intro-title"><div class="ed-intro-top"><p>{tx('eyebrow')}</p><p class="ed-available">{tx('availability')}</p></div><div class="ed-intro-grid"><h1 id="intro-title">{rich('heading')}</h1><div class="ed-intro-note"><p>{tx('intro')}</p><span>{tx('location')}</span></div></div></section>
-      <section class="ed-work" id="work" aria-labelledby="work-title"><div class="ed-section-head"><h2 id="work-title">{tx('work_heading')}</h2><p>{tx('work_note')}</p></div>
-       <article class="ed-feature"><a class="ed-feature-media {'' if detail else 'ed-feature-single'}" href="{path(lang,p['slug'])}" aria-label="{E(p['title'][i])}"><div class="ed-rooftop">{feature_image}</div>{people_block}<span class="ed-feature-open" aria-hidden="true">↗</span></a><div class="ed-feature-caption"><div><p class="ed-meta">{tx('feature_kicker')} — {E(p['org'])} / {p['year']}</p><h3><a href="{path(lang,p['slug'])}">{E(p['title'][i])}</a></h3><p>{feature_summary}</p><a class="ed-link" href="{path(lang,p['slug'])}">{tx('view_case')} <span aria-hidden="true">↗</span></a></div><ul>{''.join('<li>'+E(s)+'</li>' for s in feature_scope)}</ul></div></article>
-       <div class="ed-more-head"><h2>{tx('more_heading')}</h2><p>{tx('more_note')}</p></div><div class="ed-project-grid">{''.join(cards)}</div><details class="ed-other"><summary>{t['more']}</summary><p>{t['morecopy']}</p></details>
+            visual = f'<div class="case-placeholder"><span>{text(project["title"])}</span><small>{text(copy["visual_pending"]) if preview else escape(project["org"])}</small></div>'
+        cards.append(f'<article class="case-card case-card-{number}"><div class="case-card-copy"><p class="tags">{tags}</p><p class="case-organization">{escape(project["org"])} · {escape(project["year"])}</p><h3><a href="{href}">{text(project["title"])}</a></h3><p>{text(project["intro"])}</p><a class="button" href="{href}">{text(copy["case_link"])} <span aria-hidden="true">↗</span></a></div><a class="case-card-visual" href="{href}" aria-label="{text(project["title"])}">{visual}</a></article>')
+
+    research = []
+    for item in copy['research_items']:
+        tags = ''.join(f'<span>{escape(tag)}</span>' for tag in item['tags'][index])
+        research.append(f'<article class="research-card"><p class="tags">{tags}</p><p class="case-organization">{text(item["org"])} · {escape(item["year"])}</p><h3>{text(item["title"])}</h3><p>{text(item["text"])}</p></article>')
+
+    education = ''.join(f'<article class="qualification"><span>{escape(item["year"])}</span><div><h3>{text(item["org"])}</h3><p>{text(item["degree"])}</p><small>{text(item["text"])}</small></div></article>' for item in copy['education'])
+    faq = ''.join(f'<details><summary>{text(item["q"])}</summary><p>{text(item["a"])}</p></details>' for item in copy['faq_items'])
+    portrait = (f'<img src="{escape(config["portrait"])}" width="220" height="220" alt="{["Anton Frolov", "Anton Frolov"][index]}">'
+                if config.get('portrait') else f'<div class="portrait-placeholder"><span>AF</span><small>{text(copy["portrait"]) if preview else "Anton Frolov"}</small></div>')
+    older_work = ''.join(f'<a class="text-link" href="{path(lang, project["slug"])}">{text(project["title"])} ↗</a>' for project in projects[3:])
+    about = translations[lang]['bio']
+    body = f"""
+    <div class="light-home">
+      <section class="intro" id="about" aria-labelledby="intro-title">
+        <div class="intro-portrait">{portrait}</div>
+        <p class="open-badge"><span aria-hidden="true"></span>{text(copy['available'])}</p>
+        <h1 id="intro-title">Anton Frolov</h1>
+        <p class="intro-copy">{text(copy['intro'])}</p>
+        {resources()}
+        {review_note('missing_assets', 'asset-note')}
       </section>
-      <section id="about" class="ed-about"><div><p class="ed-label">{t['nav'][1]}</p><h2>{rich('about_heading')}</h2><div class="ed-portrait">{portrait}</div></div><div class="ed-about-copy"><p>{tx('about_text')}</p><p class="ed-interest">{tx('about_interest')}</p><div class="resource-links">{links(lang,t)}</div></div></section>
-      <section id="experience" class="ed-experience"><div class="ed-section-head"><h2>{tx('experience_heading')}</h2><p>{['Germany & Russia','Deutschland & Russland'][i]}</p></div><div class="ed-timeline">{''.join(rows)}</div><div class="ed-education"><h3>{tx('education_heading')}</h3>{education_html}</div></section>
-      <section class="ed-capabilities"><div class="ed-section-head"><h2>{tx('capabilities_heading')}</h2><p>{['A practical range of skills.','Ein vielseitiges, praktisches Profil.'][i]}</p></div><div class="ed-capability-grid">{capabilities}</div><div class="ed-practical"><div><h3>Tools</h3><p>WordPress · Meta Ads Manager · Adobe InDesign · Adobe Illustrator · CapCut</p></div><div><h3>{['Languages','Sprachen'][i]}</h3><p>{['Russian — Native · German — C1 · English — Fluent','Russisch — Muttersprache · Deutsch — C1 · Englisch — fließend'][i]}</p></div></div></section>
-      <section id="contact" class="ed-contact"><p class="ed-label">{t['nav'][3]}</p><div class="ed-contact-grid"><h2>{rich('contact_heading')}</h2><div><p>{tx('contact_text')}</p><a class="ed-email" href="mailto:{E(config['email'])}">{E(config['email'])} <span aria-hidden="true">↗</span></a><div class="resource-links">{links(lang,t)}</div></div></div></section>
-    </div>'''
+      <section id="experience" class="home-section"><h2>{text(copy['experience'])}</h2>{experience_rows(experience[:3])}</section>
+      <section id="work" class="home-section"><div class="home-section-title"><h2>{text(copy['cases'])}</h2><p>{text(copy['cases_note'])}</p></div><div class="selected-cases">{''.join(cards)}</div></section>
+      <section id="research" class="home-section"><div class="home-section-title"><h2>{text(copy['research'])}</h2><p>{text(copy['research_note'])}</p></div><div class="research-grid">{''.join(research)}</div>{review_note('research_missing')}</section>
+      <section id="additional" class="home-section"><h2>{text(copy['additional'])}</h2>{experience_rows(experience[3:])}<div class="other-projects">{older_work}</div><details class="more-about"><summary>{["More about my practice","Mehr zu meinen Arbeitsfeldern"][index]}</summary><p>{about}</p><p>{translations[lang]['morecopy']}</p><p>WordPress · Meta Ads Manager · Adobe InDesign · Adobe Illustrator · CapCut</p></details></section>
+      <section id="achievements" class="home-section"><h2>{text(copy['achievements'])}</h2><div class="qualification-grid">{education}</div><p class="languages">{["Russian — Native · German — C1 · English — Fluent","Russisch — Muttersprache · Deutsch — C1 · Englisch — fließend"][index]}</p>{review_note('awards_missing')}</section>
+      <section id="contact" class="home-section faq-contact"><h2>{text(copy['faq'])}</h2><div class="faq-list">{faq}</div><div class="contact-panel"><h3>{["Let’s talk.","Lassen Sie uns sprechen."][index]}</h3><a class="email-link" href="mailto:{escape(config['email'])}">{escape(config['email'])}</a>{resources()}</div></section>
+    </div>"""
+
+    return '\n'.join(line.rstrip() for line in body.splitlines())
