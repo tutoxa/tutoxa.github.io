@@ -51,17 +51,17 @@
         "Deliverables included employee-focused short-form videos, project stories and a three-part interview series with a climate technician. Audience and recruitment results are not documented here.",
         "Entstanden sind Kurzvideos über Mitarbeitende, Projektgeschichten und eine dreiteilige Interviewreihe mit einem Klimatechniker. Reichweiten oder Recruiting-Ergebnisse werden hier nicht ausgewiesen."
       ],
-      "cover": "/media/klimatechniker/rooftop-1440.webp",
+      "cover": "/media/klimatechniker/hero-768.webp",
       "images": [],
       "videos": [],
       "layout": "klimatechniker",
       "cover_alt": [
-        "Rooftop ventilation ductwork with the Berlin skyline in the background",
-        "Lüftungsleitungen auf einem Dach vor der Berliner Skyline"
+        "Two CLIMATECH technicians reviewing a rooftop installation in Berlin",
+        "Zwei CLIMATECH-Techniker besprechen eine Dachinstallation in Berlin"
       ],
-      "cover_width": 1536,
-      "cover_height": 2048,
-      "cover_srcset": "/media/klimatechniker/rooftop-480.webp 480w, /media/klimatechniker/rooftop-800.webp 800w, /media/klimatechniker/rooftop-1440.webp 1440w",
+      "cover_width": 768,
+      "cover_height": 1024,
+      "cover_srcset": "/media/klimatechniker/hero-480.webp 480w, /media/klimatechniker/hero-768.webp 768w",
       "case_study": {
         "publication_approved": true,
         "role": [
@@ -497,13 +497,20 @@
         "The work produced recruitment-focused social content and supported communication about technical careers. CLIMATECH also participated in a career orientation event covered by MDR television; I did not produce the MDR broadcast.",
         "Es entstanden Social-Media-Inhalte zur Personalgewinnung und zur Vorstellung technischer Berufe. CLIMATECH nahm außerdem an einer Berufsorientierungsveranstaltung teil, über die das MDR-Fernsehen berichtete. Den MDR-Beitrag habe ich nicht produziert."
       ],
-      "cover": null,
+      "cover": "/media/climatech-recruitment/schau-rein-900.webp",
       "images": [],
       "videos": [],
       "home_visual_title": [
         "Careers &<br>people.",
         "Berufe &<br>Menschen."
-      ]
+      ],
+      "cover_alt": [
+        "Supplied SCHAU REIN! 2026 recruitment graphic featuring a CLIMATECH employee",
+        "Bereitgestellte SCHAU-REIN!-Grafik 2026 mit einem Mitarbeiter von CLIMATECH"
+      ],
+      "cover_width": 1792,
+      "cover_height": 2400,
+      "cover_srcset": "/media/climatech-recruitment/schau-rein-480.webp 480w, /media/climatech-recruitment/schau-rein-900.webp 900w"
     },
     {
       "slug": "corporate-digital-presence",
@@ -779,6 +786,195 @@
     "location": [
       "Leipzig, Germany",
       "Leipzig, Deutschland"
+    ]
+  },
+  "light_home": {
+    "intro": [
+      "Marketing, communications and creative production. I bring ideas, people and planning together — from the first concept to the finished content. Based in Leipzig, with experience in Germany and Russia.",
+      "Marketing, Kommunikation und kreative Produktion. Ich verbinde Ideen, Menschen und Planung – vom ersten Konzept bis zum fertigen Inhalt. In Leipzig zu Hause, mit Erfahrung in Deutschland und Russland."
+    ],
+    "available": [
+      "Open to work",
+      "Offen für neue Aufgaben"
+    ],
+    "portrait": [
+      "Portrait to follow",
+      "Porträt folgt"
+    ],
+    "experience": [
+      "Experience",
+      "Berufserfahrung"
+    ],
+    "cases": [
+      "Selected cases",
+      "Ausgewählte Projekte"
+    ],
+    "cases_note": [
+      "Creative work, with the thinking and coordination behind it.",
+      "Kreative Arbeit – mit Konzept, Planung und Koordination dahinter."
+    ],
+    "research": [
+      "Research cases",
+      "Forschung & Hochschule"
+    ],
+    "research_note": [
+      "Research documentation at GWZO and programme support at Leipzig University.",
+      "Forschungsdokumentation am GWZO und Unterstützung eines Studienprogramms an der Universität Leipzig."
+    ],
+    "additional": [
+      "Additional experience",
+      "Weitere Erfahrung"
+    ],
+    "achievements": [
+      "Education & qualifications",
+      "Bildung & Qualifikationen"
+    ],
+    "faq": [
+      "FAQ & contact",
+      "Fragen & Kontakt"
+    ],
+    "case_link": [
+      "Explore case",
+      "Projekt ansehen"
+    ],
+    "visual_pending": [
+      "Project visual to add",
+      "Projektmaterial folgt"
+    ],
+    "linkedin_pending": [
+      "LinkedIn · link needed",
+      "LinkedIn · Link fehlt"
+    ],
+    "cv_pending": [
+      "CV · file needed",
+      "Lebenslauf · Datei fehlt"
+    ],
+    "missing_assets": [
+      "Portrait, LinkedIn URL and CV are still to be added.",
+      "Porträt, LinkedIn-URL und Lebenslauf werden noch ergänzt."
+    ],
+    "research_missing": [
+      "Project titles, approved images and supporting details are needed to develop these into full case studies.",
+      "Für ausführliche Fallstudien fehlen noch Projekttitel, freigegebene Bilder und ergänzende Details."
+    ],
+    "awards_missing": [
+      "Additional awards and certificates have not been supplied.",
+      "Weitere Auszeichnungen und Zertifikate wurden noch nicht bereitgestellt."
+    ],
+    "research_items": [
+      {
+        "title": [
+          "Fieldwork & audiovisual documentation",
+          "Feldforschung & audiovisuelle Dokumentation"
+        ],
+        "org": "GWZO",
+        "year": "2024–2025",
+        "text": [
+          "Research support, interviews, fieldwork, audiovisual documentation and drone footage from a research expedition.",
+          "Forschungsunterstützung, Interviews, Feldforschung, audiovisuelle Dokumentation und Drohnenaufnahmen einer Forschungsexpedition."
+        ],
+        "tags": [
+          [
+            "Research support",
+            "Interviews",
+            "Audiovisual documentation"
+          ],
+          [
+            "Forschungsunterstützung",
+            "Interviews",
+            "Audiovisuelle Dokumentation"
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Academic programme support",
+          "Unterstützung im Studienprogramm"
+        ],
+        "org": [
+          "Leipzig University",
+          "Universität Leipzig"
+        ],
+        "year": "2024",
+        "text": [
+          "Administrative and organizational support for the Global and European Studies programme.",
+          "Administrative und organisatorische Unterstützung für das Programm Global and European Studies."
+        ],
+        "tags": [
+          [
+            "Academic coordination",
+            "Organization"
+          ],
+          [
+            "Hochschulkoordination",
+            "Organisation"
+          ]
+        ]
+      }
+    ],
+    "education": [
+      {
+        "org": [
+          "Leipzig University",
+          "Universität Leipzig"
+        ],
+        "year": "2022–2025",
+        "degree": [
+          "Master’s Degree in European Studies",
+          "Masterabschluss in European Studies"
+        ],
+        "text": [
+          "Political science, law, sociology and selected economics subjects, with a European and international focus.",
+          "Politikwissenschaft, Recht, Soziologie und ausgewählte wirtschaftswissenschaftliche Themen mit europäischem und internationalem Schwerpunkt."
+        ]
+      },
+      {
+        "org": [
+          "RANEPA",
+          "RANEPA"
+        ],
+        "year": "2014–2018",
+        "degree": [
+          "Bachelor’s Degree in International Relations",
+          "Bachelorabschluss in Internationalen Beziehungen"
+        ],
+        "text": [
+          "Russian Presidential Academy of National Economy and Public Administration",
+          "Russische Akademie für Volkswirtschaft und öffentliche Verwaltung beim Präsidenten der Russischen Föderation"
+        ]
+      }
+    ],
+    "faq_items": [
+      {
+        "q": [
+          "What kind of role are you looking for?",
+          "Welche Aufgaben suchen Sie?"
+        ],
+        "a": [
+          "Junior to mid-level roles in marketing, communications, employer branding, content production and marketing project coordination.",
+          "Junior- bis Mid-Level-Aufgaben in Marketing, Kommunikation, Employer Branding, Content-Produktion und Marketingprojektkoordination."
+        ]
+      },
+      {
+        "q": [
+          "What do you bring to a project?",
+          "Was bringen Sie in ein Projekt ein?"
+        ],
+        "a": [
+          "Creative execution alongside planning and coordination. I work independently and collaborate with internal teams, agencies and external partners.",
+          "Kreative Umsetzung sowie Planung und Koordination. Ich arbeite selbstständig und mit internen Teams, Agenturen und externen Partnern zusammen."
+        ]
+      },
+      {
+        "q": [
+          "Which languages do you work in?",
+          "In welchen Sprachen arbeiten Sie?"
+        ],
+        "a": [
+          "Russian is my native language. I speak German at C1 level and fluent English.",
+          "Russisch ist meine Muttersprache. Ich spreche Deutsch auf C1-Niveau und fließend Englisch."
+        ]
+      }
     ]
   }
 }

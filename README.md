@@ -4,7 +4,7 @@ Static bilingual portfolio hosted by GitHub Pages from `main`, root. No npm pack
 
 ## Edit content
 
-`content.json` is the central source of project text and media settings. Each translated text is an array: `[English, German]`. `settings.featured_project` selects the featured project by its slug. The other projects appear in array order. Reorder the array to reorder those projects and the next-project links. Keep the featured Klimatechniker project first for the current case sequence. `homepage` holds the editorial homepage text; each project holds its own `home_visual_title`, cover, case text and optional `featured` summary/detail photograph. `build.py` contains shared interface translations, experience and the general case template. `editorial_home.py` renders the homepage and contains education and practical tool/language labels. `style.css` is the original base; `editorial.css` controls the new shell/homepage; `site.js` controls the mobile menu.
+`content.json` is the central source of project text and media settings. Each translated text is an array: `[English, German]`. `settings.featured_project` selects the featured project by its slug. The other projects appear in array order. Reorder the array to reorder those projects and the next-project links. Keep the featured Klimatechniker project first for the current case sequence. `light_home` holds the active light homepage text and academic/education/FAQ entries; `homepage` retains earlier copy for reference; each project holds its own `home_visual_title`, cover, case text and optional `featured` summary/detail photograph. `build.py` contains shared interface translations, experience and the general case template. `editorial_home.py` renders the homepage and contains a few practical tool/language labels. `style.css` is the original base; `editorial.css` controls the new shell/homepage; `site.js` controls the mobile menu.
 
 After editing content or templates, run `python3 build.py` (Python 3, standard library only). Commit the regenerated HTML files together with the source changes. You can run this locally or in a GitHub Codespace. Do not edit only generated HTML: it will be overwritten by the next build.
 
@@ -39,6 +39,8 @@ Upload the actual German PDF to `/media/cv/anton-frolov-de.pdf`; set `settings.c
 Keep each English/German pair complete. Shared text lives in `T` in `build.py`; homepage and project copy are in `content.json`. A few short case interface labels live in `klimatechniker.py`, and education/tools/language labels live in `editorial_home.py`. Language links preserve the current project; all in-language navigation stays in that language. English is the default at the canonical homepage; no browser-language redirect is used.
 
 ## Deployment and checks
+
+The current light redesign is local review only on `feature/light-portfolio-review`. Anton approved publication on 8 November 2026. The production build omits internal missing-content notes and unavailable links, while keeping neutral typographic identity/project covers until original media is supplied.
 
 Run `python3 build.py`. Preview with `python3 -m http.server 8000`, then visit `http://localhost:8000`. Check both languages and every project page. Commit and push to the existing repository's `main`. GitHub Pages deploys the root automatically. Keep `CNAME`, `.nojekyll`, `sitemap.xml`, `robots.txt`, CSS, JS and the social preview image. Do not change Pages to another host.
 
@@ -103,3 +105,22 @@ python3 preview_server.py --directory ../klimatechniker-preview --port 8000
 Open `http://127.0.0.1:8000/` and `http://127.0.0.1:8000/de.html`, then open the featured case. The server is private to this computer. These commands do not deploy. The preview directory and private preview archive contain review-only MP4s: do not upload them as a public site.
 
 After visual approval and rights clearance, regenerate the normal build, review its diff, and only then merge/push through the existing GitHub Pages workflow. No DNS or Pages setting change is needed for this redesign. Keep the existing `CNAME` and root HTML routes.
+
+## Light portfolio review
+
+The active homepage uses `content.json → light_home`, with English/German text pairs. Its sections are introduction, experience, three selected cases, academic work, additional experience, education/qualifications, and FAQ/contact. The first three project entries supply the selected cases. The other two remain accessible in Additional Experience and through project navigation. Employment data still comes from `experience` in `build.py`.
+
+`editorial.css` defines the light shared shell and homepage. `klimatechniker.css` ends with scoped light case styling. Onest is self-hosted in `media/fonts/`; the accompanying OFL licence is included. The recruitment cover in `media/climatech-recruitment/` is an optimized derivative of the supplied SCHAU REIN! graphic. No internal PDFs or original production files were copied.
+
+Missing content is explicitly marked: verified portrait, LinkedIn URL, CV, corporate website case visual, and full academic project details/media. No awards, internships, campaign totals or reaction figures were invented. University programme support is identified as administrative/organizational work rather than research.
+
+Local review commands:
+
+```sh
+python3 build.py
+python3 test_klimatechniker.py
+python3 build.py --preview --output ../light-portfolio-preview
+python3 preview_server.py --directory ../light-portfolio-preview --port 8002
+```
+
+The preview includes all three local films. Public output keeps the existing music/audio clearance gate. Anton approved the light redesign for publication on 8 November 2026. Public output excludes internal review notes, missing-asset messages and empty gallery placeholders. It does not include the two videos awaiting audio clearance.
