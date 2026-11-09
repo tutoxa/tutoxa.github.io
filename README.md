@@ -4,7 +4,7 @@ Static bilingual portfolio hosted by GitHub Pages from `main`, root. No npm pack
 
 ## Edit content
 
-`content.json` is the central source of project text and media settings. Each translated text is an array: `[English, German]`. `settings.featured_project` selects the featured project by its slug. The other projects appear in array order. Reorder the array to reorder those projects and the next-project links. Keep the featured Klimatechniker project first for the current case sequence. `light_home` holds the active light homepage text and academic/education/FAQ entries; `homepage` retains earlier copy for reference; each project holds its own `home_visual_title`, cover, case text and optional `featured` summary/detail photograph. `build.py` contains shared interface translations, experience and the general case template. `editorial_home.py` renders the homepage and contains a few practical tool/language labels. `style.css` is the original base; `editorial.css` controls the new shell/homepage; `site.js` controls the mobile menu.
+`content.json` is the central source of project text and media settings. Each translated text is an array: `[English, German]`. `settings.featured_project` selects the featured project by its slug. Set the homepage order in `light_home.selected_work`. The project array controls the existing next-project links. Keep the featured Klimatechniker project first for the current case sequence. `light_home` holds the homepage copy, work order, draft summaries and education entries; `homepage` retains earlier copy for reference; each project holds its own `home_visual_title`, cover, case text and optional `featured` summary/detail photograph. `build.py` contains shared interface translations, experience and the general case template. `editorial_home.py` renders the homepage and contains a few practical tool/language labels. `style.css` is the original base; `editorial.css` controls the new shell/homepage; `site.js` controls the mobile menu.
 
 After editing content or templates, run `python3 build.py` (Python 3, standard library only). Commit the regenerated HTML files together with the source changes. You can run this locally or in a GitHub Codespace. Do not edit only generated HTML: it will be overwritten by the next build.
 
@@ -18,7 +18,7 @@ In `content.json`, set `settings.portrait` to `/media/portrait/anton.webp`. Set 
 {"src":"/media/climatech-people/interview.webp","alt":["Accurate English description","Passende deutsche Beschreibung"],"caption":["English caption","Deutsche Bildunterschrift"]}
 ```
 
-The neutral editorial covers are explicitly labelled placeholders. They are HTML/CSS, not real work or stock photos. A configured cover replaces the placeholder automatically. Gallery images lazy-load. Preserve meaningful alt text. Set `cover_width` and `cover_height` to the original image dimensions, and optionally `cover_srcset` to a normal HTML srcset string such as `/media/events/cover-800.webp 800w, /media/events/cover-1600.webp 1600w`. Both the homepage and general case cover use configured photos. If a cover is missing, the homepage uses the project’s bilingual `home_visual_title` and an explicit placeholder label.
+The neutral editorial covers are explicitly labelled placeholders. They are HTML/CSS, not real work or stock photos. A configured cover replaces the placeholder automatically. Gallery images lazy-load. Preserve meaningful alt text. Set `cover_width` and `cover_height` to the original image dimensions, and optionally `cover_srcset` to a normal HTML srcset string such as `/media/events/cover-800.webp 800w, /media/events/cover-1600.webp 1600w`. Both the homepage and general case cover use configured photos. A project without a cover appears in the homepage work list as a text draft.
 
 ## Video
 
@@ -32,7 +32,7 @@ Example embed: `{"type":"embed","url":"https://www.youtube-nocookie.com/embed/AC
 
 ## CV and LinkedIn
 
-Upload the actual German PDF to `/media/cv/anton-frolov-de.pdf`; set `settings.cv_de` to that path. Set `settings.linkedin` to the verified profile URL. Until configured, the website displays honest unavailable labels instead of broken links. An English CV can be added as another setting/template link later.
+The German CV at `/media/cv/anton-frolov-de.pdf` is configured in `settings.cv_de` and opens in a separate browser tab. Set `settings.linkedin` to the verified profile URL. The homepage displays each link when its setting is configured. An isolated build with `--preview --output` also uses `.preview-media/cv/anton-frolov-de.pdf` when present. An English CV can be added as another setting/template link later.
 
 ## Translation
 
@@ -48,7 +48,7 @@ Domain DNS: four apex A records `185.199.108.153`, `185.199.109.153`, `185.199.1
 
 ## Files still needed
 
-Portrait; approved covers/photos for the four other projects; approved public video URLs and captions; website/recruitment/product/event materials; German CV; LinkedIn URL. Klimatechniker now has actual supplied project photographs, graphics and local preview films. No performance results or sole authorship are implied for collaborative work. Project time ranges follow the supplied employment years and should be refined if exact project dates become available.
+Portrait; approved covers/photos for the four other projects; approved public video URLs and captions; website/recruitment/product/event materials; LinkedIn URL. Klimatechniker now has actual supplied project photographs, graphics and local preview films. No performance results or sole authorship are implied for collaborative work. Project time ranges follow the supplied employment years and should be refined if exact project dates become available.
 
 ## Klimatechniker case — review branch
 
@@ -108,11 +108,11 @@ After visual approval and rights clearance, regenerate the normal build, review 
 
 ## Light portfolio review
 
-The active homepage uses `content.json → light_home`, with English/German text pairs. Its sections are introduction, experience, three selected cases, academic work, additional experience, education/qualifications, and FAQ/contact. The first three project entries supply the selected cases. The other two remain accessible in Additional Experience and through project navigation. Employment data still comes from `experience` in `build.py`.
+The active homepage uses `content.json → light_home`, with English/German text pairs. Its sections are introduction, selected work, relevant experience, additional experience and research, education and languages, and contact. Drafts in `light_home.draft_projects` render as text summaries without case routes. A project with `status: "draft"` retains its existing route with a draft label and noindex, and is excluded from the sitemap. To develop a summary into a case, move it into `projects` once its copy and approved media are ready. Employment data comes from `experience` in `content.json`, including the CV’s year ranges and durations.
 
 `editorial.css` defines the light shared shell and homepage. `klimatechniker.css` ends with scoped light case styling. Onest is self-hosted in `media/fonts/`; the accompanying OFL licence is included. The recruitment cover in `media/climatech-recruitment/` is an optimized derivative of the supplied SCHAU REIN! graphic. No internal PDFs or original production files were copied.
 
-Missing content is explicitly marked: verified portrait, LinkedIn URL, CV, corporate website case visual, and full academic project details/media. No awards, internships, campaign totals or reaction figures were invented. University programme support is identified as administrative/organizational work rather than research.
+Missing content is explicitly marked: verified portrait, LinkedIn URL, corporate website case visual, and full academic project details/media. No awards, internships, campaign totals or reaction figures were invented. University programme support is identified as administrative/organizational work rather than research.
 
 Local review commands:
 
