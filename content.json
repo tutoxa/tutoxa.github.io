@@ -452,7 +452,11 @@
           "height": 1024,
           "srcset": "/media/klimatechniker/hero-480.webp 480w, /media/klimatechniker/hero-768.webp 768w"
         }
-      }
+      },
+      "meta_description": [
+        "Anton Frolov’s employer branding project for CLIMATECH, from the Instagram collaboration idea and shoot planning to filming and editing Reels and an interview.",
+        "Employer Branding für CLIMATECH mit Anton Frolov. Von der Idee zur Instagram-Kooperation über die Drehplanung bis zu Kamera und Schnitt für Reels und Interview."
+      ]
     },
     {
       "slug": "technical-careers",
@@ -510,7 +514,11 @@
       ],
       "cover_width": 1792,
       "cover_height": 2400,
-      "cover_srcset": "/media/climatech-recruitment/schau-rein-480.webp 480w, /media/climatech-recruitment/schau-rein-900.webp 900w"
+      "cover_srcset": "/media/climatech-recruitment/schau-rein-480.webp 480w, /media/climatech-recruitment/schau-rein-900.webp 900w",
+      "meta_description": [
+        "Anton Frolov’s recruitment marketing work at CLIMATECH, from campaign coordination to social videos for the SCHAU REIN! career orientation initiative.",
+        "Personalmarketing für technische Berufe bei CLIMATECH mit Anton Frolov. Einblicke in Kampagnenkoordination und Social-Media-Videos für SCHAU REIN!"
+      ]
     },
     {
       "slug": "corporate-digital-presence",
@@ -563,6 +571,10 @@
       "home_visual_title": [
         "A clearer<br>company voice.",
         "Ein klarer<br>Auftritt."
+      ],
+      "meta_description": [
+        "Anton Frolov’s digital communications work for CLIMATECH’s website relaunch, including website copy, company stories and coordination with the agency dreipunkt.",
+        "Digitale Unternehmenskommunikation beim Website-Relaunch von CLIMATECH. Anton Frolov betreute Website-Texte, Unternehmensgeschichten und die Agenturabstimmung."
       ]
     },
     {
@@ -618,6 +630,10 @@
       "home_visual_title": [
         "Product.<br>Brand.<br>Story.",
         "Produkt.<br>Marke.<br>Geschichte."
+      ],
+      "meta_description": [
+        "Anton Frolov’s product marketing work at EkoNiva, covering brand communications, packaging projects and collaborative photo and video production.",
+        "Produktmarketing bei EkoNiva mit Anton Frolov. Einblicke in Markenkommunikation, Verpackungsprojekte und gemeinsame Foto- und Videoproduktionen."
       ]
     },
     {
@@ -671,6 +687,10 @@
       "home_visual_title": [
         "Bringing<br>people together.",
         "Menschen<br>verbinden."
+      ],
+      "meta_description": [
+        "Anton Frolov’s work on corporate and cultural events, from planning and partner coordination to participant communications and on-site documentation.",
+        "Unternehmens- und Kulturveranstaltungen mit Anton Frolov. Einblicke in Planung, Partnerabstimmung, Teilnehmerkommunikation und Dokumentation vor Ort."
       ]
     }
   ],
@@ -975,6 +995,10 @@
           "Russisch ist meine Muttersprache. Ich spreche Deutsch auf C1-Niveau und fließend Englisch."
         ]
       }
+    ],
+    "meta_description": [
+      "Anton Frolov’s portfolio in marketing, communications and creative production, featuring employer branding, video and project coordination in Leipzig.",
+      "Portfolio von Anton Frolov aus Leipzig für Marketing, Kommunikation und kreative Produktion mit Projekten zu Employer Branding, Video und Projektkoordination."
     ]
   }
 }

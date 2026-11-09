@@ -40,26 +40,41 @@ def media(p,lang,i,cover=False):
  if not args.preview and not p.get('cover'): return f'<div class="placeholder art-{num}" aria-label="{E(p["title"][i])}"><span class="frame-label">{E(p["org"])}</span><span class="art-title">{E(p["title"][i])}</span><span class="placeholder-label">{E(p["cats"][i])}</span></div>'
  if cover and p.get('cover'): return f'<img src="{E(p["cover"])}" alt="{E(p.get("cover_alt",p["title"])[i])}" width="{p.get("cover_width",1600)}" height="{p.get("cover_height",1100)}" loading="lazy" {("srcset="+chr(34)+E(p["cover_srcset"])+chr(34)+" sizes="+chr(34)+"(max-width: 650px) 88vw, 45vw"+chr(34)) if p.get("cover_srcset") else ""}>'
  return f'<div class="placeholder art-{num}" aria-label="{t["placeholder"]}"><span class="frame-label">{E(p["org"])} / {num:02}</span><span class="art-title">{["People.<br>Process.<br>Perspective.","A career.<br>A person.<br>A story.","Words.<br>Images.<br>Connections.","Product.<br>Brand.<br>Story.","People.<br>Place.<br>Possibility."][num-1] if lang=="en" else ["Menschen.<br>Arbeit.<br>Einblicke.","Beruf.<br>Mensch.<br>Geschichte.","Worte.<br>Bilder.<br>Verbindungen.","Produkt.<br>Marke.<br>Geschichte.","Menschen.<br>Orte.<br>Begegnungen."][num-1]}</span><span class="placeholder-label">{t["placeholder"]}</span></div>'
-def shell(lang,body,title,desc,slug=None,extra_head=""):
- t=T[lang]; base=path(lang); other=path('de' if lang=='en' else 'en',slug); canonical=config['domain']+path(lang,slug)
- preview_label = ''
+def shell(lang,body,title,desc,slug=None,extra_head="",indexable=True):
+ t = T[lang]
+ base = path(lang)
+ domain = config['domain']
+ canonical = domain + path(lang, slug)
+ page_title = f'{title} | Anton Frolov' if slug else title
+ url_metadata = ''
+ if indexable:
+  url_metadata = (
+      f'<link rel="canonical" href="{E(canonical)}">'
+      f'<link rel="alternate" hreflang="en" href="{E(domain + path("en", slug))}">'
+      f'<link rel="alternate" hreflang="de" href="{E(domain + path("de", slug))}">'
+      f'<link rel="alternate" hreflang="x-default" href="{E(domain + path("en", slug))}">'
+      f'<meta property="og:url" content="{E(canonical)}">'
+  )
+ robots = '<meta name="robots" content="noindex,nofollow">' if args.preview else ''
+ if not indexable and not args.preview:
+  robots = '<meta name="robots" content="noindex">'
  preview_banner = ''
  if args.preview:
   preview_label = 'Lokale Vorschau' if lang == 'de' else 'Local preview'
   preview_banner = f'<p class="preview-banner">{preview_label}</p>'
- tab_title = f'{preview_label} · {title}' if preview_label else title
- return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(tab_title)} — Anton Frolov</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canonical}"><link rel="alternate" hreflang="en" href="{config['domain']+path('en',slug)}"><link rel="alternate" hreflang="de" href="{config['domain']+path('de',slug)}"><link rel="alternate" hreflang="x-default" href="{config['domain']+path('en',slug)}"><meta property="og:title" content="{E(title)} — Anton Frolov"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{config['domain']}/social-preview.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#ffffff"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{asset_urls["style.css"]}"><link rel="stylesheet" href="{asset_urls["editorial.css"]}"><script src="{asset_urls["site.js"]}" defer></script>{extra_head}{"<meta name=robots content=noindex,nofollow>" if args.preview else ""}</head><body><a class="skip" href="#main">{t['skip']}</a>{preview_banner}<header class="site-header"><a class="wordmark" href="{base}" aria-label="Anton Frolov">AF</a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">{t['menu']} +</button><nav id="navigation" aria-label="{t['menu']}">{''.join(f'<a href="{base}#{id}">{label}</a>' for id,label in zip(['work','experience','research','contact'],(['Work','Experience','Research','Contact'] if lang=='en' else ['Projekte','Erfahrung','Forschung','Kontakt'])))}</nav><div class="language"><a lang="en" href="{path('en',slug)}" {'aria-current="page"' if lang=='en' else ''}>EN</a><span>/</span><a lang="de" href="{path('de',slug)}" {'aria-current="page"' if lang=='de' else ''}>DE</a></div></header><main id="main">{body}</main><footer><a class="wordmark" href="{base}">Anton Frolov</a><span>{t['footer']}</span><a href="mailto:{config['email']}">{config['email']} ↗</a><span>© 2026</span></footer></body></html>'''
+ return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{E(page_title)}</title><meta name="description" content="{E(desc)}">{url_metadata}<meta property="og:title" content="{E(page_title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website"><meta property="og:image" content="{config['domain']}/social-preview.png"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#ffffff"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{asset_urls["style.css"]}"><link rel="stylesheet" href="{asset_urls["editorial.css"]}"><script src="{asset_urls["site.js"]}" defer></script>{extra_head}{robots}</head><body><a class="skip" href="#main">{t['skip']}</a>{preview_banner}<header class="site-header"><a class="wordmark" href="{base}" aria-label="Anton Frolov">AF</a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">{t['menu']} +</button><nav id="navigation" aria-label="{t['menu']}">{''.join(f'<a href="{base}#{id}">{label}</a>' for id,label in zip(['work','experience','research','contact'],(['Work','Experience','Research','Contact'] if lang=='en' else ['Projekte','Erfahrung','Forschung','Kontakt'])))}</nav><div class="language"><a lang="en" href="{path('en',slug)}" {'aria-current="page"' if lang=='en' else ''}>EN</a><span>/</span><a lang="de" href="{path('de',slug)}" {'aria-current="page"' if lang=='de' else ''}>DE</a></div></header><main id="main">{body}</main><footer><a class="wordmark" href="{base}">Anton Frolov</a><span>{t['footer']}</span><a href="mailto:{config['email']}">{config['email']} ↗</a><span>© 2026</span></footer></body></html>'''
 def home(lang):
  i=0 if lang=='en' else 1
  body=render_home(lang,projects,config,T,experience,path,links,data['light_home'], preview=args.preview)
- return shell(lang,body,'Marketing & Communications' if i==0 else 'Marketing & Kommunikation',T[lang]['intro'])
+ return shell(lang, body, 'Anton Frolov — Marketing & Creative Production',
+              data['light_home'].get('meta_description', data['light_home']['intro'])[i])
 
 def case(lang,p,n):
  if p.get('layout')=='klimatechniker':
   i=0 if lang=='en' else 1
   manifest=json.loads((R/'media/klimatechniker/manifest.json').read_text())
   body=render_case(p,lang,manifest,args.preview,projects[(n+1)%len(projects)],path)
-  return shell(lang,body,p['title'][i],p['intro'][i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["klimatechniker.css"]}"><script src="{asset_urls["klimatechniker.js"]}" defer></script>')
+  return shell(lang,body,p['title'][i],p.get('meta_description',p['intro'])[i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["klimatechniker.css"]}"><script src="{asset_urls["klimatechniker.js"]}" defer></script>')
  i=0 if lang=='en' else 1;t=T[lang]; nxt=projects[(n+1)%len(projects)]
  gallery=''
  for img in p.get('images',[]):gallery+=f'<figure><img src="{E(img["src"])}" alt="{E(img["alt"][i])}" loading="lazy"><figcaption>{E(img.get("caption",["",""])[i])}</figcaption></figure>'
@@ -68,7 +83,7 @@ def case(lang,p,n):
   else: gallery+=f'<iframe class="video" loading="lazy" src="{E(v["url"])}" title="{E(v["title"][i])}" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>'
  case_media = (f'<section class="case-media"><div class="section-head"><h2>{t["media"]}</h2></div>{gallery}</section>' if gallery else (f'<section class="case-media"><p>{t["medianote"]}</p></section>' if args.preview else ''))
  body=f'''<section class="case-hero"><a class="text-link" href="{path(lang)}#work">← {t['back']}</a><p class="eyebrow">{n+1:02} / {E(p['org'])} / {p['year']}</p><h1>{p['title'][i]}</h1><p class="case-intro">{p['intro'][i]}</p><p class="categories">{p['cats'][i]}</p></section><div class="case-cover">{media(p,lang,i,True)}</div><section class="case-text"><div class="section-label">{t['context']}</div><p class="large-copy">{p['context'][i]}</p><div class="section-label">{t['role']}</div><ul>{''.join('<li>'+x+'</li>' for x in p['role'][i])}</ul><div class="section-label">{t['process']}</div><p>{p['process'][i]}</p></section>{case_media}<section class="case-text"><div class="section-label">{t['outcome']}</div><p>{p['outcome'][i]}</p></section><a class="next-project" href="{path(lang,nxt['slug'])}"><span>{t['next']} →</span><h2>{nxt['title'][i]}</h2></a>'''
- return shell(lang,body,p['title'][i],p['intro'][i],p['slug'])
+ return shell(lang,body,p['title'][i],p.get('meta_description',p['intro'])[i],p['slug'])
 for lang in ['en','de']:
  (OUT/('de.html' if lang=='de' else 'index.html')).write_text(home(lang))
  for n,p in enumerate(projects):
@@ -77,7 +92,7 @@ for lang in ['en','de']:
 urls=[config['domain']+path(l,p['slug'] if p else None) for l in ['en','de'] for p in [None]+projects]
 (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+u+'</loc></url>' for u in urls)+'</urlset>')
 (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://antonfrolov.de/sitemap.xml\n')
-(OUT/'404.html').write_text(shell('en','<section class="case-hero"><p>404</p><h1>Page not found.</h1><p><a href="/">Back to the portfolio →</a> / <a href="/de.html">Zum Portfolio →</a></p></section>','Page not found','Return to Anton Frolov’s portfolio.'))
+(OUT/'404.html').write_text(shell('en','<section class="case-hero"><p>404</p><h1>Page not found.</h1><p><a href="/">Back to the portfolio →</a> / <a href="/de.html">Zum Portfolio →</a></p></section>','Page not found — Anton Frolov','Return to Anton Frolov’s marketing, communications and creative production portfolio.',indexable=False))
 print('Built 12 bilingual pages, sitemap and 404.')
 
 if OUT != R:
