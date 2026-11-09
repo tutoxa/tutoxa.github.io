@@ -455,17 +455,13 @@
   cursor: pointer;
 }
 
-.kt-start span {
+.kt-play-face {
   display: inline-flex;
+  align-items: center;
   gap: 7px;
-  padding: 7px 9px;
-  background: #111e;
+  padding: 8px 11px;
+  border-radius: 8px;
   font-size: 11px;
-  transition: background-color .2s ease;
-}
-
-.kt-start:hover span {
-  background: #333;
 }
 
 .kt-output-hint {
@@ -739,8 +735,6 @@
 .kt-photo-grid img { border-radius: 14px; }
 .kt-player { border-radius: 17px; background: #ededed; }
 .kt-start:not([hidden]) { background-color: #ededed; }
-.kt-start span { background: #111d; color: #fff; border-radius: 8px; padding: 8px 11px; }
-.kt-start:hover span { background: #333; }
 .kt-held p { color: #fff; }
 .kt-video-heading h3 { font-family: Onest, sans-serif; font-size: 12px; font-weight: 550; letter-spacing: -.02em; }
 .kt-results { padding: 20px; background: #f4f4f4; border-radius: 22px; }

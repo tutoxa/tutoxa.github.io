@@ -2,7 +2,7 @@
   "settings": {
     "email": "a.m.frolov@me.com",
     "linkedin": null,
-    "cv_de": null,
+    "cv_de": "/media/cv/anton-frolov-de.pdf",
     "portrait": null,
     "domain": "https://antonfrolov.de",
     "featured_project": "people-behind-the-projects"
@@ -65,8 +65,8 @@
       "case_study": {
         "publication_approved": true,
         "role": [
-          "Concept / Project Coordination / Filming / Editing",
-          "Konzept / Projektkoordination / Kamera / Schnitt"
+          "Collaboration and interview concepts, scripting and question planning, shoot coordination, filming and editing",
+          "Kooperations- und Interviewkonzept, Skript und Fragenplanung, Drehkoordination, Kamera und Schnitt"
         ],
         "opportunity": {
           "heading": [
@@ -345,14 +345,14 @@
           ],
           "roles": [
             [
-              "Concept development",
+              "Collaboration and interview concepts, scripting and question planning",
               "Production planning",
               "Filming",
               "Video editing",
               "Social media collaboration"
             ],
             [
-              "Konzeptentwicklung",
+              "Kooperations- und Interviewkonzept, Skript und Fragenplanung",
               "Produktionsplanung",
               "Kameraarbeit",
               "Videoschnitt",
@@ -414,12 +414,12 @@
           "planning_focus": [
             [
               "Collaboration concept",
-              "Interview structure",
+              "Interview concept and script structure",
               "Interview questions"
             ],
             [
               "Konzept der Zusammenarbeit",
-              "Interviewstruktur",
+              "Interviewkonzept und Skriptstruktur",
               "Interviewfragen"
             ]
           ]
@@ -427,8 +427,8 @@
       },
       "featured": {
         "summary": [
-          "An employee’s established community. An idea for a collaboration. Three video formats, developed from concept to final edit.",
-          "Eine bestehende Mitarbeiter-Community. Eine Idee für die Zusammenarbeit. Drei Videoformate – vom Konzept bis zum fertigen Schnitt."
+          "I initiated an Instagram collaboration, developed the interview concept, script and questions, and took the production from shoot planning through filming and editing.",
+          "Ich initiierte eine Instagram-Kooperation, entwickelte Interviewkonzept, Skript und Fragen und betreute die Produktion von der Drehplanung bis zum Schnitt."
         ],
         "scope": [
           [
@@ -464,42 +464,44 @@
       "year": "2025–2026",
       "asset": "climatech-recruitment",
       "title": [
-        "Making Technical Careers Visible",
-        "Technische Berufe sichtbar machen"
+        "Making Technical Careers Visible / SCHAU REIN!",
+        "Technische Berufe sichtbar machen / SCHAU REIN!"
       ],
       "cats": [
         "Recruitment Marketing · Campaign Coordination",
         "Personalmarketing · Kampagnenkoordination"
       ],
       "intro": [
-        "Recruitment communication that connects career opportunities with the people doing the work.",
-        "Personalmarketing, das berufliche Möglichkeiten mit den Menschen verbindet, die diese Berufe ausüben."
+        "An Instagram collaboration with Saxony’s SCHAU REIN! initiative to introduce technical apprenticeships and CLIMATECH.",
+        "Eine Instagram-Kooperation mit der sächsischen Initiative SCHAU REIN!, die technische Ausbildungsberufe und CLIMATECH vorstellt."
       ],
       "context": [
-        "I contributed to recruitment and apprenticeship communication, combining content production with coordination between employees, internal stakeholders and an external creative agency.",
-        "Ich unterstützte die Kommunikation zu Karriere- und Ausbildungsmöglichkeiten und verband die Content-Produktion mit der Abstimmung zwischen Mitarbeitenden, internen Beteiligten und einer externen Kreativagentur."
+        "The goal of the collaboration with SCHAU REIN!, Saxony’s career discovery initiative, was to introduce technical apprenticeships and CLIMATECH to people exploring vocational training.",
+        "Die Kooperation mit der sächsischen Berufsorientierungsinitiative SCHAU REIN! sollte Interessierten technische Ausbildungsberufe und CLIMATECH näherbringen."
       ],
       "role": [
         [
-          "Developed recruitment content ideas and formats",
-          "Coordinated with an external creative agency",
-          "Produced videos and Reels with employees",
-          "Supported Instagram, Facebook and Meta Ads activities"
+          "Handled external communication and coordination with SCHAU REIN!",
+          "Found a suitable participant for filming",
+          "Agreed the video concept and style",
+          "Filmed on two days at CLIMATECH",
+          "Edited and published collaborative Instagram content"
         ],
         [
-          "Ideen und Formate für Recruiting-Inhalte entwickelt",
-          "Mit einer externen Kreativagentur zusammengearbeitet",
-          "Videos und Reels mit Mitarbeitenden produziert",
-          "Aktivitäten auf Instagram, Facebook und im Meta Ads Manager unterstützt"
+          "Externe Kommunikation und Abstimmung mit SCHAU REIN! übernommen",
+          "Eine geeignete Person für den Dreh gefunden",
+          "Videokonzept und Stil abgestimmt",
+          "An zwei Tagen bei CLIMATECH gedreht",
+          "Die gemeinsamen Instagram-Inhalte geschnitten und veröffentlicht"
         ]
       ],
       "process": [
-        "For SCHAU REIN!, Saxony’s career orientation initiative, I developed employee- and apprentice-focused content. One collaboration comprised two Reels and one social media post, covering format development, coordination, filming and editing.",
-        "Für SCHAU REIN!, die sächsische Initiative zur Berufsorientierung, entwickelte ich Inhalte mit Mitarbeitenden und Auszubildenden. Eine Zusammenarbeit umfasste zwei Reels und einen Social-Media-Beitrag – einschließlich Formatentwicklung, Koordination, Dreh und Schnitt."
+        "I coordinated the production with the initiative and the filming participant. The agreed concept and style guided the two filming days at CLIMATECH and the edit for Instagram.",
+        "Ich stimmte die Produktion mit der Initiative und der mitwirkenden Person ab. Das vereinbarte Konzept und der Stil gaben den Rahmen für die beiden Drehtage bei CLIMATECH und den Schnitt für Instagram vor."
       ],
       "outcome": [
-        "The work produced recruitment-focused social content and supported communication about technical careers. CLIMATECH also participated in a career orientation event covered by MDR television; I did not produce the MDR broadcast.",
-        "Es entstanden Social-Media-Inhalte zur Personalgewinnung und zur Vorstellung technischer Berufe. CLIMATECH nahm außerdem an einer Berufsorientierungsveranstaltung teil, über die das MDR-Fernsehen berichtete. Den MDR-Beitrag habe ich nicht produziert."
+        "The finished content was published jointly on Instagram and introduced technical apprenticeship opportunities at CLIMATECH.",
+        "Die fertigen Inhalte wurden gemeinsam auf Instagram veröffentlicht und stellten technische Ausbildungsmöglichkeiten bei CLIMATECH vor."
       ],
       "cover": "/media/climatech-recruitment/schau-rein-900.webp",
       "images": [],
@@ -516,8 +518,8 @@
       "cover_height": 2400,
       "cover_srcset": "/media/climatech-recruitment/schau-rein-480.webp 480w, /media/climatech-recruitment/schau-rein-900.webp 900w",
       "meta_description": [
-        "Anton Frolov’s recruitment marketing work at CLIMATECH, from campaign coordination to social videos for the SCHAU REIN! career orientation initiative.",
-        "Personalmarketing für technische Berufe bei CLIMATECH mit Anton Frolov. Einblicke in Kampagnenkoordination und Social-Media-Videos für SCHAU REIN!"
+        "Anton Frolov coordinated the SCHAU REIN! collaboration, filmed at CLIMATECH over two days and edited the joint Instagram content.",
+        "Anton Frolov koordinierte die Kooperation mit SCHAU REIN!, plante zwei Drehtage bei CLIMATECH und schnitt die gemeinsamen Instagram-Inhalte."
       ]
     },
     {
@@ -634,7 +636,8 @@
       "meta_description": [
         "Anton Frolov’s product marketing work at EkoNiva, covering brand communications, packaging projects and collaborative photo and video production.",
         "Produktmarketing bei EkoNiva mit Anton Frolov. Einblicke in Markenkommunikation, Verpackungsprojekte und gemeinsame Foto- und Videoproduktionen."
-      ]
+      ],
+      "status": "draft"
     },
     {
       "slug": "beyond-the-screen",
@@ -810,8 +813,8 @@
   },
   "light_home": {
     "intro": [
-      "Marketing, communications and creative production. I bring ideas, people and planning together — from the first concept to the finished content. Based in Leipzig, with experience in Germany and Russia.",
-      "Marketing, Kommunikation und kreative Produktion. Ich verbinde Ideen, Menschen und Planung – vom ersten Konzept bis zum fertigen Inhalt. In Leipzig zu Hause, mit Erfahrung in Deutschland und Russland."
+      "I work in marketing, communications and creative production. I produce content for digital campaigns and coordinate in-person events from planning through on-site delivery.",
+      "Ich arbeite in Marketing, Kommunikation und kreativer Produktion. Ich produziere Inhalte für digitale Kampagnen und koordiniere Veranstaltungen von der Planung bis zur Umsetzung vor Ort."
     ],
     "available": [
       "Open to work",
@@ -822,16 +825,16 @@
       "Porträt folgt"
     ],
     "experience": [
-      "Experience",
-      "Berufserfahrung"
+      "Relevant experience",
+      "Relevante Berufserfahrung"
     ],
     "cases": [
-      "Selected cases",
+      "Selected work",
       "Ausgewählte Projekte"
     ],
     "cases_note": [
-      "Creative work, with the thinking and coordination behind it.",
-      "Kreative Arbeit – mit Konzept, Planung und Koordination dahinter."
+      "Digital campaigns, creative production and events. Each project shows my role in bringing the work to life.",
+      "Digitale Kampagnen, kreative Produktion und Veranstaltungen. Die Projekte zeigen meinen jeweiligen Beitrag zur Umsetzung."
     ],
     "research": [
       "Research cases",
@@ -842,12 +845,12 @@
       "Forschungsdokumentation am GWZO und Unterstützung eines Studienprogramms an der Universität Leipzig."
     ],
     "additional": [
-      "Additional experience",
-      "Weitere Erfahrung"
+      "Additional experience & research",
+      "Weitere Erfahrung & Forschung"
     ],
     "achievements": [
-      "Education & qualifications",
-      "Bildung & Qualifikationen"
+      "Education & languages",
+      "Ausbildung & Sprachen"
     ],
     "faq": [
       "FAQ & contact",
@@ -997,8 +1000,176 @@
       }
     ],
     "meta_description": [
-      "Anton Frolov’s portfolio in marketing, communications and creative production, featuring employer branding, video and project coordination in Leipzig.",
-      "Portfolio von Anton Frolov aus Leipzig für Marketing, Kommunikation und kreative Produktion mit Projekten zu Employer Branding, Video und Projektkoordination."
-    ]
+      "Anton Frolov’s portfolio in marketing, communications and creative production, from digital campaigns and social video to in-person event production.",
+      "Portfolio von Anton Frolov für Marketing, Kommunikation und kreative Produktion mit digitalen Kampagnen, Social-Media-Videos und Veranstaltungen vor Ort."
+    ],
+    "contact": [
+      "Contact",
+      "Kontakt"
+    ],
+    "featured_label": [
+      "Featured case",
+      "Im Fokus"
+    ],
+    "draft_label": [
+      "Draft · media pending",
+      "Entwurf · Bildmaterial folgt"
+    ],
+    "selected_work": [
+      "people-behind-the-projects",
+      "technical-careers",
+      "corporate-events",
+      "product-to-brand"
+    ],
+    "research_project": "altai-field-research",
+    "draft_projects": {
+      "corporate-events": {
+        "org": [
+          "Event production",
+          "Veranstaltungsorganisation"
+        ],
+        "title": [
+          "Corporate Events: From Planning to Experience",
+          "Unternehmensveranstaltungen: Von der Planung zum Erlebnis"
+        ],
+        "intro": [
+          "Sommerfest and Weihnachtsfest. My work included event planning, communication, coordination on site and social media coverage after the events.",
+          "Sommerfest und Weihnachtsfest. Meine Aufgaben umfassten Planung, Kommunikation, Koordination vor Ort und die anschließende Berichterstattung auf Social Media."
+        ],
+        "status": "draft"
+      },
+      "altai-field-research": {
+        "org": [
+          "Field research",
+          "Feldforschung"
+        ],
+        "title": [
+          "Altai: Field Research & Aerial Documentation",
+          "Altai: Feldforschung & Luftaufnahmen"
+        ],
+        "intro": [
+          "Audiovisual field documentation and drone footage from research work in the Altai.",
+          "Audiovisuelle Dokumentation der Feldforschung im Altai, einschließlich Drohnenaufnahmen."
+        ],
+        "status": "draft"
+      }
+    }
+  },
+  "experience": {
+    "climatech": {
+      "period": "2025 – 2026",
+      "duration": [
+        "1 year 7 months",
+        "1 Jahr 7 Monate"
+      ],
+      "organization": [
+        "CLIMATECH GmbH",
+        "CLIMATECH GmbH"
+      ],
+      "role": [
+        "Marketing Manager",
+        "Marketing Manager"
+      ],
+      "location": [
+        "Leipzig, Germany",
+        "Leipzig, Deutschland"
+      ],
+      "description": [
+        "Digital marketing, employer branding, social media, content production, corporate communications, website content, project coordination and events.",
+        "Digitales Marketing, Employer Branding, Social Media, Content-Produktion, Unternehmenskommunikation, Website-Inhalte, Projektkoordination und Veranstaltungen."
+      ]
+    },
+    "ekoniva": {
+      "period": "2018 – 2021",
+      "duration": [
+        "3 years 2 months",
+        "3 Jahre 2 Monate"
+      ],
+      "organization": [
+        "EkoNiva Food",
+        "EkoNiva Food"
+      ],
+      "role": [
+        "Product Manager",
+        "Produktmanager"
+      ],
+      "location": [
+        "Moscow, Russia",
+        "Moskau, Russland"
+      ],
+      "description": [
+        "Product marketing, brand communication, creative production and marketing project coordination.",
+        "Produktmarketing, Markenkommunikation, kreative Produktion und Marketingprojektkoordination."
+      ]
+    },
+    "german-russian-house": {
+      "period": "2021 – 2022",
+      "duration": [
+        "10 months",
+        "10 Monate"
+      ],
+      "organization": [
+        "German Russian House",
+        "Deutsch-Russisches Haus"
+      ],
+      "role": [
+        "Project Manager",
+        "Projektmanager"
+      ],
+      "location": [
+        "Moscow, Russia",
+        "Moskau, Russland"
+      ],
+      "description": [
+        "Conferences, cultural events, partnerships, communications, event budgets and editorial projects.",
+        "Konferenzen, Kulturveranstaltungen, Partnerschaften, Kommunikation, Veranstaltungsbudgets und redaktionelle Projekte."
+      ]
+    },
+    "gwzo": {
+      "period": "2024 – 2025",
+      "duration": [
+        "1 year",
+        "1 Jahr"
+      ],
+      "organization": [
+        "Leibniz Institute GWZO",
+        "Leibniz-Institut GWZO"
+      ],
+      "role": [
+        "Research Assistant",
+        "Wissenschaftliche Hilfskraft"
+      ],
+      "location": [
+        "Leipzig, Germany",
+        "Leipzig, Deutschland"
+      ],
+      "description": [
+        "Research support, interviews, fieldwork, audiovisual documentation and drone footage.",
+        "Forschungsunterstützung, Interviews, Feldforschung, audiovisuelle Dokumentation und Drohnenaufnahmen."
+      ]
+    },
+    "leipzig-university": {
+      "period": "2024",
+      "duration": [
+        "7 months",
+        "7 Monate"
+      ],
+      "organization": [
+        "Leipzig University",
+        "Universität Leipzig"
+      ],
+      "role": [
+        "Student Assistant",
+        "Studentische Hilfskraft"
+      ],
+      "location": [
+        "Leipzig, Germany",
+        "Leipzig, Deutschland"
+      ],
+      "description": [
+        "Administrative and organizational support for the Global and European Studies programme.",
+        "Administrative und organisatorische Unterstützung für das Programm Global and European Studies."
+      ]
+    }
   }
 }
