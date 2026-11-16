@@ -329,5 +329,107 @@
     "preview_bytes": 6265914,
     "preview_url": "/.preview-media/klimatechniker/interview.mp4",
     "poster": "/media/klimatechniker/interview-poster.webp"
+  },
+  "berlin-crane-hero": {
+    "width": 1776,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-crane-hero-640.webp",
+        "width": 640
+      },
+      {
+        "path": "/media/klimatechniker/berlin-crane-hero-1120.webp",
+        "width": 1120
+      },
+      {
+        "path": "/media/klimatechniker/berlin-crane-hero-1776.webp",
+        "width": 1776
+      }
+    ]
+  },
+  "berlin-roof-view": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-roof-view-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-roof-view-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "berlin-lift": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-lift-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-lift-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "berlin-tools": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-tools-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-tools-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "berlin-ground-crew": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-ground-crew-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-ground-crew-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "berlin-crane-mobile": {
+    "width": 800,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-crane-mobile-480.webp",
+        "width": 480
+      },
+      {
+        "path": "/media/klimatechniker/berlin-crane-mobile-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "berlin-trainee": {
+    "width": 640,
+    "height": 1024,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-trainee-320.webp",
+        "width": 320
+      },
+      {
+        "path": "/media/klimatechniker/berlin-trainee-640.webp",
+        "width": 640
+      }
+    ]
   }
 }

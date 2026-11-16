@@ -24,13 +24,13 @@ def check_tree(root,preview):
     for value in a['srcset'].split(','):assert (root/value.strip().split()[0].lstrip('/')).exists(),value
    if tag=='img':assert a.get('alt') and a.get('width') and a.get('height'),(f,a)
   if 'people-behind' in f.name:
-   sources=[a['src'] for t,a in page.tags if t=='source']
+   sources=[a['src'] for t,a in page.tags if t=='source' and a.get('type')=='video/mp4']
    expected = ['/media/klimatechniker/reel-1.mp4']
    if preview:
-    expected = [f'/.preview-media/klimatechniker/{name}.mp4' for name in ('reel-1', 'reel-2', 'interview')]
+    expected = [f'/.preview-media/klimatechniker/{name}.mp4' for name in ('reel-2', 'reel-1', 'interview')]
    assert sources == expected, (f, sources)
    timeline_ids = [a['id'] for t,a in page.tags if 'kt-stage' in a.get('class','').split()]
-   assert timeline_ids == ['opportunity', 'planning', 'production', 'films', 'publication'], (f, timeline_ids)
+   assert timeline_ids == ['brief', 'opportunity', 'production', 'publication', 'results'], (f, timeline_ids)
    assert all(a.get('preload')=='none' and 'autoplay' not in a and 'playsinline' in a for t,a in page.tags if t=='video')
    if preview:assert any(t=='meta' and a.get('name')=='robots' and 'noindex' in a.get('content','') for t,a in page.tags)
  assert (root/'CNAME').read_text().strip()=='antonfrolov.de'

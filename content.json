@@ -65,8 +65,8 @@
       "case_study": {
         "publication_approved": true,
         "role": [
-          "Collaboration and interview concepts, scripting and question planning, shoot coordination, filming and editing",
-          "Kooperations- und Interviewkonzept, Skript und Fragenplanung, Drehkoordination, Kamera und Schnitt"
+          "Concept, shoot coordination, camera, editing and publishing support",
+          "Konzept, Drehkoordination, Kamera, Schnitt und Unterstützung bei der Veröffentlichung"
         ],
         "opportunity": {
           "heading": [
@@ -128,47 +128,47 @@
         },
         "photos": [
           {
-            "asset": "rooftop",
-            "caption": [
-              "The rooftop as a production location",
-              "Das Dach als Drehort"
-            ],
+            "asset": "berlin-roof-view",
             "alt": [
-              "Ventilation ductwork on a rooftop overlooking Berlin in morning light",
-              "Lüftungsleitungen auf einem Dach mit Blick über Berlin im Morgenlicht"
+              "The crane boom stretches over the rooftop and surrounding Berlin buildings",
+              "Der Kranausleger ragt über das Dach und die umliegenden Berliner Gebäude"
+            ],
+            "caption": [
+              "The Berlin rooftop",
+              "Blick über das Berliner Dach"
             ]
           },
           {
-            "asset": "installation",
-            "caption": [
-              "Technical processes, observed up close",
-              "Technische Abläufe aus nächster Nähe"
-            ],
+            "asset": "berlin-lift",
             "alt": [
-              "A ventilation component is lifted by a crane above the rooftop installation",
-              "Ein Lüftungsbauteil wird mit einem Kran über die Dachinstallation gehoben"
+              "A crew member watches from the roof beside ventilation ducts and a crane boom",
+              "Ein Mitarbeiter beobachtet den Einsatz neben Lüftungsrohren und einem Kranausleger"
+            ],
+            "caption": [
+              "Crew and crane on site",
+              "Team und Kran im Einsatz"
             ]
           },
           {
-            "asset": "planning",
-            "caption": [
-              "The people behind the installation",
-              "Die Menschen hinter der Installation"
-            ],
+            "asset": "berlin-tools",
             "alt": [
-              "Two technicians discuss the rooftop work beside ventilation equipment",
-              "Zwei Techniker besprechen die Arbeiten neben der Lüftungsanlage auf dem Dach"
+              "Tools and equipment laid out on cardboard at the rooftop site",
+              "Werkzeug und Ausrüstung auf Karton am Einsatzort auf dem Dach"
+            ],
+            "caption": [
+              "Tools used on site",
+              "Werkzeug am Einsatzort"
             ]
           },
           {
-            "asset": "van",
-            "caption": [
-              "Equipment and preparation",
-              "Ausrüstung und Vorbereitung"
-            ],
+            "asset": "berlin-ground-crew",
             "alt": [
-              "A technician at the open rear of a work van",
-              "Ein Techniker am offenen Heck eines Einsatzfahrzeugs"
+              "Two crew members stand near the crane at street level",
+              "Zwei Mitarbeiter stehen auf Straßenniveau neben dem Kran"
+            ],
+            "caption": [
+              "The crew at street level",
+              "Das Team auf Straßenniveau"
             ]
           }
         ],
@@ -177,15 +177,30 @@
           "Drei Formate, eine Produktion."
         ],
         "formats_intro": [
-          "I edited the footage into three finished pieces: two dynamic Reels and one informative employee interview.",
-          "Im Schnitt entstanden drei fertige Beiträge: zwei dynamische Reels und ein informatives Mitarbeiterinterview."
+          "More than 10 short-form video assets were produced during the project, including interview content, rooftop documentation, Reel-style edits and supporting employer-branding material.",
+          "Im Rahmen des Projekts entstanden über 10 Short-Form-Video-Assets, darunter Interview-Content, Rooftop-Dokumentation, Reel-orientierte Schnitte und ergänzendes Employer-Branding-Material."
         ],
         "videos": [
           {
+            "asset": "reel-2",
+            "label": [
+              "01 — Creative Reel",
+              "01 — Kreatives Reel"
+            ],
+            "text": [
+              "A personality-led short-form edit combining expressive performance, effects and footage of the rooftop installation.",
+              "Ein Kurzvideo, das Persönlichkeit, expressive Inszenierung und Effekte mit Aufnahmen der Dachinstallation verbindet."
+            ],
+            "duration": "0:18",
+            "width": 720,
+            "height": 1280,
+            "audio": "review"
+          },
+          {
             "asset": "reel-1",
             "label": [
-              "01 — Project Reel",
-              "01 — Projekt-Reel"
+              "02 — Project Reel",
+              "02 — Projekt-Reel"
             ],
             "text": [
               "A concise, fast-cut montage of technical work, rooftop coordination and the installation. The supplied export has no audio track.",
@@ -196,21 +211,6 @@
             "height": 1280,
             "audio": "none",
             "public_url": "/media/klimatechniker/reel-1.mp4"
-          },
-          {
-            "asset": "reel-2",
-            "label": [
-              "02 — Creative Reel",
-              "02 — Kreatives Reel"
-            ],
-            "text": [
-              "A personality-led short-form edit combining expressive performance, effects and footage of the rooftop installation.",
-              "Ein Kurzvideo, das Persönlichkeit, expressive Inszenierung und Effekte mit Aufnahmen der Dachinstallation verbindet."
-            ],
-            "duration": "0:18",
-            "width": 720,
-            "height": 1280,
-            "audio": "review"
           },
           {
             "asset": "interview",
@@ -229,8 +229,8 @@
           }
         ],
         "preview_notice": [
-          "This local preview includes all three finished videos. The public site plays the silent Reel 1. Audio clearance is pending for Reel 2 and the interview.",
-          "Diese lokale Vorschau enthält alle drei fertigen Videos. Auf der öffentlichen Website ist das stumme Reel 1 abspielbar. Die Tonrechte für Reel 2 und das Interview sind noch nicht geklärt."
+          "This local preview includes three selected videos. The public site plays the silent Project Reel. Audio clearance is pending for the Creative Reel and interview.",
+          "Diese lokale Vorschau enthält drei ausgewählte Videos. Auf der öffentlichen Website ist das stumme Projekt-Reel abspielbar. Die Tonrechte für das kreative Reel und das Interview sind noch nicht geklärt."
         ],
         "publication": {
           "heading": [
@@ -238,8 +238,8 @@
             "Veröffentlichung & Collaboration"
           ],
           "text": [
-            "The content was shared through an Instagram collaboration with the employee’s account and CLIMATECH’s own channels, connecting an existing technical community with the company’s employer branding communication.",
-            "Die Inhalte wurden als Instagram-Collaboration mit dem Mitarbeiter-Account und über die eigenen Kanäle von CLIMATECH geteilt. So wurde eine bestehende Fach-Community mit der Employer-Branding-Kommunikation des Unternehmens verbunden."
+            "The content was shared through an Instagram collaboration with the employee’s account and CLIMATECH’s own channels, connecting an existing technical community with the company’s employer branding communication. I also helped prepare the finished content for publication.",
+            "Die Inhalte wurden als Instagram-Collaboration mit dem Mitarbeiter-Account und über die eigenen Kanäle von CLIMATECH geteilt. So wurde eine bestehende Fach-Community mit der Employer-Branding-Kommunikation des Unternehmens verbunden. Ich half außerdem dabei, die fertigen Inhalte für die Veröffentlichung vorzubereiten."
           ]
         },
         "carousel_heading": [
@@ -386,30 +386,30 @@
             "Von der Idee zur Veröffentlichung."
           ],
           "stages": {
+            "brief": [
+              "The brief",
+              "Die Aufgabe"
+            ],
             "opportunity": [
-              "The Opportunity",
+              "The idea",
               "Die Idee"
             ],
-            "planning": [
-              "Concept & Planning",
-              "Konzept & Planung"
-            ],
             "production": [
-              "Production",
-              "Produktion"
-            ],
-            "films": [
-              "Outputs",
-              "Formate"
+              "Planning & Production",
+              "Planung & Produktion"
             ],
             "publication": [
+              "Publication",
+              "Veröffentlichung"
+            ],
+            "results": [
               "Results",
               "Ergebnisse"
             ]
           },
           "planning": [
-            "I developed the collaboration idea myself, selected an active project site and coordinated the shoot. For the interview, I planned the concept, script structure and questions.",
-            "Ich entwickelte die Idee für die Zusammenarbeit selbst, wählte einen laufenden Einsatz als Drehort und koordinierte den Dreh. Für das Interview plante ich das Konzept, die Skriptstruktur und die Fragen."
+            "I chose an active job site in Berlin and coordinated the shoot. I developed the interview concept, outlined the script and prepared the questions. On site, I filmed the installation work, everyday moments and the interview. I then edited short-form material for the collaboration and employer branding.",
+            "Ich wählte eine laufende Baustelle in Berlin aus und koordinierte den Dreh. Ich entwickelte das Interviewkonzept, gliederte das Skript und bereitete die Fragen vor. Vor Ort filmte ich die Montagearbeiten, Alltagssituationen und das Interview. Anschließend schnitt ich Kurzformate für die Kooperation und das Employer Branding."
           ],
           "planning_focus": [
             [
@@ -422,6 +422,47 @@
               "Interviewkonzept und Skriptstruktur",
               "Interviewfragen"
             ]
+          ]
+        },
+        "banner": {
+          "asset": "berlin-crane-hero",
+          "alt": [
+            "Crew members working among rooftop ventilation ducts beneath a crane in Berlin",
+            "Mitarbeiter zwischen Lüftungsrohren auf einem Berliner Dach, darüber ein Kran"
+          ],
+          "mobile_asset": "berlin-crane-mobile",
+          "credit": "CLIMATECH Berlin · 2026"
+        },
+        "subtitle": [
+          "An Instagram collaboration showing real technical work — from the initial idea to filming, editing and publication.",
+          "Eine Instagram-Kooperation, die echte Einblicke in den technischen Arbeitsalltag zeigt – von der Idee über den Dreh und Schnitt bis zur Veröffentlichung."
+        ],
+        "brief": [
+          "CLIMATECH wanted to draw more attention to its Instagram account and give potential applicants an accessible look at technical work. We used a real job site to show what the work involves and who does it.",
+          "CLIMATECH wollte seinen Instagram-Auftritt sichtbarer machen und Interessierten einen verständlichen Einblick in die technische Arbeit geben. Auf einer echten Baustelle zeigten wir, wie die Arbeit abläuft und wer sie macht."
+        ],
+        "results_intro": [
+          "The Instagram screenshot records views for the collaboration Reel. It captures performance at the time of the screenshot.",
+          "Der Instagram-Screenshot zeigt die Aufrufe des gemeinsamen Reels zum Zeitpunkt der Aufnahme."
+        ],
+        "trainee": {
+          "title": [
+            "Bonus moment: trainee testimonial",
+            "Zusätzlicher Moment: Praktikums-Testimonial"
+          ],
+          "text": [
+            "During the shoot, a trainee happened to be on site. I used the opportunity to capture a short testimonial, turning an unplanned moment into an additional employer-branding asset.",
+            "Während des Drehs war kurzfristig ein Praktikant vor Ort. Ich habe die Gelegenheit spontan genutzt und ein kurzes Testimonial aufgenommen – so wurde aus einem ungeplanten Moment ein zusätzliches Employer-Branding-Asset."
+          ],
+          "still": "berlin-trainee",
+          "alt": [
+            "The trainee in a yellow hard hat standing in front of the crane",
+            "Der Praktikant mit gelbem Schutzhelm vor dem Kran"
+          ],
+          "quote": "Ich würde dieses Praktikum auf jeden Fall empfehlen.",
+          "quote_label": [
+            "Testimonial summary",
+            "Testimonial sinngemäß"
           ]
         }
       },

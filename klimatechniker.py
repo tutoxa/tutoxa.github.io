@@ -4,11 +4,11 @@ from html import escape as esc
 def render_case(project,lang,assets,preview=False,next_project=None,path=None):
  i=0 if lang=='en' else 1;c=project['case_study'];base='/de.html' if i else '/'
  def tx(v):return esc(v[i])
+ def srcset(asset):
+  return ', '.join(f'{x["path"]} {x["width"]}w' for x in asset['variants'])
  def image(key,alt,classes='',eager=False,sizes='(max-width: 650px) 88vw, 45vw'):
   a=assets[key];vs=a['variants'];v=vs[-1]
-  srcset=', '.join(f'{x["path"]} {x["width"]}w' for x in vs)
-  return f'<img class="{classes}" src="{v["path"]}" srcset="{srcset}" sizes="{sizes}" width="{a["width"]}" height="{a["height"]}" alt="{tx(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async" {"fetchpriority=high" if eager else ""}>'
- def label(n,title):return f'<p class="kt-kicker">{n} / {title}</p>'
+  return f'<img class="{classes}" src="{v["path"]}" srcset="{srcset(a)}" sizes="{sizes}" width="{a["width"]}" height="{a["height"]}" alt="{tx(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async" {"fetchpriority=high" if eager else ""}>'
  def figure(item,classes='',sizes='(max-width: 650px) 88vw, 45vw'):
   return f'<figure class="{classes}"><a href="{assets[item["asset"]]["variants"][-1]["path"]}" target="_blank" rel="noopener" aria-label="{tx(item["alt"])}">{image(item["asset"],item["alt"],sizes=sizes)}</a><figcaption>{tx(item["caption"])}</figcaption></figure>'
  profiles=''
@@ -32,12 +32,9 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
  performance = next(item for item in c['evidence'] if item['asset'] == 'performance')
  evidence = ''.join(figure(item, sizes='(max-width: 650px) 38vw, 220px')
                     for item in c['evidence'] if item is not performance)
- planning_focus = ''.join(f'<li>{esc(item)}</li>' for item in c['timeline']['planning_focus'][i])
- production_stills = ''.join(figure(item, sizes='(max-width: 650px) 29vw, 24vw')
-                             for item in c['photos'][1:])
- summary=''.join(f'<li><span>{n+1:02}</span>{esc(role)}</li>' for n,role in enumerate(c['contribution']['roles'][i]))
+ production_stills = ''.join(figure(item, sizes='(max-width: 650px) 44vw, 19vw')
+                             for item in c['photos'])
  notice=f'<aside class="kt-review" role="note"><strong>{"REVIEW PREVIEW" if i==0 else "VORSCHAU ZUR PRÜFUNG"}</strong><p>{tx(c["preview_notice"])}</p></aside>' if preview else ''
- title=tx(c['editorial_title']).replace('&lt;br&gt;','<br>').replace('&lt;em&gt;','<em>').replace('&lt;/em&gt;','</em>')
  timeline = c['timeline']
  stages = timeline['stages']
  stage_links = ''.join(
@@ -51,33 +48,25 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
    f'<h3 id="{slug}-title">{tx(stages[slug])}</h3><p>{tx(description)}</p></div>'
   )
  if published_count == len(c['videos']):
-  player_note = ["Reel 1 is silent. The interview has German on-screen subtitles.",
-                 "Reel 1 ist ohne Ton. Das Interview enthält eingeblendete deutsche Untertitel."][i]
+  player_note = ["The Project Reel is silent. The interview has German on-screen subtitles.",
+                 "Das Projekt-Reel ist ohne Ton. Das Interview enthält eingeblendete deutsche Untertitel."][i]
  else:
-  player_note = ["Reel 1 plays without sound. Reel 2 and the interview are shown as stills while their audio rights are being confirmed.",
-                 "Reel 1 wird ohne Ton abgespielt. Reel 2 und das Interview sind bis zur Klärung der Tonrechte als Standbilder zu sehen."][i]
+  player_note = ["The Project Reel plays without sound. The Creative Reel and the interview are shown as stills while their audio rights are being confirmed.",
+                 "Das Projekt-Reel wird ohne Ton abgespielt. Das kreative Reel und das Interview sind bis zur Klärung der Tonrechte als Standbilder zu sehen."][i]
  next_link=path(lang,next_project['slug']) if next_project else base+'#work'
  next_title=next_project['title'][i] if next_project else c['back'][i]
  return f'''<div class="kt-case">
  <section class="kt-hero" aria-labelledby="case-title">
-  <div class="kt-hero-top"><a class="text-link" href="{base}#work">← {"All work" if i==0 else "Alle Projekte"}</a><span>{esc(project['org'])} / {esc(project['year'])}</span></div>
-  <div class="kt-hero-grid">
-   <div class="kt-hero-copy">
-    <p class="kt-kicker">BERLIN / 2026</p>
-    <h1 id="case-title">{title}</h1>
-    <p class="kt-subtitle">{tx(project['intro'])}</p>
-    <p class="kt-categories">{tx(project['cats'])}</p>
-    <dl class="kt-metadata">
-     <div><dt>{"My role" if i==0 else "Meine Rolle"}</dt><dd>{tx(c['role'])}</dd></div>
-     <div><dt>{"Final formats" if i==0 else "Fertige Formate"}</dt><dd>{"2 Reels + 1 employee interview" if i==0 else "2 Reels + 1 Mitarbeiterinterview"}</dd></div>
-    </dl>
-   </div>
-   <div class="kt-hero-media">
-    <div class="kt-lead">
-     <figure class="kt-lead-wide">{image('rooftop',c['photos'][0]['alt'],eager=True,sizes='(max-width: 750px) 67vw, 42vw')}</figure>
-     <figure class="kt-lead-person">{image('hero',c['hero_alt'],eager=True,sizes='(max-width: 750px) 24vw, 15vw')}</figure>
-    </div>
-    <p class="kt-lead-caption">{tx(c['hero_caption'])}</p>
+  <div class="kt-hero-top"><a class="text-link" href="{base}#work">← {"All work" if i==0 else "Alle Projekte"}</a></div>
+  <div class="kt-banner">
+   <picture>
+    <source media="(max-width: 650px)" srcset="{srcset(assets[c['banner']['mobile_asset']])}" sizes="calc(100vw - 36px)">
+    {image(c['banner']['asset'],c['banner']['alt'],eager=True,sizes='(max-width: 1160px) calc(100vw - 56px), 1104px')}
+   </picture>
+   <div class="kt-banner-copy">
+    <p class="kt-banner-credit">{esc(c['banner']['credit'])}</p>
+    <h1 id="case-title">{esc(project['title'][i])}</h1>
+    <p class="kt-subtitle">{tx(c['subtitle'])}</p>
    </div>
   </div>
  </section>{notice}
@@ -87,6 +76,9 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
    <nav class="kt-stage-nav" aria-label="{tx(timeline['label'])}"><ol>{stage_links}</ol></nav>
   </div>
   <ol class="kt-stages">
+   <li class="kt-stage kt-brief" id="brief" aria-labelledby="brief-title">
+    {stage_header('brief', c['brief'])}
+   </li>
    <li class="kt-stage" id="opportunity" aria-labelledby="opportunity-title">
     {stage_header('opportunity', c['opportunity']['text'])}
     <div class="kt-stage-content">
@@ -94,19 +86,31 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
      <p class="kt-source-note">{tx(c['snapshot_note'])}</p>
     </div>
    </li>
-   <li class="kt-stage" id="planning" aria-labelledby="planning-title">
-    {stage_header('planning', timeline['planning'])}
-    <ol class="kt-plan-list" aria-label="{"Planning focus" if i==0 else "Schwerpunkte der Planung"}">{planning_focus}</ol>
-   </li>
    <li class="kt-stage kt-production" id="production" aria-labelledby="production-title">
-    {stage_header('production', c['production']['text'])}
-    <div class="kt-photo-grid">{production_stills}</div>
-   </li>
-   <li class="kt-stage kt-formats" id="films" aria-labelledby="films-title">
-    {stage_header('films', c['formats_intro'])}
+    <div id="planning">
+     {stage_header('production', timeline['planning'])}
+     <p class="kt-project-scale">{tx(c['formats_intro'])}</p>
+    </div>
     <div class="kt-stage-content">
+     <div class="kt-photo-grid">{production_stills}</div>
+     <aside class="kt-trainee" aria-labelledby="trainee-title">
+      <h4 id="trainee-title">{tx(c['trainee']['title'])}</h4>
+      <p>{tx(c['trainee']['text'])}</p>
+      <figure class="kt-trainee-still">
+       {image(c['trainee']['still'],c['trainee']['alt'],sizes='(max-width: 360px) calc(100vw - 70px), 290px')}
+       <figcaption>
+        <span>{tx(c['trainee']['quote_label'])}</span>
+        <strong lang="de">{esc(c['trainee']['quote'])}</strong>
+       </figcaption>
+      </figure>
+     </aside>
+    </div>
+   </li>
+   <li class="kt-stage kt-publication" id="publication" aria-labelledby="publication-title">
+    {stage_header('publication', c['publication']['text'])}
+    <div class="kt-stage-content" id="films">
      <p class="kt-output-hint">{"Swipe or use arrow keys to browse the three videos →" if i==0 else "Mit Wischen oder den Pfeiltasten durch die drei Videos blättern →"}</p>
-     <div class="kt-video-grid" tabindex="0" role="region" aria-label="{"Three finished videos" if i==0 else "Drei fertige Videos"}">{videos}</div>
+     <div class="kt-video-grid" tabindex="0" role="region" aria-label="{"Three selected videos" if i==0 else "Drei ausgewählte Videos"}">{videos}</div>
      <p class="kt-player-note">{player_note}</p>
      <details class="kt-evidence kt-carousel-details">
       <summary>{"Interview carousel · five slides" if i==0 else "Interview-Carousel · fünf Slides"}</summary>
@@ -114,8 +118,8 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
      </details>
     </div>
    </li>
-   <li class="kt-stage kt-publication" id="publication" aria-labelledby="publication-title">
-    {stage_header('publication', c['publication']['text'])}
+   <li class="kt-stage" id="results" aria-labelledby="results-title">
+    {stage_header('results', c['results_intro'])}
     <div class="kt-stage-content">
      <div class="kt-results">
       <div class="kt-metric">
@@ -132,10 +136,6 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
     </div>
    </li>
   </ol>
- </section>
- <section id="contribution" class="kt-contribution" aria-labelledby="contribution-title">
-  <div>{label('06','What I took from it' if i==0 else 'Was ich daraus mitnehme')}<h2 id="contribution-title">{tx(c['contribution']['heading'])}</h2><p>{tx(c['contribution']['text'])}</p></div>
-  <ul>{summary}</ul>
  </section>
  <div class="kt-next"><div class="kt-next-label"><span>{"Next project / 02" if i==0 else "Nächstes Projekt / 02"}</span><a href="{base}#work">{"All selected work ↗" if i==0 else "Alle Projekte ↗"}</a></div><a class="kt-next-title" href="{next_link}"><h2>{esc(next_title)}</h2><span aria-hidden="true">↗</span></a></div>
  </div>'''
