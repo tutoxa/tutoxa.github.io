@@ -128,25 +128,25 @@
         },
         "photos": [
           {
-            "asset": "berlin-roof-view",
-            "alt": [
-              "The crane boom stretches over the rooftop and surrounding Berlin buildings",
-              "Der Kranausleger ragt über das Dach und die umliegenden Berliner Gebäude"
-            ],
+            "asset": "berlin-rooftop-coordination",
             "caption": [
-              "The Berlin rooftop",
-              "Blick über das Berliner Dach"
+              "Reviewing the installation on the rooftop",
+              "Abstimmung zur Installation auf dem Dach"
+            ],
+            "alt": [
+              "Two technicians in helmets review a handheld device on the Berlin rooftop",
+              "Zwei Techniker mit Schutzhelmen schauen auf ein Handgerät auf dem Berliner Dach"
             ]
           },
           {
-            "asset": "berlin-lift",
-            "alt": [
-              "A crew member watches from the roof beside ventilation ducts and a crane boom",
-              "Ein Mitarbeiter beobachtet den Einsatz neben Lüftungsrohren und einem Kranausleger"
-            ],
+            "asset": "berlin-indoor-installation",
             "caption": [
-              "Crew and crane on site",
-              "Team und Kran im Einsatz"
+              "Interior installation work",
+              "Montagearbeiten im Innenraum"
+            ],
+            "alt": [
+              "A technician works on a ceiling-mounted unit while a colleague stands behind him",
+              "Ein Techniker arbeitet an einem Deckengerät, während ein Kollege hinter ihm steht"
             ]
           },
           {
@@ -161,14 +161,14 @@
             ]
           },
           {
-            "asset": "berlin-ground-crew",
-            "alt": [
-              "Two crew members stand near the crane at street level",
-              "Zwei Mitarbeiter stehen auf Straßenniveau neben dem Kran"
-            ],
+            "asset": "berlin-site-equipment",
             "caption": [
-              "The crew at street level",
-              "Das Team auf Straßenniveau"
+              "Equipment outside the building",
+              "Ausrüstung vor dem Gebäude"
+            ],
+            "alt": [
+              "Boxed equipment and crew members outside the Forum Landsberger Allee entrance",
+              "Verpackte Ausrüstung und Mitarbeiter vor dem Eingang des Forums Landsberger Allee"
             ]
           }
         ],

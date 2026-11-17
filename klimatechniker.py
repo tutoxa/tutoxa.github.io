@@ -32,8 +32,10 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
  performance = next(item for item in c['evidence'] if item['asset'] == 'performance')
  evidence = ''.join(figure(item, sizes='(max-width: 650px) 38vw, 220px')
                     for item in c['evidence'] if item is not performance)
- production_stills = ''.join(figure(item, sizes='(max-width: 650px) 44vw, 19vw')
-                             for item in c['photos'])
+ production_sizes = '(max-width: 650px) calc(100vw - 36px), (max-width: 1160px) calc(100vw - 56px), 1104px'
+ supporting_sizes = '(max-width: 650px) calc((100vw - 46px) / 2), (max-width: 1160px) 31vw, 356px'
+ production_stills = figure(c['photos'][0], 'kt-photo-feature', sizes=production_sizes)
+ production_stills += ''.join(figure(item, sizes=supporting_sizes) for item in c['photos'][1:])
  notice=f'<aside class="kt-review" role="note"><strong>{"REVIEW PREVIEW" if i==0 else "VORSCHAU ZUR PRÜFUNG"}</strong><p>{tx(c["preview_notice"])}</p></aside>' if preview else ''
  timeline = c['timeline']
  stages = timeline['stages']
@@ -55,13 +57,12 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
                  "Das Projekt-Reel wird ohne Ton abgespielt. Das kreative Reel und das Interview sind bis zur Klärung der Tonrechte als Standbilder zu sehen."][i]
  next_link=path(lang,next_project['slug']) if next_project else base+'#work'
  next_title=next_project['title'][i] if next_project else c['back'][i]
- return f'''<div class="kt-case">
- <section class="kt-hero" aria-labelledby="case-title">
+ return f'''<section class="kt-hero" aria-labelledby="case-title">
   <div class="kt-hero-top"><a class="text-link" href="{base}#work">← {"All work" if i==0 else "Alle Projekte"}</a></div>
   <div class="kt-banner">
    <picture>
-    <source media="(max-width: 650px)" srcset="{srcset(assets[c['banner']['mobile_asset']])}" sizes="calc(100vw - 36px)">
-    {image(c['banner']['asset'],c['banner']['alt'],eager=True,sizes='(max-width: 800px) calc(100vw - 56px), (max-width: 1656px) calc(118vw - 66px), 1888px')}
+    <source media="(max-width: 650px)" srcset="{srcset(assets[c['banner']['mobile_asset']])}" sizes="100vw">
+    {image(c['banner']['asset'],c['banner']['alt'],eager=True,sizes='(max-width: 800px) 100vw, 118vw')}
    </picture>
    <div class="kt-banner-copy">
     <p class="kt-banner-credit">{esc(c['banner']['credit'])}</p>
@@ -69,7 +70,8 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
     <p class="kt-subtitle">{tx(c['subtitle'])}</p>
    </div>
   </div>
- </section>{notice}
+ </section>
+ <div class="kt-case">{notice}
  <section class="kt-timeline" aria-labelledby="timeline-title">
   <div class="kt-index">
    <h2 id="timeline-title">{tx(timeline['label'])}</h2>
@@ -92,7 +94,7 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
      <p class="kt-project-scale">{tx(c['formats_intro'])}</p>
     </div>
     <div class="kt-stage-content">
-     <div class="kt-photo-grid">{production_stills}</div>
+     <div class="kt-photo-grid" id="production-photos">{production_stills}</div>
      <aside class="kt-trainee" aria-labelledby="trainee-title">
       <h4 id="trainee-title">{tx(c['trainee']['title'])}</h4>
       <p>{tx(c['trainee']['text'])}</p>

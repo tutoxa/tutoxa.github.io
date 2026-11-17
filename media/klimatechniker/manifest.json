@@ -431,5 +431,51 @@
         "width": 640
       }
     ]
+  },
+  "berlin-rooftop-coordination": {
+    "width": 1200,
+    "height": 1600,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-rooftop-coordination-480.webp",
+        "width": 480
+      },
+      {
+        "path": "/media/klimatechniker/berlin-rooftop-coordination-800.webp",
+        "width": 800
+      },
+      {
+        "path": "/media/klimatechniker/berlin-rooftop-coordination-1200.webp",
+        "width": 1200
+      }
+    ]
+  },
+  "berlin-indoor-installation": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-indoor-installation-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-indoor-installation-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "berlin-site-equipment": {
+    "width": 720,
+    "height": 960,
+    "variants": [
+      {
+        "path": "/media/klimatechniker/berlin-site-equipment-360.webp",
+        "width": 360
+      },
+      {
+        "path": "/media/klimatechniker/berlin-site-equipment-720.webp",
+        "width": 720
+      }
+    ]
   }
 }
