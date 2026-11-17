@@ -61,7 +61,7 @@ def render_case(project,lang,assets,preview=False,next_project=None,path=None):
   <div class="kt-banner">
    <picture>
     <source media="(max-width: 650px)" srcset="{srcset(assets[c['banner']['mobile_asset']])}" sizes="calc(100vw - 36px)">
-    {image(c['banner']['asset'],c['banner']['alt'],eager=True,sizes='(max-width: 1160px) calc(100vw - 56px), 1104px')}
+    {image(c['banner']['asset'],c['banner']['alt'],eager=True,sizes='(max-width: 800px) calc(100vw - 56px), (max-width: 1656px) calc(118vw - 66px), 1888px')}
    </picture>
    <div class="kt-banner-copy">
     <p class="kt-banner-credit">{esc(c['banner']['credit'])}</p>

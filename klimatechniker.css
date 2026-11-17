@@ -765,7 +765,7 @@
   isolation: isolate;
   display: grid;
   align-items: end;
-  min-height: clamp(440px, 70svh, 690px);
+  min-height: max(490px, calc(100svh - 154px));
   margin-top: 14px;
   overflow: hidden;
   border-radius: 18px;
@@ -789,7 +789,8 @@
   content: "";
   background:
     radial-gradient(ellipse at 0 100%, #000e 16%, #000b 35%, transparent 72%),
-    linear-gradient(to top, #0007, transparent 52%);
+    linear-gradient(to top, #0007, transparent 52%),
+    linear-gradient(to left, #10182063, transparent 32%);
 }
 .kt-banner-copy {
   position: relative;
@@ -827,10 +828,25 @@
 .kt-photo-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .kt-photo-grid figure:nth-child(2) { margin-top: 0; }
 .kt-case :is(#planning, #films) { scroll-margin-top: 100px; }
+@media (min-width: 801px) {
+  .kt-banner {
+    width: min(calc(100vw - 56px), 1600px);
+    margin-left: 50%;
+    translate: -50% 0;
+  }
+  .kt-banner picture img {
+    width: 118%;
+    height: 110%;
+    object-position: left 35%;
+  }
+  .kt-banner-copy { padding-bottom: clamp(26px, 3vw, 48px); }
+}
 @media (max-width: 650px) {
   .kt-banner { min-height: clamp(490px, 72svh, 610px); border-radius: 14px; }
   .kt-banner::before {
-    background: linear-gradient(to bottom, transparent 27%, #0004 47%, #000c 69%, #000e);
+    background:
+      linear-gradient(to bottom, transparent 27%, #0004 47%, #000c 69%, #000e),
+      linear-gradient(to left, #10182050, transparent 30%);
   }
   .kt-banner-copy { padding: 22px; }
   .kt-banner h1 { font-size: clamp(30px, 8.7vw, 47px); text-wrap: initial; }
