@@ -114,3 +114,5 @@ if OUT != R:
   shutil.copy2(R/name,OUT/name)
  shutil.copytree(R/'media',OUT/'media',dirs_exist_ok=True)
  if args.preview: shutil.copytree(R/'.preview-media',OUT/'.preview-media',dirs_exist_ok=True)
+
+ if args.preview and (R/'.preview-ekoniva').is_dir(): shutil.copytree(R/'.preview-ekoniva',OUT/'.preview-ekoniva',dirs_exist_ok=True)

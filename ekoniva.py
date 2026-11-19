@@ -20,8 +20,9 @@ def render_ekoniva(project, collection, lang):
         poster = local_url(item.get('poster'))
         title = text(item['title'])
         if src and item['type'] == 'image':
+            responsive = (f' srcset="{escape(item["srcset"])}" sizes="{escape(item.get("sizes", "100vw"))}"' if item.get('srcset') else '')
             return (f'<img src="{escape(src)}" alt="{text(item["alt"])}" '
-                    f'width="{item["width"]}" height="{item["height"]}" loading="lazy" decoding="async">')
+                    f'width="{item["width"]}" height="{item["height"]}" loading="lazy" decoding="async"{responsive}>')
         if src and poster and item['type'] == 'video':
             return (f'<video controls playsinline preload="none" poster="{escape(poster)}" '
                     f'width="{item["width"]}" height="{item["height"]}" aria-label="{title}" {"muted" if item.get("silent_preview") else ""}>'
@@ -42,10 +43,28 @@ def render_ekoniva(project, collection, lang):
         contribution = item.get('contribution') or collection['contribution_pending']
         entries.append(f'<article class="ek-work-row"><h3>{text(item["title"])}</h3><span>{text(item["format"])}{year}</span><p>{text(contribution)}</p>{external}</article>')
 
-    behind = ''.join(
-        f'<figure>{media(item)}<figcaption>{text(item["title"])}</figcaption></figure>'
-        for item in collection['behind']
-    )
+    behind = ''
+    for number, item in enumerate(collection['behind'], 1):
+        image = media(item)
+        src = local_url(item.get('src'))
+        if src:
+            label = [f'Open production photograph {number}', f'Produktionsfoto {number} öffnen'][index]
+            image = f'<a class="ek-gallery-link" href="{escape(src)}" target="_blank" rel="noopener noreferrer" aria-label="{label}">{image}</a>'
+        caption = f'<figcaption>{text(item["caption"])}</figcaption>' if item.get('caption') else ''
+        behind += f'<figure class="{"ek-production-featured" if item.get("featured") else ""}">{image}{caption}</figure>'
+    source_note = ''
+    sources = collection.get('production_sources')
+    if sources:
+        source_links = ''.join(
+            f'<a href="{escape(sources[key])}" target="_blank" rel="noopener noreferrer">{label} ↗</a>'
+            for key, label in [('article', 'EkoNiva'), ('article_credit', 'Milknews')]
+            if publication_url(sources.get(key))
+        )
+        video_links = ''.join(
+            f'<a href="{escape(video["url"])}" target="_blank" rel="noopener noreferrer">{text(video["title"])} ↗</a>'
+            for video in sources.get('videos', []) if publication_url(video.get('url'))
+        )
+        source_note = f'<div class="ek-production-source"><p>{text(sources["note"])}</p><div class="ek-source-links">{source_links}</div><p>{text(sources["videos_label"])}</p><div class="ek-source-links">{video_links}</div></div>'
     base = '/' if index == 0 else '/de.html'
     roles = ''.join(f'<li>{escape(role)}</li>' for role in project['role'][index])
     headings = collection['headings']
@@ -76,9 +95,9 @@ def render_ekoniva(project, collection, lang):
   <div class="ek-section-heading"><h2 id="ek-selected">{text(headings[2])}</h2><p>{text(collection['work_note'])}</p></div>
   {''.join(entries)}
  </section>
- <section class="ek-behind" aria-labelledby="ek-production">
+ <section id="commercial-production" class="ek-behind" aria-labelledby="ek-production">
   <div class="ek-section-heading"><h2 id="ek-production">{text(headings[3])}</h2><p>{text(collection['behind_note'])}</p></div>
-  <div class="ek-behind-grid">{behind}</div>
+  <div class="ek-behind-grid">{behind}</div>{source_note}
  </section>
  <section class="ek-editorial ek-contribution" aria-labelledby="ek-contribution">
   <h2 id="ek-contribution">{text(headings[4])}</h2><div><p>{text(project['process'])}</p><p>{text(collection['collaboration'])}</p></div>

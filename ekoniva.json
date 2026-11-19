@@ -25,8 +25,8 @@
       "Ausgewählte Arbeiten"
     ],
     [
-      "Behind the Production",
-      "Hinter den Kulissen"
+      "Commercial Production",
+      "Werbeproduktion"
     ],
     [
       "My Contribution",
@@ -62,8 +62,8 @@
     "Vorläufige visuelle Referenzen aus bereitgestellten EkoNiva-Screenshots. Projekttitel, individuelle Beiträge und Credits sind noch zu bestätigen. Zahlen in den Screenshots sind historische Oberflächeninhalte und werden nicht als Kampagnenergebnisse ausgewiesen."
   ],
   "behind_note": [
-    "Space for production photography and campaign preparation, alongside the finished work.",
-    "Raum für Produktionsfotografie und Kampagnenvorbereitung neben den fertigen Arbeiten."
+    "External production references for local visual review. My involvement in the production shown is not established.",
+    "Externe Produktionsreferenzen zur lokalen Bildauswahl. Meine Mitwirkung an der gezeigten Produktion ist nicht bestätigt."
   ],
   "items": [
     {
@@ -194,28 +194,145 @@
   ],
   "behind": [
     {
-      "id": "shoot",
-      "title": [
-        "On set",
-        "Am Set"
-      ],
       "type": "image",
-      "src": null,
-      "alt": null,
-      "width": null,
-      "height": null
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/.preview-ekoniva/production/kitchen-set-1920.webp",
+      "srcset": "/.preview-ekoniva/production/kitchen-set-480.webp 480w, /.preview-ekoniva/production/kitchen-set-960.webp 960w, /.preview-ekoniva/production/kitchen-set-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 94vw, 1080px",
+      "alt": [
+        "Film camera beside a kitchen set with three people at a breakfast table.",
+        "Filmkamera neben einer Küchenkulisse mit drei Personen am Frühstückstisch."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": true,
+      "source_file": "ekoniva-article168-003-w-5058.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/003-w-5058.jpg",
+      "rights_status": "unconfirmed-local-review-only"
     },
     {
-      "id": "preparation",
-      "title": [
-        "Campaign preparation",
-        "Kampagnenvorbereitung"
-      ],
       "type": "image",
-      "src": null,
-      "alt": null,
-      "width": null,
-      "height": null
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/.preview-ekoniva/production/camera-rails-1920.webp",
+      "srcset": "/.preview-ekoniva/production/camera-rails-480.webp 480w, /.preview-ekoniva/production/camera-rails-960.webp 960w, /.preview-ekoniva/production/camera-rails-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Camera crew working beside a floor-mounted camera rail on an interior set.",
+        "Kamerateam bei der Arbeit an einer Schienenanlage in einer Innenkulisse."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-002-w-5045.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/002-w-5045.jpg",
+      "rights_status": "unconfirmed-local-review-only"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/.preview-ekoniva/production/factory-filming-1920.webp",
+      "srcset": "/.preview-ekoniva/production/factory-filming-480.webp 480w, /.preview-ekoniva/production/factory-filming-960.webp 960w, /.preview-ekoniva/production/factory-filming-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Film camera and crew in protective clothing on a factory floor.",
+        "Filmkamera und Team in Schutzkleidung in einer Produktionshalle."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-5.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/5.jpg",
+      "rights_status": "unconfirmed-local-review-only"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/.preview-ekoniva/production/retail-set-1920.webp",
+      "srcset": "/.preview-ekoniva/production/retail-set-480.webp 480w, /.preview-ekoniva/production/retail-set-960.webp 960w, /.preview-ekoniva/production/retail-set-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Crew and lighting equipment beside refrigerated shelves in a shop.",
+        "Team und Beleuchtungstechnik neben Kühlregalen in einem Geschäft."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-008-w-5647.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/008-w-5647.jpg",
+      "rights_status": "unconfirmed-local-review-only"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/.preview-ekoniva/production/farm-filming-1920.webp",
+      "srcset": "/.preview-ekoniva/production/farm-filming-480.webp 480w, /.preview-ekoniva/production/farm-filming-960.webp 960w, /.preview-ekoniva/production/farm-filming-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Camera crew filming beside cattle pens inside a barn.",
+        "Kamerateam bei Dreharbeiten neben Rinderboxen in einem Stall."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-1.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/1.jpg",
+      "rights_status": "unconfirmed-local-review-only"
     }
-  ]
+  ],
+  "production_sources": {
+    "article": "https://www.ekoniva-moloko.com/news/168",
+    "article_credit": "https://milknews.ru/longridy/novaja-reklama-EkoNivy.html",
+    "note": [
+      "Source article: EkoNiva · credited to Milknews. Photographer and reuse permission unconfirmed.",
+      "Quellartikel: EkoNiva · Text mit Quellenangabe Milknews. Fotograf und Nutzungsfreigabe unbestätigt."
+    ],
+    "videos_label": [
+      "Original source videos",
+      "Originalvideos an der Quelle"
+    ],
+    "videos": [
+      {
+        "title": [
+          "Milk",
+          "Milch"
+        ],
+        "url": "https://www.youtube.com/watch?v=CmFqYiLRa0g",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      },
+      {
+        "title": [
+          "Yoghurt",
+          "Joghurt"
+        ],
+        "url": "https://www.youtube.com/watch?v=2XD42MsPw84",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      },
+      {
+        "title": [
+          "Sour cream",
+          "Sauerrahm"
+        ],
+        "url": "https://www.youtube.com/watch?v=J9e4psdbtQ4",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      }
+    ]
+  }
 }
