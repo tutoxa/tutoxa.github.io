@@ -1,0 +1,42 @@
+[
+  {
+    "source_file": "кофе 1.jpg",
+    "web_copy": "coffee-preparation.webp",
+    "width": 811,
+    "height": 1600,
+    "bytes": 111790,
+    "treatment": "Full source framing retained; resized and encoded as WebP; no crop or retouch."
+  },
+  {
+    "source_file": "сюжет 3.PNG",
+    "web_copy": "employee-story.webp",
+    "width": 739,
+    "height": 1600,
+    "bytes": 124924,
+    "treatment": "Full source framing retained; resized and encoded as WebP; no crop or retouch."
+  },
+  {
+    "source_file": "эконива 4.PNG",
+    "web_copy": "dairy-products.webp",
+    "width": 739,
+    "height": 1600,
+    "bytes": 105854,
+    "treatment": "Full source framing retained; resized and encoded as WebP; no crop or retouch."
+  },
+  {
+    "source_file": "эконива 2.PNG",
+    "web_copy": "instagram-selection.webp",
+    "width": 739,
+    "height": 1600,
+    "bytes": 135202,
+    "treatment": "Full source framing retained; resized and encoded as WebP; no crop or retouch."
+  },
+  {
+    "source_file": "сыр 2.png",
+    "web_copy": "cheese-product.webp",
+    "width": 1280,
+    "height": 800,
+    "bytes": 94562,
+    "treatment": "Full source framing retained; resized and encoded as WebP; no crop or retouch."
+  }
+]

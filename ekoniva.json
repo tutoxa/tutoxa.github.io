@@ -46,8 +46,8 @@
     "Originalmaterial folgt"
   ],
   "review_note": [
-    "Local concept preview · all media panels are placeholders",
-    "Lokale Konzeptvorschau · alle Medienflächen sind Platzhalter"
+    "Provisional image selection · original screenshots, no campaign credits assigned",
+    "Vorläufige Bildauswahl · Original-Screenshots ohne zugewiesene Kampagnen-Credits"
   ],
   "contribution_pending": [
     "Project-specific contribution to be confirmed with the original material.",
@@ -58,8 +58,8 @@
     "Die Arbeit entstand gemeinsam mit dem internen Marketingteam, externen Agenturen und Produktionspartnern. Mein Beitrag verband Produktkommunikation, praktische Abstimmung und die Vorbereitung von Marketingmaterialien."
   ],
   "work_note": [
-    "Formats prepared for the collection. Individual projects, credits and publication details will be added with the original media.",
-    "Vorbereitete Formate für die Auswahl. Einzelne Projekte, Credits und Veröffentlichungsangaben werden mit dem Originalmaterial ergänzt."
+    "Provisional visual references from supplied EkoNiva screenshots. Project titles, individual contributions and credits remain to be verified. Figures visible within screenshots are historical interface content, not claimed campaign results.",
+    "Vorläufige visuelle Referenzen aus bereitgestellten EkoNiva-Screenshots. Projekttitel, individuelle Beiträge und Credits sind noch zu bestätigen. Zahlen in den Screenshots sind historische Oberflächeninhalte und werden nicht als Kampagnenergebnisse ausgewiesen."
   ],
   "behind_note": [
     "Space for production photography and campaign preparation, alongside the finished work.",
@@ -67,109 +67,129 @@
   ],
   "items": [
     {
-      "id": "tv-commercial",
+      "id": "coffee-preparation",
       "title": [
-        "TV commercial",
-        "TV-Werbespot"
+        "Coffee preparation",
+        "Kaffeezubereitung"
       ],
       "format": [
-        "Advertising film",
-        "Werbefilm"
-      ],
-      "type": "video",
-      "src": null,
-      "poster": null,
-      "alt": null,
-      "width": null,
-      "height": null,
-      "year": null,
-      "contribution": null,
-      "external_url": null,
-      "silent_preview": false
-    },
-    {
-      "id": "social-campaign",
-      "title": [
-        "Social campaign",
-        "Social-Media-Kampagne"
-      ],
-      "format": [
-        "Short-form video",
-        "Kurzvideo"
-      ],
-      "type": "video",
-      "src": null,
-      "poster": null,
-      "alt": null,
-      "width": null,
-      "height": null,
-      "year": null,
-      "contribution": null,
-      "external_url": null,
-      "silent_preview": false
-    },
-    {
-      "id": "brand-story",
-      "title": [
-        "Brand storytelling",
-        "Markengeschichte"
-      ],
-      "format": [
-        "Brand film",
-        "Markenfilm"
-      ],
-      "type": "video",
-      "src": null,
-      "poster": null,
-      "alt": null,
-      "width": null,
-      "height": null,
-      "year": null,
-      "contribution": null,
-      "external_url": null,
-      "silent_preview": false
-    },
-    {
-      "id": "instagram",
-      "title": [
-        "Instagram post",
-        "Instagram-Beitrag"
-      ],
-      "format": [
-        "Social content",
-        "Social Content"
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
       ],
       "type": "image",
-      "src": null,
+      "src": "/media/ekoniva/coffee-preparation.webp",
       "poster": null,
-      "alt": null,
-      "width": null,
-      "height": null,
+      "alt": [
+        "Screenshot showing a barista in a yellow sweatshirt beside a coffee machine.",
+        "Screenshot mit einem Barista im gelben Pullover neben einer Kaffeemaschine."
+      ],
+      "width": 811,
+      "height": 1600,
       "year": null,
       "contribution": null,
       "external_url": null,
-      "silent_preview": false
+      "silent_preview": false,
+      "source_file": "кофе 1.jpg"
     },
     {
-      "id": "production",
+      "id": "employee-story",
       "title": [
-        "Behind the scenes",
-        "Hinter den Kulissen"
+        "An employee story",
+        "Ein Mitarbeiterporträt"
       ],
       "format": [
-        "Production footage",
-        "Produktionsaufnahmen"
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
       ],
-      "type": "video",
-      "src": null,
+      "type": "image",
+      "src": "/media/ekoniva/employee-story.webp",
       "poster": null,
-      "alt": null,
-      "width": null,
-      "height": null,
+      "alt": [
+        "EkoNiva Instagram post showing an employee in green workwear at a farm.",
+        "Instagram-Beitrag von EkoNiva mit einer Mitarbeiterin in grüner Arbeitskleidung auf einem Hof."
+      ],
+      "width": 739,
+      "height": 1600,
       "year": null,
       "contribution": null,
       "external_url": null,
-      "silent_preview": false
+      "silent_preview": false,
+      "source_file": "сюжет 3.PNG"
+    },
+    {
+      "id": "dairy-products",
+      "title": [
+        "Dairy product presentation",
+        "Milchprodukte im Bild"
+      ],
+      "format": [
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/dairy-products.webp",
+      "poster": null,
+      "alt": [
+        "EkoNiva Instagram post showing milk packaging on a wooden table with warm lights in the background.",
+        "Instagram-Beitrag von EkoNiva mit Milchverpackungen auf einem Holztisch und warmen Lichtern im Hintergrund."
+      ],
+      "width": 739,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "эконива 4.PNG"
+    },
+    {
+      "id": "instagram-selection",
+      "title": [
+        "Instagram selection",
+        "Instagram-Auswahl"
+      ],
+      "format": [
+        "Supplied profile screenshot",
+        "Bereitgestellter Profil-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/instagram-selection.webp",
+      "poster": null,
+      "alt": [
+        "Screenshot of the EkoNiva Instagram grid with food, products and people.",
+        "Screenshot des Instagram-Rasters von EkoNiva mit Lebensmitteln, Produkten und Menschen."
+      ],
+      "width": 739,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "эконива 2.PNG"
+    },
+    {
+      "id": "cheese-product",
+      "title": [
+        "Cheese product page",
+        "Produktseite Käse"
+      ],
+      "format": [
+        "Supplied website screenshot",
+        "Bereitgestellter Website-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/cheese-product.webp",
+      "poster": null,
+      "alt": [
+        "EkoNiva cheese product page screenshot with a packaged hard cheese and Russian product information.",
+        "Screenshot einer Käse-Produktseite von EkoNiva mit einer Hartkäseverpackung und russischen Produktinformationen."
+      ],
+      "width": 1280,
+      "height": 800,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "сыр 2.png"
     }
   ],
   "behind": [
