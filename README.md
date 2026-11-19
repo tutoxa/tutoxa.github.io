@@ -124,3 +124,13 @@ python3 preview_server.py --directory ../light-portfolio-preview --port 8002
 ```
 
 The preview includes all three local films. Public output keeps the existing music/audio clearance gate. Anton approved the light redesign for publication on 8 November 2026. Public output excludes internal review notes, missing-asset messages and empty gallery placeholders. It does not include the two videos awaiting audio clearance.
+
+## EkoNiva local case study
+
+Run an isolated review build with `python3 build.py --preview --output /tmp/ekoniva-preview`. The English page is `/product-to-brand.html`, and the German page is `/de-product-to-brand.html`. The preview homepage links to the draft. The normal build retains the published draft treatment and excludes the new showcase. Media and final project credits are needed before publication.
+
+Edit `ekoniva.json` to update both languages. Text pairs use English first, German second. The order of `items` controls both the hero carousel and Selected Work. The `behind` collection controls the production gallery. Current titles identify formats and explicitly labeled media slots.
+
+For each actual item, fill `title`, `format`, and `contribution` with verified details. Use `year` only when verified. Set `type` to `image` or `video`, and use a root-relative `src` path. Images require bilingual `alt` text and their original `width` and `height`. Videos require an MP4 file and a `poster` image. Set `silent_preview` to true to start playback muted. Playback always requires a visitor action, and moving away pauses the video. Use `external_url` for a verified HTTPS publication or social link. It opens only on request, without a tracking embed. A missing source or video poster displays the labeled fallback.
+
+Suggested media names under `media/ekoniva/` are `tv-commercial-01.mp4`, `tv-commercial-01-poster.webp`, `social-campaign-01.mp4`, `brand-story-01.mp4`, `instagram-01.webp`, `production-01.webp` and `campaign-preparation-01.webp`. Names are configurable. Use optimized WebP/AVIF/JPEG stills and H.264 MP4 videos. The portrait showcase contains landscape material without cropping. Keep raw footage outside the repository. Only add cleared media and confirmed publication links.

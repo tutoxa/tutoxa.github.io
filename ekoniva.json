@@ -1,0 +1,201 @@
+{
+  "title": [
+    "From Product to Brand Story",
+    "Von der Produktidee zur Markenkommunikation"
+  ],
+  "intro": [
+    "A selection of advertising and brand communication projects developed with the EkoNiva marketing team and external creative partners.",
+    "Eine Auswahl an Werbe- und Markenkommunikationsprojekten, die gemeinsam mit dem EkoNiva-Marketingteam und externen Kreativpartnern umgesetzt wurden."
+  ],
+  "role": [
+    "Product Marketing & Creative Production Coordination",
+    "Produktmarketing & Koordination kreativer Produktionen"
+  ],
+  "headings": [
+    [
+      "The Context",
+      "Der Kontext"
+    ],
+    [
+      "My Role",
+      "Meine Rolle"
+    ],
+    [
+      "Selected Work",
+      "Ausgewählte Arbeiten"
+    ],
+    [
+      "Behind the Production",
+      "Hinter den Kulissen"
+    ],
+    [
+      "My Contribution",
+      "Mein Beitrag"
+    ]
+  ],
+  "showcase_label": [
+    "Advertising and brand content showcase",
+    "Werbung und Markenkommunikation"
+  ],
+  "slot_label": [
+    "Media slot",
+    "Medienplatz"
+  ],
+  "media_pending": [
+    "Original media to follow",
+    "Originalmaterial folgt"
+  ],
+  "review_note": [
+    "Local concept preview · all media panels are placeholders",
+    "Lokale Konzeptvorschau · alle Medienflächen sind Platzhalter"
+  ],
+  "contribution_pending": [
+    "Project-specific contribution to be confirmed with the original material.",
+    "Der konkrete Projektbeitrag wird mit dem Originalmaterial ergänzt."
+  ],
+  "collaboration": [
+    "The work brought together the internal marketing team, external agencies and production partners. My contribution connected product communication, practical coordination and the preparation of marketing materials.",
+    "Die Arbeit entstand gemeinsam mit dem internen Marketingteam, externen Agenturen und Produktionspartnern. Mein Beitrag verband Produktkommunikation, praktische Abstimmung und die Vorbereitung von Marketingmaterialien."
+  ],
+  "work_note": [
+    "Formats prepared for the collection. Individual projects, credits and publication details will be added with the original media.",
+    "Vorbereitete Formate für die Auswahl. Einzelne Projekte, Credits und Veröffentlichungsangaben werden mit dem Originalmaterial ergänzt."
+  ],
+  "behind_note": [
+    "Space for production photography and campaign preparation, alongside the finished work.",
+    "Raum für Produktionsfotografie und Kampagnenvorbereitung neben den fertigen Arbeiten."
+  ],
+  "items": [
+    {
+      "id": "tv-commercial",
+      "title": [
+        "TV commercial",
+        "TV-Werbespot"
+      ],
+      "format": [
+        "Advertising film",
+        "Werbefilm"
+      ],
+      "type": "video",
+      "src": null,
+      "poster": null,
+      "alt": null,
+      "width": null,
+      "height": null,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false
+    },
+    {
+      "id": "social-campaign",
+      "title": [
+        "Social campaign",
+        "Social-Media-Kampagne"
+      ],
+      "format": [
+        "Short-form video",
+        "Kurzvideo"
+      ],
+      "type": "video",
+      "src": null,
+      "poster": null,
+      "alt": null,
+      "width": null,
+      "height": null,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false
+    },
+    {
+      "id": "brand-story",
+      "title": [
+        "Brand storytelling",
+        "Markengeschichte"
+      ],
+      "format": [
+        "Brand film",
+        "Markenfilm"
+      ],
+      "type": "video",
+      "src": null,
+      "poster": null,
+      "alt": null,
+      "width": null,
+      "height": null,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false
+    },
+    {
+      "id": "instagram",
+      "title": [
+        "Instagram post",
+        "Instagram-Beitrag"
+      ],
+      "format": [
+        "Social content",
+        "Social Content"
+      ],
+      "type": "image",
+      "src": null,
+      "poster": null,
+      "alt": null,
+      "width": null,
+      "height": null,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false
+    },
+    {
+      "id": "production",
+      "title": [
+        "Behind the scenes",
+        "Hinter den Kulissen"
+      ],
+      "format": [
+        "Production footage",
+        "Produktionsaufnahmen"
+      ],
+      "type": "video",
+      "src": null,
+      "poster": null,
+      "alt": null,
+      "width": null,
+      "height": null,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false
+    }
+  ],
+  "behind": [
+    {
+      "id": "shoot",
+      "title": [
+        "On set",
+        "Am Set"
+      ],
+      "type": "image",
+      "src": null,
+      "alt": null,
+      "width": null,
+      "height": null
+    },
+    {
+      "id": "preparation",
+      "title": [
+        "Campaign preparation",
+        "Kampagnenvorbereitung"
+      ],
+      "type": "image",
+      "src": null,
+      "alt": null,
+      "width": null,
+      "height": null
+    }
+  ]
+}
