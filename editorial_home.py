@@ -63,9 +63,11 @@ def render_home(lang, projects, config, experience, path, copy, preview=False):
 
     def published_card(project, number):
         href = path(lang, project['slug'])
-        title = text(project['title'])
-        summary = project.get('featured', {}).get('summary', project['intro'])
-        tags = ''.join(f'<span>{escape(tag)}</span>' for tag in project['cats'][index].split(' · '))
+        card = project.get('home_card', {})
+        title = text(card.get('title', project['title']))
+        summary = card.get('description', project.get('featured', {}).get('summary', project['intro']))
+        tags = ''.join(f'<span>{escape(tag)}</span>' for tag in card.get('categories', project['cats'])[index].split(' · '))
+        focal_style = f' style="object-position: {escape(project["cover_position"])}"' if project.get('cover_position') else ''
         srcset = ''
         if project.get('cover_srcset'):
             srcset = f' srcset="{escape(project["cover_srcset"])}" sizes="(max-width: 700px) 90vw, 42vw"'
@@ -75,11 +77,11 @@ def render_home(lang, projects, config, experience, path, copy, preview=False):
           <div class="case-card-copy"><p class="tags">{tags}</p>
             <p class="case-organization">{label} / {escape(project['org'])} · {escape(project['year'])}</p>
             <h3><a href="{href}">{title}</a></h3><p>{text(summary)}</p>
-            <a class="button" href="{href}">{text(copy['case_link'])} {ARROW_ICON}</a>
+            <a class="button" href="{href}">{text(card.get('button', copy['case_link']))} {ARROW_ICON}</a>
           </div>
           <a class="case-card-visual" href="{href}" aria-label="{title}">
             <img src="{escape(project['cover'])}"{srcset} alt="{text(project['cover_alt'])}"
-                 width="{project['cover_width']}" height="{project['cover_height']}" loading="lazy" decoding="async">
+                 width="{project['cover_width']}" height="{project['cover_height']}" loading="lazy" decoding="async"{focal_style}>
           </a>
         </article>"""
 

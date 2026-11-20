@@ -667,7 +667,7 @@
         "The work covered presentations, promotional materials, packaging-related projects and collaborative photo, video and advertising production. Creative authorship was shared across teams and contractors.",
         "Die Arbeit umfasste Präsentationen, Werbematerialien, Verpackungsprojekte sowie gemeinsame Foto-, Video- und Werbeproduktionen. Die kreative Leistung entstand im Zusammenspiel von Teams und externen Dienstleistern."
       ],
-      "cover": null,
+      "cover": "/media/ekoniva/production/kitchen-set-960.webp",
       "images": [],
       "videos": [],
       "home_visual_title": [
@@ -678,7 +678,33 @@
         "Anton Frolov’s product marketing work at EkoNiva, covering brand communications, packaging projects and collaborative photo and video production.",
         "Produktmarketing bei EkoNiva mit Anton Frolov. Einblicke in Markenkommunikation, Verpackungsprojekte und gemeinsame Foto- und Videoproduktionen."
       ],
-      "status": "published"
+      "status": "published",
+      "cover_srcset": "/media/ekoniva/production/kitchen-set-480.webp 480w, /media/ekoniva/production/kitchen-set-960.webp 960w, /media/ekoniva/production/kitchen-set-1920.webp 1920w",
+      "cover_width": 1920,
+      "cover_height": 1280,
+      "cover_alt": [
+        "Film camera beside a kitchen set with three people at a breakfast table.",
+        "Filmkamera neben einer Küchenkulisse mit drei Personen am Frühstückstisch."
+      ],
+      "cover_position": "50% 42%",
+      "home_card": {
+        "title": [
+          "From Product to Brand Story",
+          "Von der Produktidee zur Markenkommunikation"
+        ],
+        "categories": [
+          "Brand Marketing · Creative Production",
+          "Markenmarketing · Kreativproduktion"
+        ],
+        "description": [
+          "Advertising production, product storytelling and brand communications developed with EkoNiva’s marketing team and creative partners.",
+          "Werbeproduktionen, Produkt-Storytelling und Markenkommunikation in Zusammenarbeit mit dem Marketingteam und externen Kreativpartnern."
+        ],
+        "button": [
+          "Explore case",
+          "Projekt ansehen"
+        ]
+      }
     },
     {
       "slug": "beyond-the-screen",
