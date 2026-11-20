@@ -52,13 +52,13 @@ def render_home(lang, projects, config, experience, path, copy, preview=False):
         label = f'{number:02} / ' if number is not None else ''
         date = f' · {escape(project["year"])}' if project.get('year') else ''
         preview_link = ''
-        if preview and project.get('slug') == 'product-to-brand':
-            preview_link = f'<p><a class="text-link" href="{path(lang, project["slug"])}">{["Preview case study", "Fallstudie ansehen"][index]} ↗</a></p>'
+        if project.get('slug') == 'product-to-brand' and (preview or project.get('status') == 'published'):
+            preview_link = f'<p><a class="text-link" href="{path(lang, project["slug"])}">{text(copy['case_link']) if project.get('status') == 'published' else ['Preview case study', 'Fallstudie ansehen'][index]} ↗</a></p>'
         return f"""
         <article class="project-draft">
           <div class="draft-meta">{label}{text(project['org'])}{date}</div>
           <div><h3>{text(project['title'])}</h3><p>{text(project['intro'])}</p>
-            <p class="draft-status">{text(copy['draft_label'])}</p>{preview_link}</div>
+            {'' if project.get('status') == 'published' else '<p class="draft-status">' + text(copy['draft_label']) + '</p>'}{preview_link}</div>
         </article>"""
 
     def published_card(project, number):

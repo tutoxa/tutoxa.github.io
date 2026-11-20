@@ -1,4 +1,4 @@
-"""Local EkoNiva case study, using the existing verified project record."""
+"""EkoNiva case study, using the existing verified project record."""
 from html import escape
 from urllib.parse import urlsplit
 

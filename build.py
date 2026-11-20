@@ -73,11 +73,11 @@ def home(lang):
               data['light_home'].get('meta_description', data['light_home']['intro'])[i])
 
 def case(lang,p,n):
- if p['slug']=='product-to-brand' and args.preview:
+ if p['slug']=='product-to-brand':
   collection=json.loads((R/'ekoniva.json').read_text())
   i=0 if lang=='en' else 1
   body=render_ekoniva(p,collection,lang)
-  return shell(lang,body,collection['title'][i],collection['intro'][i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["ekoniva.css"]}"><script src="{asset_urls["ekoniva.js"]}" defer></script>',indexable=False)
+  return shell(lang,body,collection['title'][i],collection['intro'][i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["ekoniva.css"]}"><script src="{asset_urls["ekoniva.js"]}" defer></script>',indexable=True)
  if p.get('layout')=='klimatechniker':
   i=0 if lang=='en' else 1
   manifest=json.loads((R/'media/klimatechniker/manifest.json').read_text())

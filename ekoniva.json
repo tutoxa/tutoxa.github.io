@@ -62,8 +62,8 @@
     "Vorläufige visuelle Referenzen aus bereitgestellten EkoNiva-Screenshots. Projekttitel, individuelle Beiträge und Credits sind noch zu bestätigen. Zahlen in den Screenshots sind historische Oberflächeninhalte und werden nicht als Kampagnenergebnisse ausgewiesen."
   ],
   "behind_note": [
-    "External production references for local visual review. My involvement in the production shown is not established.",
-    "Externe Produktionsreferenzen zur lokalen Bildauswahl. Meine Mitwirkung an der gezeigten Produktion ist nicht bestätigt."
+    "External production references. My involvement in the production shown is not established.",
+    "Externe Produktionsreferenzen. Meine Mitwirkung an der gezeigten Produktion ist nicht bestätigt."
   ],
   "items": [
     {
@@ -199,8 +199,8 @@
         "Production reference",
         "Produktionsreferenz"
       ],
-      "src": "/.preview-ekoniva/production/kitchen-set-1920.webp",
-      "srcset": "/.preview-ekoniva/production/kitchen-set-480.webp 480w, /.preview-ekoniva/production/kitchen-set-960.webp 960w, /.preview-ekoniva/production/kitchen-set-1920.webp 1920w",
+      "src": "/media/ekoniva/production/kitchen-set-1920.webp",
+      "srcset": "/media/ekoniva/production/kitchen-set-480.webp 480w, /media/ekoniva/production/kitchen-set-960.webp 960w, /media/ekoniva/production/kitchen-set-1920.webp 1920w",
       "sizes": "(max-width: 700px) 94vw, 1080px",
       "alt": [
         "Film camera beside a kitchen set with three people at a breakfast table.",
@@ -211,7 +211,7 @@
       "featured": true,
       "source_file": "ekoniva-article168-003-w-5058.jpg",
       "source_url": "https://www.ekoniva-moloko.com/uploads/20/003-w-5058.jpg",
-      "rights_status": "unconfirmed-local-review-only"
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
     },
     {
       "type": "image",
@@ -219,8 +219,8 @@
         "Production reference",
         "Produktionsreferenz"
       ],
-      "src": "/.preview-ekoniva/production/camera-rails-1920.webp",
-      "srcset": "/.preview-ekoniva/production/camera-rails-480.webp 480w, /.preview-ekoniva/production/camera-rails-960.webp 960w, /.preview-ekoniva/production/camera-rails-1920.webp 1920w",
+      "src": "/media/ekoniva/production/camera-rails-1920.webp",
+      "srcset": "/media/ekoniva/production/camera-rails-480.webp 480w, /media/ekoniva/production/camera-rails-960.webp 960w, /media/ekoniva/production/camera-rails-1920.webp 1920w",
       "sizes": "(max-width: 700px) 45vw, 23vw",
       "alt": [
         "Camera crew working beside a floor-mounted camera rail on an interior set.",
@@ -231,7 +231,7 @@
       "featured": false,
       "source_file": "ekoniva-article168-002-w-5045.jpg",
       "source_url": "https://www.ekoniva-moloko.com/uploads/20/002-w-5045.jpg",
-      "rights_status": "unconfirmed-local-review-only"
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
     },
     {
       "type": "image",
@@ -239,8 +239,8 @@
         "Production reference",
         "Produktionsreferenz"
       ],
-      "src": "/.preview-ekoniva/production/factory-filming-1920.webp",
-      "srcset": "/.preview-ekoniva/production/factory-filming-480.webp 480w, /.preview-ekoniva/production/factory-filming-960.webp 960w, /.preview-ekoniva/production/factory-filming-1920.webp 1920w",
+      "src": "/media/ekoniva/production/factory-filming-1920.webp",
+      "srcset": "/media/ekoniva/production/factory-filming-480.webp 480w, /media/ekoniva/production/factory-filming-960.webp 960w, /media/ekoniva/production/factory-filming-1920.webp 1920w",
       "sizes": "(max-width: 700px) 45vw, 23vw",
       "alt": [
         "Film camera and crew in protective clothing on a factory floor.",
@@ -251,7 +251,7 @@
       "featured": false,
       "source_file": "ekoniva-article168-5.jpg",
       "source_url": "https://www.ekoniva-moloko.com/uploads/20/5.jpg",
-      "rights_status": "unconfirmed-local-review-only"
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
     },
     {
       "type": "image",
@@ -259,8 +259,8 @@
         "Production reference",
         "Produktionsreferenz"
       ],
-      "src": "/.preview-ekoniva/production/retail-set-1920.webp",
-      "srcset": "/.preview-ekoniva/production/retail-set-480.webp 480w, /.preview-ekoniva/production/retail-set-960.webp 960w, /.preview-ekoniva/production/retail-set-1920.webp 1920w",
+      "src": "/media/ekoniva/production/retail-set-1920.webp",
+      "srcset": "/media/ekoniva/production/retail-set-480.webp 480w, /media/ekoniva/production/retail-set-960.webp 960w, /media/ekoniva/production/retail-set-1920.webp 1920w",
       "sizes": "(max-width: 700px) 45vw, 23vw",
       "alt": [
         "Crew and lighting equipment beside refrigerated shelves in a shop.",
@@ -271,7 +271,7 @@
       "featured": false,
       "source_file": "ekoniva-article168-008-w-5647.jpg",
       "source_url": "https://www.ekoniva-moloko.com/uploads/20/008-w-5647.jpg",
-      "rights_status": "unconfirmed-local-review-only"
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
     },
     {
       "type": "image",
@@ -279,8 +279,8 @@
         "Production reference",
         "Produktionsreferenz"
       ],
-      "src": "/.preview-ekoniva/production/farm-filming-1920.webp",
-      "srcset": "/.preview-ekoniva/production/farm-filming-480.webp 480w, /.preview-ekoniva/production/farm-filming-960.webp 960w, /.preview-ekoniva/production/farm-filming-1920.webp 1920w",
+      "src": "/media/ekoniva/production/farm-filming-1920.webp",
+      "srcset": "/media/ekoniva/production/farm-filming-480.webp 480w, /media/ekoniva/production/farm-filming-960.webp 960w, /media/ekoniva/production/farm-filming-1920.webp 1920w",
       "sizes": "(max-width: 700px) 45vw, 23vw",
       "alt": [
         "Camera crew filming beside cattle pens inside a barn.",
@@ -291,15 +291,15 @@
       "featured": false,
       "source_file": "ekoniva-article168-1.jpg",
       "source_url": "https://www.ekoniva-moloko.com/uploads/20/1.jpg",
-      "rights_status": "unconfirmed-local-review-only"
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
     }
   ],
   "production_sources": {
     "article": "https://www.ekoniva-moloko.com/news/168",
     "article_credit": "https://milknews.ru/longridy/novaja-reklama-EkoNivy.html",
     "note": [
-      "Source article: EkoNiva · credited to Milknews. Photographer and reuse permission unconfirmed.",
-      "Quellartikel: EkoNiva · Text mit Quellenangabe Milknews. Fotograf und Nutzungsfreigabe unbestätigt."
+      "Source article: EkoNiva · credited to Milknews. Photographer not specified.",
+      "Quellartikel: EkoNiva · Text mit Quellenangabe Milknews. Fotograf nicht angegeben."
     ],
     "videos_label": [
       "Original source videos",
