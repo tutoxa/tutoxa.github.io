@@ -1,3 +1,6 @@
 # Local review videos are never published or committed.
 .preview-media/
 __pycache__/
+
+# External EkoNiva article photos await reuse permission and stay local.
+.preview-ekoniva/

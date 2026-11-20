@@ -124,3 +124,15 @@ python3 preview_server.py --directory ../light-portfolio-preview --port 8002
 ```
 
 The preview includes all three local films. Public output keeps the existing music/audio clearance gate. Anton approved the light redesign for publication on 8 November 2026. Public output excludes internal review notes, missing-asset messages and empty gallery placeholders. It does not include the two videos awaiting audio clearance.
+
+## EkoNiva case study
+
+The English page is `/product-to-brand.html`, and the German page is `/de-product-to-brand.html`. Both are published by the normal build. The existing typography-based homepage item links to the case. Run `python3 build.py` to regenerate the static pages, or use `--output` for an isolated build. `--preview` keeps the existing local-only Klimatechniker video review behavior.
+
+Edit `ekoniva.json` to update both languages. Text pairs use English first, German second. The order of `items` controls the hero carousel and Selected Work; `behind` controls the Commercial Production gallery, with `featured: true` on the large opening photograph. The five carousel images remain provisional supplied screenshots, with no assigned campaign credits or results. Original filenames are recorded in `media/ekoniva/sources.json`.
+
+For new media, set `type`, root-relative `src`, original `width`/`height`, bilingual `alt`, and optional `srcset`/`sizes`. Videos require a cleared MP4 and poster image, start only on visitor action, and pause when navigating away. Verified HTTPS `external_url` links open on request, without tracking embeds. Confirm each item's title, year, contribution and credits before adding those details. Reorder the data to change image order; no layout rebuild is needed.
+
+The production gallery uses five photographs from https://www.ekoniva-moloko.com/news/168. Anton confirmed public reuse permission on 20 November 2026. Optimized responsive copies and their provenance are in `media/ekoniva/production/`. The source article describes a 2022 production; Anton’s involvement is not confirmed and the page identifies these as external production references. EkoNiva/Milknews source credits remain visible. Original YouTube videos are external links only; their files have not been downloaded or embedded, and reuse permission for video files is unconfirmed.
+
+Keep raw originals outside Git. `.preview-ekoniva/` retains ignored local alternatives and is never part of the public build. Publication is not authorized for unlisted reserve images merely because the five selected gallery photos have been cleared.

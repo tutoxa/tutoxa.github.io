@@ -1,0 +1,338 @@
+{
+  "title": [
+    "From Product to Brand Story",
+    "Von der Produktidee zur Markenkommunikation"
+  ],
+  "intro": [
+    "A selection of advertising and brand communication projects developed with the EkoNiva marketing team and external creative partners.",
+    "Eine Auswahl an Werbe- und Markenkommunikationsprojekten, die gemeinsam mit dem EkoNiva-Marketingteam und externen Kreativpartnern umgesetzt wurden."
+  ],
+  "role": [
+    "Product Marketing & Creative Production Coordination",
+    "Produktmarketing & Koordination kreativer Produktionen"
+  ],
+  "headings": [
+    [
+      "The Context",
+      "Der Kontext"
+    ],
+    [
+      "My Role",
+      "Meine Rolle"
+    ],
+    [
+      "Selected Work",
+      "Ausgewählte Arbeiten"
+    ],
+    [
+      "Commercial Production",
+      "Werbeproduktion"
+    ],
+    [
+      "My Contribution",
+      "Mein Beitrag"
+    ]
+  ],
+  "showcase_label": [
+    "Advertising and brand content showcase",
+    "Werbung und Markenkommunikation"
+  ],
+  "slot_label": [
+    "Media slot",
+    "Medienplatz"
+  ],
+  "media_pending": [
+    "Original media to follow",
+    "Originalmaterial folgt"
+  ],
+  "review_note": [
+    "Provisional image selection · original screenshots, no campaign credits assigned",
+    "Vorläufige Bildauswahl · Original-Screenshots ohne zugewiesene Kampagnen-Credits"
+  ],
+  "contribution_pending": [
+    "Project-specific contribution to be confirmed with the original material.",
+    "Der konkrete Projektbeitrag wird mit dem Originalmaterial ergänzt."
+  ],
+  "collaboration": [
+    "The work brought together the internal marketing team, external agencies and production partners. My contribution connected product communication, practical coordination and the preparation of marketing materials.",
+    "Die Arbeit entstand gemeinsam mit dem internen Marketingteam, externen Agenturen und Produktionspartnern. Mein Beitrag verband Produktkommunikation, praktische Abstimmung und die Vorbereitung von Marketingmaterialien."
+  ],
+  "work_note": [
+    "Provisional visual references from supplied EkoNiva screenshots. Project titles, individual contributions and credits remain to be verified. Figures visible within screenshots are historical interface content, not claimed campaign results.",
+    "Vorläufige visuelle Referenzen aus bereitgestellten EkoNiva-Screenshots. Projekttitel, individuelle Beiträge und Credits sind noch zu bestätigen. Zahlen in den Screenshots sind historische Oberflächeninhalte und werden nicht als Kampagnenergebnisse ausgewiesen."
+  ],
+  "behind_note": [
+    "External production references. My involvement in the production shown is not established.",
+    "Externe Produktionsreferenzen. Meine Mitwirkung an der gezeigten Produktion ist nicht bestätigt."
+  ],
+  "items": [
+    {
+      "id": "coffee-preparation",
+      "title": [
+        "Coffee preparation",
+        "Kaffeezubereitung"
+      ],
+      "format": [
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/coffee-preparation.webp",
+      "poster": null,
+      "alt": [
+        "Screenshot showing a barista in a yellow sweatshirt beside a coffee machine.",
+        "Screenshot mit einem Barista im gelben Pullover neben einer Kaffeemaschine."
+      ],
+      "width": 811,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "кофе 1.jpg"
+    },
+    {
+      "id": "employee-story",
+      "title": [
+        "An employee story",
+        "Ein Mitarbeiterporträt"
+      ],
+      "format": [
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/employee-story.webp",
+      "poster": null,
+      "alt": [
+        "EkoNiva Instagram post showing an employee in green workwear at a farm.",
+        "Instagram-Beitrag von EkoNiva mit einer Mitarbeiterin in grüner Arbeitskleidung auf einem Hof."
+      ],
+      "width": 739,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "сюжет 3.PNG"
+    },
+    {
+      "id": "dairy-products",
+      "title": [
+        "Dairy product presentation",
+        "Milchprodukte im Bild"
+      ],
+      "format": [
+        "Supplied Instagram screenshot",
+        "Bereitgestellter Instagram-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/dairy-products.webp",
+      "poster": null,
+      "alt": [
+        "EkoNiva Instagram post showing milk packaging on a wooden table with warm lights in the background.",
+        "Instagram-Beitrag von EkoNiva mit Milchverpackungen auf einem Holztisch und warmen Lichtern im Hintergrund."
+      ],
+      "width": 739,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "эконива 4.PNG"
+    },
+    {
+      "id": "instagram-selection",
+      "title": [
+        "Instagram selection",
+        "Instagram-Auswahl"
+      ],
+      "format": [
+        "Supplied profile screenshot",
+        "Bereitgestellter Profil-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/instagram-selection.webp",
+      "poster": null,
+      "alt": [
+        "Screenshot of the EkoNiva Instagram grid with food, products and people.",
+        "Screenshot des Instagram-Rasters von EkoNiva mit Lebensmitteln, Produkten und Menschen."
+      ],
+      "width": 739,
+      "height": 1600,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "эконива 2.PNG"
+    },
+    {
+      "id": "cheese-product",
+      "title": [
+        "Cheese product page",
+        "Produktseite Käse"
+      ],
+      "format": [
+        "Supplied website screenshot",
+        "Bereitgestellter Website-Screenshot"
+      ],
+      "type": "image",
+      "src": "/media/ekoniva/cheese-product.webp",
+      "poster": null,
+      "alt": [
+        "EkoNiva cheese product page screenshot with a packaged hard cheese and Russian product information.",
+        "Screenshot einer Käse-Produktseite von EkoNiva mit einer Hartkäseverpackung und russischen Produktinformationen."
+      ],
+      "width": 1280,
+      "height": 800,
+      "year": null,
+      "contribution": null,
+      "external_url": null,
+      "silent_preview": false,
+      "source_file": "сыр 2.png"
+    }
+  ],
+  "behind": [
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/media/ekoniva/production/kitchen-set-1920.webp",
+      "srcset": "/media/ekoniva/production/kitchen-set-480.webp 480w, /media/ekoniva/production/kitchen-set-960.webp 960w, /media/ekoniva/production/kitchen-set-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 94vw, 1080px",
+      "alt": [
+        "Film camera beside a kitchen set with three people at a breakfast table.",
+        "Filmkamera neben einer Küchenkulisse mit drei Personen am Frühstückstisch."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": true,
+      "source_file": "ekoniva-article168-003-w-5058.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/003-w-5058.jpg",
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/media/ekoniva/production/camera-rails-1920.webp",
+      "srcset": "/media/ekoniva/production/camera-rails-480.webp 480w, /media/ekoniva/production/camera-rails-960.webp 960w, /media/ekoniva/production/camera-rails-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Camera crew working beside a floor-mounted camera rail on an interior set.",
+        "Kamerateam bei der Arbeit an einer Schienenanlage in einer Innenkulisse."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-002-w-5045.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/002-w-5045.jpg",
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/media/ekoniva/production/factory-filming-1920.webp",
+      "srcset": "/media/ekoniva/production/factory-filming-480.webp 480w, /media/ekoniva/production/factory-filming-960.webp 960w, /media/ekoniva/production/factory-filming-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Film camera and crew in protective clothing on a factory floor.",
+        "Filmkamera und Team in Schutzkleidung in einer Produktionshalle."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-5.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/5.jpg",
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/media/ekoniva/production/retail-set-1920.webp",
+      "srcset": "/media/ekoniva/production/retail-set-480.webp 480w, /media/ekoniva/production/retail-set-960.webp 960w, /media/ekoniva/production/retail-set-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Crew and lighting equipment beside refrigerated shelves in a shop.",
+        "Team und Beleuchtungstechnik neben Kühlregalen in einem Geschäft."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-008-w-5647.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/008-w-5647.jpg",
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
+    },
+    {
+      "type": "image",
+      "title": [
+        "Production reference",
+        "Produktionsreferenz"
+      ],
+      "src": "/media/ekoniva/production/farm-filming-1920.webp",
+      "srcset": "/media/ekoniva/production/farm-filming-480.webp 480w, /media/ekoniva/production/farm-filming-960.webp 960w, /media/ekoniva/production/farm-filming-1920.webp 1920w",
+      "sizes": "(max-width: 700px) 45vw, 23vw",
+      "alt": [
+        "Camera crew filming beside cattle pens inside a barn.",
+        "Kamerateam bei Dreharbeiten neben Rinderboxen in einem Stall."
+      ],
+      "width": 1920,
+      "height": 1280,
+      "featured": false,
+      "source_file": "ekoniva-article168-1.jpg",
+      "source_url": "https://www.ekoniva-moloko.com/uploads/20/1.jpg",
+      "rights_status": "public-reuse-permission-confirmed-by-user-2026-11-20"
+    }
+  ],
+  "production_sources": {
+    "article": "https://www.ekoniva-moloko.com/news/168",
+    "article_credit": "https://milknews.ru/longridy/novaja-reklama-EkoNivy.html",
+    "note": [
+      "Source article: EkoNiva · credited to Milknews. Photographer not specified.",
+      "Quellartikel: EkoNiva · Text mit Quellenangabe Milknews. Fotograf nicht angegeben."
+    ],
+    "videos_label": [
+      "Original source videos",
+      "Originalvideos an der Quelle"
+    ],
+    "videos": [
+      {
+        "title": [
+          "Milk",
+          "Milch"
+        ],
+        "url": "https://www.youtube.com/watch?v=CmFqYiLRa0g",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      },
+      {
+        "title": [
+          "Yoghurt",
+          "Joghurt"
+        ],
+        "url": "https://www.youtube.com/watch?v=2XD42MsPw84",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      },
+      {
+        "title": [
+          "Sour cream",
+          "Sauerrahm"
+        ],
+        "url": "https://www.youtube.com/watch?v=J9e4psdbtQ4",
+        "reuse_permission": "unconfirmed",
+        "integration": "external-link-only; no downloaded file or embed"
+      }
+    ]
+  }
+}

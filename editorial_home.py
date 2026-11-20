@@ -15,7 +15,7 @@ CV_ICON = button_icon('M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6')
 ARROW_ICON = button_icon('M6 18L18 6 M8 6h10v10')
 
 
-def render_home(lang, projects, config, experience, path, copy):
+def render_home(lang, projects, config, experience, path, copy, preview=False):
     index = 0 if lang == 'en' else 1
     project_by_slug = {project['slug']: project for project in projects}
     project_by_slug.update(copy['draft_projects'])
@@ -51,11 +51,14 @@ def render_home(lang, projects, config, experience, path, copy):
     def draft_row(project, number=None):
         label = f'{number:02} / ' if number is not None else ''
         date = f' · {escape(project["year"])}' if project.get('year') else ''
+        preview_link = ''
+        if project.get('slug') == 'product-to-brand' and (preview or project.get('status') == 'published'):
+            preview_link = f'<p><a class="text-link" href="{path(lang, project["slug"])}">{text(copy['case_link']) if project.get('status') == 'published' else ['Preview case study', 'Fallstudie ansehen'][index]} ↗</a></p>'
         return f"""
         <article class="project-draft">
           <div class="draft-meta">{label}{text(project['org'])}{date}</div>
           <div><h3>{text(project['title'])}</h3><p>{text(project['intro'])}</p>
-            <p class="draft-status">{text(copy['draft_label'])}</p></div>
+            {'' if project.get('status') == 'published' else '<p class="draft-status">' + text(copy['draft_label']) + '</p>'}{preview_link}</div>
         </article>"""
 
     def published_card(project, number):

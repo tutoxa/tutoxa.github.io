@@ -1,6 +1,7 @@
 import json, pathlib, html, argparse, shutil, hashlib
 from klimatechniker import render_case
 from editorial_home import render_home
+from ekoniva import render_ekoniva
 parser=argparse.ArgumentParser()
 parser.add_argument("--preview",action="store_true",help="Include local-only video files for review")
 parser.add_argument("--output",type=pathlib.Path,help="Write an isolated preview directory")
@@ -11,7 +12,7 @@ OUT=args.output.resolve() if args.output else R
 OUT.mkdir(parents=True,exist_ok=True)
 
 # A regenerated page should always request its matching styles and scripts.
-asset_names = ('style.css', 'editorial.css', 'site.js', 'klimatechniker.css', 'klimatechniker.js')
+asset_names = ('style.css', 'editorial.css', 'site.js', 'klimatechniker.css', 'klimatechniker.js', 'ekoniva.css', 'ekoniva.js')
 asset_urls = {
     name: f'/{name}?v={hashlib.sha256((R / name).read_bytes()).hexdigest()[:12]}'
     for name in asset_names
@@ -67,11 +68,16 @@ def home(lang):
  preview_cv = '.preview-media/cv/anton-frolov-de.pdf'
  if args.preview and OUT != R and not config.get('cv_de') and (R / preview_cv).is_file():
   home_config = {**config, 'cv_de': '/' + preview_cv}
- body = render_home(lang, projects, home_config, data['experience'], path, data['light_home'])
+ body = render_home(lang, projects, home_config, data['experience'], path, data['light_home'], preview=args.preview)
  return shell(lang, body, 'Anton Frolov — Marketing & Creative Production',
               data['light_home'].get('meta_description', data['light_home']['intro'])[i])
 
 def case(lang,p,n):
+ if p['slug']=='product-to-brand':
+  collection=json.loads((R/'ekoniva.json').read_text())
+  i=0 if lang=='en' else 1
+  body=render_ekoniva(p,collection,lang)
+  return shell(lang,body,collection['title'][i],collection['intro'][i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["ekoniva.css"]}"><script src="{asset_urls["ekoniva.js"]}" defer></script>',indexable=True)
  if p.get('layout')=='klimatechniker':
   i=0 if lang=='en' else 1
   manifest=json.loads((R/'media/klimatechniker/manifest.json').read_text())
@@ -104,7 +110,9 @@ urls=[config['domain']+path(l,p['slug'] if p else None) for l in ['en','de'] for
 print('Built 12 bilingual pages, sitemap and 404.')
 
 if OUT != R:
- for name in ['style.css','site.js','favicon.svg','social-preview.png','klimatechniker.css','klimatechniker.js','editorial.css']:
+ for name in ['style.css','site.js','favicon.svg','social-preview.png','klimatechniker.css','klimatechniker.js','editorial.css','ekoniva.css','ekoniva.js']:
   shutil.copy2(R/name,OUT/name)
  shutil.copytree(R/'media',OUT/'media',dirs_exist_ok=True)
  if args.preview: shutil.copytree(R/'.preview-media',OUT/'.preview-media',dirs_exist_ok=True)
+
+ if args.preview and (R/'.preview-ekoniva').is_dir(): shutil.copytree(R/'.preview-ekoniva',OUT/'.preview-ekoniva',dirs_exist_ok=True)

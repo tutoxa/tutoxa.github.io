@@ -1,0 +1,86 @@
+.ek-case { --ek-rule: #deded7; color: var(--ink); }
+.ek-case section { padding: 0; }
+.ek-intro, .ek-editorial, .ek-work, .ek-behind, .ek-back {
+  width: min(calc(100% - 56px), 1080px);
+  margin-inline: auto;
+}
+.ek-intro { padding-top: 38px !important; }
+.ek-credit { margin: 28px 0 13px; font-size: 12px; color: #666; }
+.ek-intro h1 { max-width: 880px; margin: 0 0 18px; font: 450 clamp(38px, 5.3vw, 72px)/1.06 Onest, sans-serif; letter-spacing: -.055em; text-wrap: balance; }
+.ek-introduction { max-width: 660px; font-size: clamp(16px, 1.7vw, 21px); line-height: 1.5; margin-bottom: 14px; }
+.ek-role { font-size: 12px; color: #666; margin: 0; }
+.ek-showcase { overflow: hidden; margin: 26px 0 50px; background: #f7f7f3; padding: 16px 0 20px !important; }
+.ek-preview-note { text-align: center; padding-inline: 20px; font-size: 11px; color: #65655e; margin: 0 0 14px; }
+.ek-panels { list-style: none; display: flex; gap: 18px; overflow-x: auto; padding: 16px 20px; margin: 0; }
+.ek-panel { flex: 0 0 270px; background: #e7e7e0; overflow: hidden; border-radius: 5px; }
+.ek-panel .ek-slot { min-height: 310px; }
+.ek-slot { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 16px; padding: 26px; color: #474740; }
+.ek-slot > span, .ek-slot > small { font-size: 11px; font-weight: 400; }
+.ek-slot > span { padding-bottom: 6px; border-bottom: 1px solid #aaa99e; }
+.ek-slot strong { font: 450 clamp(24px, 3vw, 38px)/1.15 Onest, sans-serif; letter-spacing: -.04em; }
+.ek-panel:nth-child(even) { background: #edede7; }
+.ek-panel:nth-child(3n) { background: #dcded5; }
+.ek-panel-caption { position: absolute; inset: auto 20px 17px; font-size: 11px; color: #4f5049; }
+.ek-panel > img, .ek-panel > video { width: 100%; height: 100%; display: block; object-fit: contain; background: #111; }
+.ek-panel:has(img, video) .ek-panel-caption { background: #fff; padding: 4px 8px; width: fit-content; pointer-events: none; bottom: 48px; }
+.ek-ready .ek-panels { position: relative; height: clamp(340px, 38vw, 460px); overflow: visible; padding: 0; }
+.ek-ready .ek-panel {
+  position: absolute; left: 50%; top: 0; width: clamp(240px, 26vw, 330px); height: 100%;
+  transform: translateX(-50%);
+  transform-origin: center;
+  transition: transform 480ms cubic-bezier(.22,.7,.25,1), box-shadow 480ms ease;
+  box-shadow: 0 9px 25px #252a1812;
+}
+.ek-ready .ek-panel .ek-slot { min-height: 100%; padding-bottom: 50px; }
+.ek-controls { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 22px; position: relative; }
+.ek-controls[hidden] { display: none; }
+.ek-controls button { border: 1px solid #b8b9ae; background: transparent; border-radius: 50%; width: 44px; height: 44px; font-size: 21px; cursor: pointer; }
+.ek-controls button:hover { background: #e2e3d9; }
+.ek-status { font-size: 11px; color: #55574d; margin: 0; min-width: 110px; text-align: center; }
+.ek-editorial { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,2fr); gap: 22px 60px; padding-bottom: 34px !important; }
+.ek-case h2 { font: 450 clamp(24px, 3vw, 34px)/1.18 Onest, sans-serif; letter-spacing: -.04em; }
+.ek-editorial h2, .ek-editorial p { margin: 0; }
+.ek-editorial p, .ek-work-row p, .ek-section-heading p { color: #606058; font-size: 14px; line-height: 1.7; }
+.ek-responsibilities { margin: 15px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.8; }
+.ek-work, .ek-behind, .ek-contribution { padding-block: 28px 38px !important; border-top: 1px solid var(--ek-rule); }
+.ek-section-heading { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; margin-bottom: 22px; }
+.ek-section-heading h2, .ek-section-heading p { margin: 0; }
+.ek-work-row { display: grid; grid-template-columns: 1.1fr .6fr 1.5fr; gap: 24px; padding-block: 16px; border-top: 1px solid #e8e8e2; }
+.ek-work-row h3 { margin: 0; font-size: 18px; }
+.ek-work-row > span, .ek-work-row > a { font-size: 12px; color: #666; }
+.ek-work-row p { margin: 0; font-size: 12px; }
+.ek-behind-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.ek-production-featured { grid-column: 1 / -1; }
+.ek-gallery-link { display: block; overflow: hidden; border-radius: 6px; }
+.ek-gallery-link:hover { opacity: .94; }
+.ek-production-source { display: grid; grid-template-columns: 1fr auto; gap: 9px 24px; margin-top: 18px; color: #666; font-size: 11px; }
+.ek-production-source p { margin: 0; }
+.ek-source-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.ek-source-links a { text-decoration: underline; text-underline-offset: 3px; }
+.ek-behind figure { margin: 0; min-width: 0; }
+.ek-behind .ek-slot { aspect-ratio: 16 / 9; background: #f1f1eb; }
+.ek-behind img, .ek-behind video { display: block; width: 100%; height: auto; }
+.ek-behind figcaption { margin-top: 7px; font-size: 11px; color: #777; }
+.ek-contribution p + p { margin-top: 12px; }
+.ek-back { display: block; margin-bottom: 34px; width: fit-content; }
+@media (max-width: 700px) {
+  .ek-intro, .ek-editorial, .ek-work, .ek-behind { width: calc(100% - 36px); }
+  .ek-intro { padding-top: 28px !important; }
+  .ek-intro h1 { font-size: clamp(36px, 9vw, 53px); }
+  .ek-showcase { margin-top: 24px; margin-bottom: 32px; }
+  .ek-ready .ek-panels { height: 350px; }
+  .ek-ready .ek-panel { width: 238px; }
+  .ek-editorial, .ek-section-heading { grid-template-columns: 1fr; gap: 14px; }
+  .ek-editorial h2:not(:first-child) { margin-top: 12px; }
+  .ek-work-row { grid-template-columns: 1fr auto; gap: 5px 15px; }
+  .ek-work-row p, .ek-work-row a { grid-column: 1 / -1; }
+  .ek-behind-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .ek-production-source { grid-template-columns: 1fr; gap: 10px; font-size: 12px; }
+  .ek-production-source p:nth-of-type(2) { margin-top: 6px; }
+  .ek-behind .ek-slot { aspect-ratio: 3 / 4; padding: 15px; }
+  .ek-behind .ek-slot strong { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ek-ready .ek-panel { transition: none; }
+}
+.ek-slot strong { overflow-wrap: anywhere; hyphens: auto; }
