@@ -30,9 +30,10 @@ def render_home(lang, projects, config, experience, path, copy, preview=False):
         ]
         if config.get('linkedin'):
             buttons.append(f'<a class="button" href="{escape(config["linkedin"])}" rel="me">LinkedIn {ARROW_ICON}</a>')
-        if config.get('cv_de'):
+        cv_url = config.get(f'cv_{lang}')
+        if cv_url:
             buttons.append(
-                f'<a class="button" href="{escape(config["cv_de"])}" target="_blank" rel="noopener noreferrer">'
+                f'<a class="button" href="{escape(cv_url)}" target="_blank" rel="noopener noreferrer">'
                 f'{["View CV", "Lebenslauf ansehen"][index]} {CV_ICON}</a>'
             )
         return f'<div class="contact-buttons">{"".join(buttons)}</div>'
