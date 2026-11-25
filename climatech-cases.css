@@ -1,0 +1,74 @@
+/* Scoped to the two event cases; existing case styles remain unchanged. */
+.ce-case { max-width: 1200px; padding: 52px 28px 80px; margin: auto; }
+.ce-intro { padding: 0 0 36px; }
+.ce-intro > .eyebrow { margin-top: 34px; color: #777; font-size: 12px; }
+.ce-case h1 { max-width: 990px; font-size: clamp(36px, 5.2vw, 72px); line-height: 1.04; margin-bottom: 30px; text-wrap: balance; }
+.ce-intro-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 10%; align-items: start; }
+.ce-deck { font-size: clamp(18px, 2vw, 23px); line-height: 1.5; margin: 0; }
+.ce-role { color: #666; font-size: 14px; margin: 0; }
+.ce-role span { display: block; color: #171717; margin-bottom: 9px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.ce-photo { margin: 0; min-width: 0; }
+.ce-photo img, .ce-video img { width: 100%; height: auto; display: block; border-radius: 18px; background: #f4f4f4; }
+.ce-photo figcaption, .ce-video figcaption { color: #777; font-size: 12px; line-height: 1.5; margin-top: 9px; }
+.ce-opening { background: #f4f4f4; border-radius: 22px; padding: 22px; }
+.ce-opening .ce-photo { max-width: 850px; margin: auto; }
+.ce-opening .ce-photo-visit-filming { max-width: 650px; }
+.ce-opening .ce-photo img { max-height: 650px; width: auto; max-width: 100%; margin: auto; }
+.ce-opening figcaption { text-align: center; }
+.ce-index { display: flex; flex-wrap: wrap; gap: 12px 30px; padding: 22px 0; border-bottom: 1px solid #e4e4e4; font-size: 12px; }
+.ce-index a { text-underline-offset: 5px; }
+.ce-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr); gap: 40px; padding: 55px 0; border-bottom: 1px solid #e4e4e4; scroll-margin-top: 120px; }
+.ce-section .eyebrow { font-size: 11px; color: #777; margin-bottom: 15px; }
+.ce-section h2 { font-size: clamp(26px, 2.7vw, 39px); line-height: 1.12; text-wrap: balance; }
+.ce-section-copy > p:not(.eyebrow) { font-size: 15px; line-height: 1.65; color: #555; }
+.ce-section-copy .ce-note { font-size: 12px !important; color: #777 !important; }
+.ce-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; min-width: 0; }
+.ce-gallery-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ce-gallery-3 > :first-child { grid-column: 1 / -1; }
+.ce-gallery-3 > :first-child img { max-height: 540px; object-fit: contain; background: #f4f4f4; }
+.ce-video { max-width: 355px; margin: 0 auto; grid-column: 1 / -1; }
+.ce-video video { width: 100%; aspect-ratio: 9/16; display: block; border-radius: 18px; background: #111; }
+#media-coverage .ce-gallery { align-items: center; }
+.ce-responsibilities { display: grid; grid-template-columns: 1fr 2.1fr; gap: 40px; padding: 44px 0 28px; }
+.ce-responsibilities h2 { font-size: 30px; }
+.ce-responsibilities p { font-size: 17px; line-height: 1.7; max-width: 690px; }
+.ce-back { display: inline-block; margin-top: 30px; }
+@media (max-width: 850px) {
+  .ce-section { grid-template-columns: 1fr; gap: 24px; padding: 38px 0; }
+  .ce-section-copy { max-width: 620px; }
+  .ce-section h2 { font-size: 33px; }
+}
+@media (max-width: 550px) {
+  .ce-case { padding: 32px 18px 55px; }
+  .ce-intro-grid, .ce-responsibilities { grid-template-columns: 1fr; gap: 20px; }
+  .ce-case h1 { font-size: 39px; margin-bottom: 23px; }
+  .ce-deck { font-size: 18px; }
+  .ce-opening { padding: 10px; border-radius: 17px; }
+  .ce-photo img, .ce-video video { border-radius: 12px; }
+  .ce-index { gap: 12px; flex-direction: column; }
+  .ce-gallery { gap: 14px; }
+  .ce-photo figcaption { font-size: 11px; }
+  .ce-section-copy > p:not(.eyebrow) { font-size: 16px; }
+  .ce-responsibilities { padding-top: 32px; }
+}
+/* Override the site's generic header flex rule for this article heading only. */
+.ce-case .ce-intro { display: block; }
+.ce-case h1 { overflow-wrap: anywhere; hyphens: auto; }
+
+/* SCHAU REIN media rhythm; other CLIMATECH cases retain their layout. */
+.ce-schau #media-coverage .ce-gallery { align-items: start; }
+.ce-schau #media-coverage .ce-video { grid-column: auto; width: 100%; max-width: none; }
+.ce-schau #media-coverage .ce-photo-mdr-report { align-self: center; }
+.ce-schau .ce-opening .ce-photo { max-width: 720px; }
+@media (max-width: 550px) {
+ .ce-schau #media-coverage .ce-video { grid-column: 1 / -1; width: min(100%, 330px); }
+ .ce-schau #media-coverage .ce-photo-mdr-report { grid-column: 1 / -1; }
+}
+
+.ce-schau .ce-instagram { grid-column: 1 / -1; max-width: 470px; width: 100%; margin: 0 auto; }
+.ce-schau .ce-instagram iframe { display: block; border: 1px solid #eee; border-radius: 18px; width: 100%; height: 720px; background: white; }
+.ce-schau .ce-instagram figcaption { margin-top: 14px; font-size: 13px; }
+@media (max-width: 550px) { .ce-schau .ce-instagram iframe { height: 660px; border-radius: 12px; } }
+@media (max-width: 550px) {
+ .ce-schau .ce-gallery { grid-template-columns: 1fr; gap: 24px; }
+}

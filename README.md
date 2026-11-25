@@ -145,3 +145,10 @@ Configure `settings.cv_en` and `settings.cv_de` separately in `content.json`. Ea
 The German PDF is the existing November 19 portrait-centred review export, copied without re-exporting or editing. Its text and one-page count match the earlier website document. Source: `outputs/cv-center-review/Anton_Frolov_CV_DE_Portrait_Centered_Review.pdf` outside the repository. Review before publication. The build adds a file-content hash query to local CV URLs so updated PDFs avoid stale browser/CDN URLs while the stable filename remains usable. A configured missing local file fails the build.
 
 Safari portrait compatibility: the English export initially used an inverted soft mask that Safari displayed as a white circle on black. The final review PDF embeds the existing circular photograph on white as an opaque RGB image, without a soft mask. Only the image stream was replaced after export; text, coordinates and page count were retained. When exporting a future English revision, check the portrait in Safari as well as the normal PDF render.
+
+
+### SCHAU REIN case media
+
+`climatech-cases.json` holds the bilingual SCHAU REIN copy, photo sources, responsive images and public Instagram Collab URL. `climatech_cases.py` renders the existing `technical-careers.html` and `de-technical-careers.html` routes, with scoped styles in `climatech-cases.css`. Corporate Events and other local review cases are not part of this release.
+
+The selected photos are optimized WebP copies; originals are preserved outside the repository. The 9.18-second TV-crew clip in `media/schau-rein/tv-crew-silent.mp4` is an optimized H.264 derivative with all audio removed. It documents the crew filming on site, not the finished television report. The actual Collab uses Instagram’s public embed and a direct post link; no copy of that video is hosted here. The full MDR report link remains pending.
