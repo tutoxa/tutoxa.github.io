@@ -2,6 +2,7 @@ import json, pathlib, html, argparse, shutil, hashlib
 from klimatechniker import render_case
 from editorial_home import render_home
 from ekoniva import render_ekoniva
+from climatech_cases import render_climatech_case
 parser=argparse.ArgumentParser()
 parser.add_argument("--preview",action="store_true",help="Include local-only video files for review")
 parser.add_argument("--output",type=pathlib.Path,help="Write an isolated preview directory")
@@ -12,7 +13,7 @@ OUT=args.output.resolve() if args.output else R
 OUT.mkdir(parents=True,exist_ok=True)
 
 # A regenerated page should always request its matching styles and scripts.
-asset_names = ('style.css', 'editorial.css', 'site.js', 'klimatechniker.css', 'klimatechniker.js', 'ekoniva.css', 'ekoniva.js')
+asset_names = ('style.css', 'editorial.css', 'site.js', 'klimatechniker.css', 'klimatechniker.js', 'ekoniva.css', 'ekoniva.js', 'climatech-cases.css')
 asset_urls = {
     name: f'/{name}?v={hashlib.sha256((R / name).read_bytes()).hexdigest()[:12]}'
     for name in asset_names
@@ -83,6 +84,11 @@ def home(lang):
               data['light_home'].get('meta_description', data['light_home']['intro'])[i])
 
 def case(lang,p,n):
+ if p['slug']=='technical-careers':
+  collection=json.loads((R/'climatech-cases.json').read_text())
+  i=0 if lang=='en' else 1
+  body=render_climatech_case(p['slug'],collection,lang,args.preview)
+  return shell(lang,body,collection[p['slug']]['title'][i],collection[p['slug']]['intro'][i],p['slug'],f'<link rel="stylesheet" href="{asset_urls["climatech-cases.css"]}">')
  if p['slug']=='product-to-brand':
   collection=json.loads((R/'ekoniva.json').read_text())
   i=0 if lang=='en' else 1
@@ -120,7 +126,7 @@ urls=[config['domain']+path(l,p['slug'] if p else None) for l in ['en','de'] for
 print('Built 12 bilingual pages, sitemap and 404.')
 
 if OUT != R:
- for name in ['style.css','site.js','favicon.svg','social-preview.png','klimatechniker.css','klimatechniker.js','editorial.css','ekoniva.css','ekoniva.js']:
+ for name in ['style.css','site.js','favicon.svg','social-preview.png','klimatechniker.css','klimatechniker.js','editorial.css','ekoniva.css','ekoniva.js','climatech-cases.css']:
   shutil.copy2(R/name,OUT/name)
  shutil.copytree(R/'media',OUT/'media',dirs_exist_ok=True)
  if args.preview: shutil.copytree(R/'.preview-media',OUT/'.preview-media',dirs_exist_ok=True)

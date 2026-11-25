@@ -1,0 +1,178 @@
+{
+  "media": {
+    "hands-on": {
+      "src": "/media/climatech-events/hands-on-1600.webp",
+      "srcset": "/media/climatech-events/hands-on-480.webp 480w, /media/climatech-events/hands-on-960.webp 960w, /media/climatech-events/hands-on-1600.webp 1500w",
+      "width": 1500,
+      "height": 2000,
+      "alt": [
+        "A student trying a workshop task with an employee",
+        "Ein Schüler probiert unter Anleitung eine Werkstattaufgabe aus"
+      ],
+      "source": "Instagram/schau rein/IMG_0248.HEIC"
+    },
+    "mdr-report": {
+      "src": "/media/climatech-events/mdr-report-1600.webp",
+      "srcset": "/media/climatech-events/mdr-report-480.webp 480w, /media/climatech-events/mdr-report-960.webp 960w, /media/climatech-events/mdr-report-1600.webp 1600w",
+      "width": 1600,
+      "height": 920,
+      "alt": [
+        "Supplied MDR broadcast screenshot showing an interview at CLIMATECH",
+        "Bereitgestellter Screenshot des MDR-Beitrags mit Interview bei CLIMATECH"
+      ],
+      "source": "Instagram/schau rein/IMG_2083.PNG"
+    },
+    "sr-demonstration": {
+      "src": "/media/schau-rein/img_0306-1600.webp",
+      "srcset": "/media/schau-rein/img_0306-480.webp 480w, /media/schau-rein/img_0306-960.webp 960w, /media/schau-rein/img_0306-1600.webp 1500w",
+      "width": 1500,
+      "height": 2000,
+      "alt": [
+        "Employees explaining technical tools and equipment to visiting pupils",
+        "Mitarbeitende erklären den Schülerinnen und Schülern technische Werkzeuge und Geräte"
+      ],
+      "source": "antonfrolov.de/Schau rein/IMG_0306.HEIC"
+    },
+    "sr-tv-group": {
+      "src": "/media/schau-rein/img_0229-1600.webp",
+      "srcset": "/media/schau-rein/img_0229-480.webp 480w, /media/schau-rein/img_0229-960.webp 960w, /media/schau-rein/img_0229-1600.webp 1500w",
+      "width": 1500,
+      "height": 2000,
+      "alt": [
+        "The television crew filming a hands-on activity with pupils and employees",
+        "Das Fernsehteam filmt eine praktische Aufgabe mit Schülern und Mitarbeitenden"
+      ],
+      "source": "antonfrolov.de/Schau rein/IMG_0229.HEIC"
+    },
+    "sr-tv-interview": {
+      "src": "/media/schau-rein/img_0240-1600.webp",
+      "srcset": "/media/schau-rein/img_0240-480.webp 480w, /media/schau-rein/img_0240-960.webp 960w, /media/schau-rein/img_0240-1600.webp 1500w",
+      "width": 1500,
+      "height": 2000,
+      "alt": [
+        "The television crew recording an interview in the workshop",
+        "Das Fernsehteam zeichnet ein Interview in der Werkstatt auf"
+      ],
+      "source": "antonfrolov.de/Schau rein/IMG_0240.HEIC"
+    },
+    "sr-workshop": {
+      "src": "/media/schau-rein/img_0249-1600.webp",
+      "srcset": "/media/schau-rein/img_0249-480.webp 480w, /media/schau-rein/img_0249-960.webp 960w, /media/schau-rein/img_0249-1600.webp 1500w",
+      "width": 1500,
+      "height": 2000,
+      "alt": [
+        "Pupils and employees exploring a practical task in the CLIMATECH workshop",
+        "Schüler und Mitarbeitende bei einer praktischen Aufgabe in der CLIMATECH-Werkstatt"
+      ],
+      "source": "antonfrolov.de/Schau rein/IMG_0249.HEIC"
+    }
+  },
+  "technical-careers": {
+    "title": [
+      "Making Technical Careers Visible / SCHAU REIN!",
+      "Technische Berufe sichtbar machen / SCHAU REIN!"
+    ],
+    "intro": [
+      "Making technical apprenticeships visible through a school visit, hands-on encounters and a published Instagram collaboration for CLIMATECH.",
+      "Technische Ausbildungsberufe sichtbar machen: durch einen Schulbesuch im Betrieb, praktische Einblicke und eine veröffentlichte Instagram-Kooperation für CLIMATECH."
+    ],
+    "role": [
+      "Concept support, coordination with the initiative, on-site filming, editing and visual communication.",
+      "Konzeptunterstützung, Abstimmung mit der Initiative, Dreh vor Ort, Schnitt und visuelle Kommunikation."
+    ],
+    "hero": "sr-workshop",
+    "sections": [
+      {
+        "id": "event-day",
+        "label": [
+          "01 / Visit day",
+          "01 / Besuchstag"
+        ],
+        "title": [
+          "A working day, up close.",
+          "Berufsalltag zum Anfassen."
+        ],
+        "body": [
+          "The goal was to introduce pupils to technical apprenticeships and CLIMATECH through SCHAU REIN!. During the company open day, they explored the workshop, met employees and saw how technical tasks are approached in everyday work. I documented these encounters for the project’s visual communication.",
+          "Ziel war es, Schülerinnen und Schülern über SCHAU REIN! technische Ausbildungsberufe und CLIMATECH näherzubringen. Am Besuchstag erkundeten sie die Werkstatt, trafen Mitarbeitende und lernten technische Aufgaben aus dem Arbeitsalltag kennen. Ich dokumentierte diese Begegnungen für die visuelle Kommunikation des Projekts."
+        ],
+        "photos": [
+          "sr-demonstration",
+          "hands-on"
+        ]
+      },
+      {
+        "id": "content-production",
+        "label": [
+          "02 / Instagram collaboration",
+          "02 / Instagram-Kooperation"
+        ],
+        "title": [
+          "From filming to a joint post.",
+          "Vom Dreh zum gemeinsamen Post."
+        ],
+        "body": [
+          "I coordinated with the SCHAU REIN! initiative, found a suitable participant and helped agree the concept and visual style. Across two filming days at the company, I filmed and edited the content myself, shaping practical technical work into a short-form piece for Instagram. The collaboration content was published as a joint post as part of SCHAU REIN!.",
+          "Ich stimmte mich mit der Initiative SCHAU REIN! ab, fand einen passenden Protagonisten und unterstützte die Abstimmung von Konzept und Bildsprache. An zwei Drehtagen im Unternehmen filmte ich selbst und schnitt den Content zu einem Kurzformat für Instagram. Der Kooperationsbeitrag wurde im Rahmen von SCHAU REIN! als gemeinsamer Post veröffentlicht."
+        ],
+        "note": [
+          "I filmed and edited this collaboration content myself and prepared it for joint publication. The original Instagram post is linked here; its availability in the embedded player depends on Instagram.",
+          "Ich filmte und schnitt diesen Kooperationsbeitrag selbst und bereitete ihn für die gemeinsame Veröffentlichung vor. Der originale Instagram-Post ist hier verlinkt; die Verfügbarkeit im eingebetteten Player hängt von Instagram ab."
+        ],
+        "embed": {
+          "type": "instagram",
+          "url": "https://www.instagram.com/reel/DU-QGI7CHq5/",
+          "src": "https://www.instagram.com/reel/DU-QGI7CHq5/embed/",
+          "title": [
+            "Published SCHAU REIN! Instagram collaboration",
+            "Veröffentlichte SCHAU REIN! Instagram-Kooperation"
+          ],
+          "label": [
+            "View the published Collab post",
+            "Veröffentlichten Collab-Post ansehen"
+          ]
+        }
+      },
+      {
+        "id": "media-coverage",
+        "label": [
+          "03 / Media coverage",
+          "03 / Medienberichterstattung"
+        ],
+        "title": [
+          "Visibility beyond the company.",
+          "Sichtbarkeit über den Betrieb hinaus."
+        ],
+        "body": [
+          "A television crew accompanied the visit and recorded demonstrations and interviews. MDR later broadcast a report. My work was the event documentation and social media production; the television report was produced by the broadcaster.",
+          "Ein Fernsehteam begleitete den Besuch und zeichnete Vorführungen und Interviews auf. Später berichtete der MDR darüber. Mein Beitrag lag in der Veranstaltungsdokumentation und Social-Media-Produktion; den Fernsehbericht produzierte der Sender."
+        ],
+        "photos": [
+          "sr-tv-group",
+          "sr-tv-interview"
+        ],
+        "note": [
+          "The short clip shows the TV crew filming on site, not the finished report. Broadcast screenshot: MDR / supplied reference. A verified report link is still needed.",
+          "Der kurze Clip zeigt das Fernsehteam beim Dreh vor Ort, nicht den fertigen Beitrag. Sendungs-Screenshot: MDR / bereitgestellte Referenz. Ein bestätigter Link zum Bericht fehlt noch."
+        ],
+        "reference_photo": "mdr-report",
+        "video": {
+          "src": "/media/schau-rein/tv-crew-silent.mp4",
+          "poster": "/media/schau-rein/tv-crew-poster.webp",
+          "width": 540,
+          "height": 960,
+          "caption": [
+            "Behind the scenes: television interview recording. Silent on-site clip, approximately 9 seconds.",
+            "Hinter den Kulissen: Aufzeichnung eines Fernsehinterviews. Stummer Vor-Ort-Clip, etwa 9 Sekunden."
+          ],
+          "fallback_caption": [
+            "Behind the scenes: television interview recording.",
+            "Hinter den Kulissen: Aufzeichnung eines Fernsehinterviews."
+          ],
+          "public": true
+        }
+      }
+    ],
+    "year": "2026"
+  }
+}
